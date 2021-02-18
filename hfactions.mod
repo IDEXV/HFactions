@@ -1,14 +1,5 @@
 version="1.10.*"
-replace_path="common/decisions"
-replace_path="common/decisions/categories"
-replace_path="common/on_actions"
-replace_path="common/scripted_effects"
-replace_path="common/scripted_localisation"
-replace_path​="common/scripted_triggers"
-replace_path="history/countries"
-replace_path="history/states"
-replace_path="events"
-replace_path="gfx/loadingscreens"
+
 tags={
 	"Alternative History"
 	"Events"
@@ -20,4 +11,18 @@ tags={
 }
 name="HFactions"
 supported_version="1.10.1"
-path="C:/Users/maxim/Documents/Paradox Interactive/Hearts of Iron IV/mod/hfactions"
+path="mod/hfactions"
+
+replace_path={
+	"common/decisions"
+	"common/decisions/categories"
+	"common/on_actions"
+	"common/scripted_effects"
+	"common/scripted_localisation"
+	"common/scripted_triggers"
+	"history/countries"
+	"history/states"
+	"events"
+	"gfx/loadingscreens"
+}
+
