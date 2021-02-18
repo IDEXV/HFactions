@@ -1,0 +1,8 @@
+NDF_empire = {
+	color = rgb { 255 207 171 }
+	color_ui = rgb { 255 207 171 }
+}
+NDF_elektrostal_families = {
+	color = rgb { 6 122 45 }
+	color_ui = rgb { 6 122 45 }
+}

@@ -1,0 +1,291 @@
+division_template = {
+	name = "Vagner Soldiers"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Vagner National Guard"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+	}
+}
+division_template = {
+	name = "Vagner Armoured Division"
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+	    	medium_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+		light_armor = { x = 2 y = 0 }
+	    	light_armor = { x = 2 y = 1 }
+		light_armor = { x = 2 y = 2 }
+		motorized = { x = 3 y = 0 }
+	    	motorized = { x = 3 y = 1 }
+	}
+	support = {
+	 	mot_recon = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 1155
+		division_template = "Vagner Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 10099
+		division_template = "Vagner Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7001
+		division_template = "Vagner Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 10815
+		division_template = "Vagner Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 5058
+		division_template = "Vagner Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 1955
+		division_template = "Vagner Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 4968
+		division_template = "Vagner Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7934
+		division_template = "Vagner Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 5037
+		division_template = "Vagner Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 5093
+		division_template = "Vagner Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 10791
+		division_template = "Vagner Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 10840
+		division_template = "Vagner Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 12821
+		division_template = "Vagner Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 12894
+		division_template = "Vagner Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 8002
+		division_template = "Vagner Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 10760
+		division_template = "Vagner Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7960
+		division_template = "Vagner Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7960
+		division_template = "Vagner Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7960
+		division_template = "Vagner Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7960
+		division_template = "Vagner Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7960
+		division_template = "Vagner Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7960
+		division_template = "Vagner Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7960
+		division_template = "Vagner Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7960
+		division_template = "Vagner Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7960
+		division_template = "Vagner Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7960
+		division_template = "Vagner Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7960
+		division_template = "Vagner Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+}

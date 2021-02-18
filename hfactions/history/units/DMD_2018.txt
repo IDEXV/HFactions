@@ -1,0 +1,372 @@
+division_template = {
+	name = "DD Soldiers"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "DD National Guard"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+	}
+}
+division_template = {
+	name = "DD Armoured Division"
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+	    	medium_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+		light_armor = { x = 2 y = 0 }
+	    	light_armor = { x = 2 y = 1 }
+		light_armor = { x = 2 y = 2 }
+		motorized = { x = 3 y = 0 }
+	    	motorized = { x = 3 y = 1 }
+	}
+	support = {
+	 	mot_recon = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 10046
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 10046
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 10046
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 10046
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 10046
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 10046
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 10046
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 4047
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7082
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 4194
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 10026
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 4163
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7166
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 1013
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7008
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 1194
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 10107
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 4022
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 1967
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 9983
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 10046
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7180
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7180
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7180
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7180
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7180
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7180
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7180
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7180
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7180
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7180
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7180
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7180
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7180
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7180
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7180
+		division_template = "DD Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+}

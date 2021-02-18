@@ -1,0 +1,87 @@
+add_namespace = arc_invite_dec
+
+country_event = {
+	id = arc_invite_dec.1
+    title = arcid_title.0.d
+    desc = arcid_desc.0.d
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = arcid_ok.1.a
+	}
+}
+
+add_namespace = arc_invite_ace
+
+country_event = {
+	id = arc_invite_ace.1
+    title = arcace_title.0.d
+    desc = arcace_desc.0.d
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = arcid_pog.1.a
+	}
+}
+
+add_namespace = vcc_tertrade_ace
+
+country_event = {
+	id = vcc_tertrade_ace.1
+    title = vcc_tertradeace_title.0.d
+    desc = vcc_tertradeace_desc.0.d
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = vcc_tertrade_pog.1.a
+		add_stability = 0.1
+	}
+}
+
+add_namespace = vcc_tertrade_dec
+
+country_event = {
+	id = vcc_tertrade_dec.1
+    title = vcc_tertradedec_title.0.d
+    desc = vcc_tertradedec_desc.0.d
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = vcc_tertrade_bruh.1.a
+	}
+}
+
+add_namespace = ndf_finsetrebels
+
+country_event = {
+	id = ndf_finsetrebels.1
+    title = ndf_finsetrebels_title.0.d
+    desc = ndf_finsetrebels_desc.0.d
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = ndf_finsetrebels_ok.1.a
+		unlock_decision_category_tooltip = NDF_category_inside_issues
+		unlock_decision_tooltip = NDF_mission_finset_rebellion
+	}
+}

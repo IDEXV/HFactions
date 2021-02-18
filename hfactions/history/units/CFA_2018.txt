@@ -1,0 +1,399 @@
+division_template = {
+	name = "CFA Soldiers"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "CFA National Guard"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+	}
+}
+division_template = {
+	name = "CFA Armoured Division"
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+	    	medium_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+		light_armor = { x = 2 y = 0 }
+	    	light_armor = { x = 2 y = 1 }
+		light_armor = { x = 2 y = 2 }
+		motorized = { x = 3 y = 0 }
+	    	motorized = { x = 3 y = 1 }
+	}
+	support = {
+	 	mot_recon = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 12981
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 12981
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 12981
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 12981
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 12981
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 12981
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 12981
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 12981
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 12981
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 12981
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 12981
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 12981
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 12981
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 12981
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 12981
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 12981
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 12981
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 12981
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 1552
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 10930
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 4851
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 1580
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 5177
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2217
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 12911
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 10858
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 5097
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 10775
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 12814
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2020
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 8164
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 1966
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7912
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 5070
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 12742
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 8039
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 10762
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 12944
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2123
+		division_template = "CFA Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+}

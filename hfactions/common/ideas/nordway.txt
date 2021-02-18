@@ -1,0 +1,281 @@
+ideas = {
+
+    country = {
+		brother_for_brother = {
+
+            picture = generic_political_support
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                war_support_weekly = 0.1
+                stability_weekly = 0.2
+                neutrality_drift = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+
+		people_government = {
+
+            picture = generic_political_support
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                stability_weekly = 0.2
+                democratic_drift = 0.3
+			}
+		}
+		
+        nordway_research = {
+
+            picture = generic_research_bonus
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+            modifier = {
+				research_speed_factor = 0.5			
+            }
+		}
+
+        nordway_press_ban = {
+
+            picture = generic_pp_unity_bonus
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+            modifier = {
+				neutrality_drift = 0.5
+				drift_defence_factor = 0.5
+				fascism_drift = -1
+				democratic_drift = -1
+				communism_drift = -1
+            }
+		}
+
+        nordway_new_plans = {
+
+            picture = generic_infantry_equipment_manufacturer_2
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+            modifier = {
+				war_support_weekly = 0.2
+				command_power_gain = 0.2
+				conscription_factor = 0.2			
+				planning_speed = 0.2
+				experience_gain_army_factor = 0.2
+				air_mission_xp_gain_factor = 0.2
+            }
+		}
+
+        nordway_academy = {
+
+            picture = generic_infantry_equipment_manufacturer_2
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+            modifier = {
+				war_support_weekly = 0.2
+				command_power_gain = 0.2
+				conscription_factor = 0.2
+				army_leader_start_attack_level = 2
+				army_leader_start_defense_level = 2
+				army_leader_start_logistics_level = 2				
+            }
+		}
+
+        boreas_infil_intel = {
+
+            picture = generic_spy_intel
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = BRF
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+
+        nordway_brf_raiding = {
+
+            picture = generic_industrial_concern_3
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				country_resource_aluminium = 5
+				country_resource_chromium = 10
+			}
+		}
+
+        boreas_agent_rescued = {
+
+            picture = generic_spy_intel
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = BRF
+				attack_bonus_against = 0.2
+			}
+		}
+
+        nordway_agency = {
+
+            picture = generic_spy_intel
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+            modifier = {
+				agency_upgrade_time = -0.5
+				airforce_intel_to_others = 5
+				civilian_intel_to_others = 5
+				navy_intel_to_others = 5
+				encryption = 1.5
+				intelligence_agency_defense = 0.5
+				enemy_operative_detection_chance_factor = 0.1
+            }
+		}
+
+        unstable_hierarchy = {
+
+            picture = generic_purge
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+            modifier = {
+                stability_weekly = -0.3
+				drift_defence_factor = -0.5
+            }
+		}
+
+        friendly_army = {
+
+            picture = generic_pp_unity_bonus
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+            modifier = {
+				conscription_factor = 0.2
+            }
+		}
+
+        stable_hierarchy = {
+
+            picture = generic_pp_unity_bonus
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+            modifier = {
+				stability_weekly = 0.1
+				drift_defence_factor = 0.5
+            }
+		}
+    }
+}

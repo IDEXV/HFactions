@@ -1,0 +1,90 @@
+bookmarks = {
+	bookmark = {
+		name = "WARZONE_NAME"
+		desc = "WARZONE_DESC"
+		date = 2020.5.13.12
+		picture = "GFX_select_date_1939"
+		default_country = "DUT"
+		default = yes
+
+		"NDF" = {
+			history = NDF_WARZONE_DESC
+			ideology = democratic
+			ideas={
+				friendly_army
+				soul_of_organization
+			}
+			focuses = {
+				ndf_militarism
+			}
+		}
+		"BRF" = {
+			history = BRF_WARZONE_DESC
+			ideology = neutrality
+			ideas={
+				soul_of_organization
+			}
+			focuses = {
+			}
+		}
+		"REX" = {
+			history = REX_WARZONE_DESC
+			ideology = neutrality
+			ideas={
+				soul_of_organization
+				unstability
+			}
+			focuses = {
+			}
+		}
+		"GSR" = {
+			history = GSR_WARZONE_DESC
+			ideology = neutrality
+			ideas={
+				soul_of_organization
+				three_leaders
+			}
+			focuses = {
+			}
+		}
+		"DUT" = {
+			history = DUT_WARZONE_DESC
+			ideology = fascism
+			ideas={
+				soul_of_organization
+				heavy_military
+			}
+			focuses = {
+			}
+		}
+		"LOM" = {
+			history = LOM_WARZONE_DESC
+			ideology = fascism
+			ideas={
+				soul_of_organization
+				disorganization
+			}
+			focuses = {
+			}
+		}
+		"VCC" = {
+			history = VCC_WARZONE_DESC
+			ideology = communism
+			ideas={
+				soul_of_organization
+				absolute_power
+			}
+			focuses = {
+			}
+		}
+
+		"---"={
+			history = "OTHER_WARZONE_DESC"
+		}
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

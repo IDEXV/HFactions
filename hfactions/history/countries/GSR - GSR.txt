@@ -1,0 +1,200 @@
+capital = 709
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+oob = "GSR_2018"
+
+add_ideas = {
+	soul_of_pmc
+	three_leaders
+	beginning_debuff
+}
+
+set_convoys = 20
+set_research_slots = 3
+set_stability = 1
+set_war_support = 0.7
+
+2020.1.1 = {
+	
+	add_ideas = {
+		soul_of_organization
+	}
+
+	remove_ideas = {
+		soul_of_pmc
+		beginning_debuff
+	}
+
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	set_technology = {
+		tech_support = 1
+		tech_recon = 1
+		support_weapons = 1
+		gw_artillery = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		fuel_silos = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+
+		set_politics = {
+			ruling_party = democratic
+			last_election = "2019.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+
+		set_popularities = {
+			neutrality = 20
+			democratic = 80
+		}
+
+	create_country_leader = {
+    	name = "Mark Reed"
+    	desc = "LEADER_MARK_DESC"
+    	picture = "gfx/leaders/GSR/portrait_gsr_unknown.dds"
+    	expire = "2050.1.1"
+    	ideology = liberalism
+    	traits = {
+			warmonger
+			ideological_crusader
+			quartermaster_general
+			war_industrialist
+    	}
+	}
+
+	create_country_leader = {
+    	name = "Ethan Price"
+    	desc = ""
+    	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+    	expire = "2050.1.1"
+    	ideology = centrism
+    	traits = {
+       		ideological_crusader
+			stout_defender
+			backroom_backstabber
+    	}
+	}
+
+	create_country_leader = {
+    	name = "Maxim IDEXV"
+    	desc = "LEADER_KERK_DESC"
+    	picture = "gfx/leaders/GSR/portrait_gsr_kerk.dds"
+    	expire = "2050.1.1"
+    	ideology = liberalism
+    	traits = {
+			fortification_engineer
+			war_industrialist
+			ideological_crusader
+			headstrong
+			#
+			dislikes_duty
+    	}
+	}
+
+	create_country_leader = {
+    	name = "Mike Hernandez"
+    	desc = "LEADER_MIKE_DESC"
+    	picture = "gfx/leaders/GSR/portrait_gsr_unknown.dds"
+    	expire = "2050.1.1"
+    	ideology = liberalism
+    	traits = {
+        	stout_defender
+			ideological_crusader
+			head_of_intelligence
+			war_industrialist
+    	}
+	}
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2018.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 100
+}
+
+create_country_leader = {
+    name = "Mark Reed"
+    desc = "LEADER_MARK_DESC"
+    picture = "gfx/leaders/GSR/portrait_gsr_unknown.dds"
+    expire = "2050.1.1"
+    ideology = centrism
+    traits = {
+		warmonger
+		ideological_crusader
+		quartermaster_general
+		war_industrialist
+    }
+}
+
+create_country_leader = {
+    name = "Maxim IDEXV"
+    desc = "LEADER_KERK_DESC"
+    picture = "gfx/leaders/GSR/portrait_gsr_kerk.dds"
+    expire = "2050.1.1"
+    ideology = centrism
+    traits = {
+		fortification_engineer
+		war_industrialist
+		ideological_crusader
+		headstrong
+		#
+		dislikes_duty
+    }
+}
+
+create_country_leader = {
+    name = "Mike Hernandez"
+    desc = "LEADER_MIKE_DESC"
+    picture = "gfx/leaders/GSR/portrait_gsr_unknown.dds"
+    expire = "2050.1.1"
+    ideology = centrism
+    traits = {
+        stout_defender
+		ideological_crusader
+		head_of_intelligence
+		war_industrialist
+    }
+}
+
+add_opinion_modifier = { target = BRF modifier = dam_relations }	

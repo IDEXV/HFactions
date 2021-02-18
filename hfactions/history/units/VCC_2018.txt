@@ -1,0 +1,156 @@
+division_template = {
+	name = "VCC Infantry"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "VCC National Guard"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+	}
+}
+division_template = {
+	name = "VCC Armoured Division"
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+	    	medium_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+		light_armor = { x = 2 y = 0 }
+	    	light_armor = { x = 2 y = 1 }
+		light_armor = { x = 2 y = 2 }
+		motorized = { x = 3 y = 0 }
+	    	motorized = { x = 3 y = 1 }
+	}
+	support = {
+	 	mot_recon = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 11349
+		division_template = "VCC National Guard"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 9333
+		division_template = "VCC National Guard"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 11349
+		division_template = "VCC National Guard"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 11349
+		division_template = "VCC National Guard"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 11349
+		division_template = "VCC National Guard"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 11349
+		division_template = "VCC National Guard"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 11349
+		division_template = "VCC National Guard"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 11072
+		division_template = "VCC National Guard"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 3310
+		division_template = "VCC National Guard"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 10323
+		division_template = "VCC National Guard"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6178
+		division_template = "VCC National Guard"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 3140
+		division_template = "VCC National Guard"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+}

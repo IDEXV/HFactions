@@ -1,0 +1,37 @@
+add_namespace = vcc_tertrade
+
+country_event = {
+	id = vcc_tertrade.1
+    title = vcc_tertrade.0.d
+    desc = vcc_tertrade_desc.0.d
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = vcc_tertrade_option.1.a
+        add_political_power = -50
+        add_stability = -0.2
+		add_war_support = 0.3
+        NDF = {
+			set_state_controller = 264
+			set_state_controller = 244
+			set_state_controller = 208
+			set_state_owner = 264
+			set_state_owner = 244
+			set_state_owner = 208
+            country_event = { days = 1 id = vcc_tertrade_ace.1 }
+        }
+	}
+    option = {
+		name = vcc_tertrade_option.1.b
+        add_political_power = 50
+        add_stability = 0.2
+        add_war_support = -0.3
+        NDF = {
+            country_event = { days = 1 id = vcc_tertrade_dec.1 }
+        }
+	}
+}

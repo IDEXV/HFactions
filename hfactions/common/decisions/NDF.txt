@@ -1,0 +1,43 @@
+NDF_category_inside_issues = {
+
+	NDF_mission_finset_rebellion = {
+
+		icon = revolt
+
+		allowed = {
+			original_tag = NDF
+		}
+
+		available = {
+            OR = {
+                has_completed_focus = ndf_repress_civilwar 
+                has_completed_focus = ndf_oppress_civilwar       
+            }
+		}
+
+		days_mission_timeout = 100
+		#days_remove = 1
+
+		activation = {
+			has_completed_focus = ndf_boreas_war
+		}
+
+		fixed_random_seed = no
+
+		fire_only_once = yes
+
+		is_good = no
+
+		timeout_effect = {
+            complete_national_focus = ndf_oppress_civilwar
+            add_stability = -1
+            start_civil_war = {
+    			ideology = democratic
+    			size = 0.7
+    			only_own_territory = yes
+    			capital = 351
+    			keep_political_leader = yes
+			}	
+		}
+	}
+}

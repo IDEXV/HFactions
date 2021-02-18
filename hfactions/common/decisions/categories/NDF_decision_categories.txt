@@ -1,0 +1,10 @@
+NDF_category_inside_issues = {
+
+	icon = border_conflicts
+
+	priority = 95
+
+	allowed = {
+		original_tag = NDF
+	}
+}

@@ -1,0 +1,13 @@
+﻿l_russian:
+ ST:0 "-я"
+ ND:0 "-я"
+ RD:0 "-я"
+ TH:0 "-я"
+ WAR_NAME:0 "Война: $ORDER$$FIRST$-$SECOND$"
+ CIVIL_WAR_NAME:0 "Гражданская война: $ORDER$$SECOND$"
+ WAR_TAKE_CORE_NAME:0 "$ORDER$$FIRST$ война за возвращение региона $STATE$"
+ WAR_TAKE_CLAIM_NAME:0 "$ORDER$$FIRST$ нападение с целью захвата региона $STATE$"
+ WAR_NAME_DUT_NDF:0 "Вторая война организаций"
+ WAR_NAME_DUT_GSR:0 "Вторая война организаций"
+ WAR_NAME_DUT_BRF:0 "Вторая война организаций"
+ WAR_NAME_NDF_BRF:0 "Первая война организаций"

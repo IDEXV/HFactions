@@ -1,0 +1,327 @@
+division_template = {
+	name = "ZRS Soldiers"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "ZRS National Guard"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+	}
+}
+division_template = {
+	name = "ZRS Armoured Division"
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+	    	medium_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+		light_armor = { x = 2 y = 0 }
+	    	light_armor = { x = 2 y = 1 }
+		light_armor = { x = 2 y = 2 }
+		motorized = { x = 3 y = 0 }
+	    	motorized = { x = 3 y = 1 }
+	}
+	support = {
+	 	mot_recon = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 8188
+		division_template = "ZRS Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 10993
+		division_template = "ZRS Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 12956
+		division_template = "ZRS Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 5222
+		division_template = "ZRS Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 12808
+		division_template = "ZRS Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 8223
+		division_template = "ZRS Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 4941
+		division_template = "ZRS Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2066
+		division_template = "ZRS Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 10860
+		division_template = "ZRS Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 10976
+		division_template = "ZRS Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 3854
+		division_template = "ZRS Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2034
+		division_template = "ZRS Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 1891
+		division_template = "ZRS Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 1951
+		division_template = "ZRS Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 4972
+		division_template = "ZRS Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 1992
+		division_template = "ZRS Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 4952
+		division_template = "ZRS Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 4997
+		division_template = "ZRS Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 10061
+		division_template = "ZRS Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7117
+		division_template = "ZRS Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 10005
+		division_template = "ZRS Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 1080
+		division_template = "ZRS Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 1028
+		division_template = "ZRS Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 4910
+		division_template = "ZRS Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 4963
+		division_template = "ZRS Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 2046
+		division_template = "ZRS Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 7925
+		division_template = "ZRS Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 12766
+		division_template = "ZRS Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 12836
+		division_template = "ZRS Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 5069
+		division_template = "ZRS Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 8105
+		division_template = "ZRS Soldiers"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+}

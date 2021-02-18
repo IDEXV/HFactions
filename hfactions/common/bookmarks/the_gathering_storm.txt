@@ -1,0 +1,94 @@
+bookmarks = {
+	bookmark = {
+		name = "BEGINNING_NAME"
+		desc = "BEGINNING_DESC"
+		date = 2018.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "NDF"
+		default = yes
+
+		"NDF" = {
+			history = NDF_BEGINNING_DESC
+			ideology = neutrality
+			ideas={
+				unstable_hierarchy
+				friendly_army
+				soul_of_organization
+				brother_for_brother
+			}
+			focuses = {
+				ndf_militarism
+			}
+		}
+		"BRF" = {
+			history = BRF_BEGINNING_DESC
+			ideology = neutrality
+			ideas={
+				soul_of_organization
+				research_focus
+			}
+			focuses = {
+			}
+		}
+		"REX" = {
+			history = REX_BEGINNING_DESC
+			ideology = neutrality
+			ideas={
+				soul_of_organization
+				unstability
+			}
+			focuses = {
+			}
+		}
+		"GSR" = {
+			history = GSR_BEGINNING_DESC
+			ideology = neutrality
+			ideas={
+				soul_of_pmc
+				three_leaders
+				beginning_debuff
+			}
+			focuses = {
+			}
+		}
+		"DUT" = {
+			history = DUT_BEGINNING_DESC
+			ideology = democratic
+			ideas={
+				soul_of_organization
+				danil_forces
+				heavy_military
+			}
+			focuses = {
+			}
+		}
+		"LOM" = {
+			history = LOM_BEGINNING_DESC
+			ideology = fascism
+			ideas={
+				soul_of_organization
+				disorganization
+			}
+			focuses = {
+			}
+		}
+		"VCC" = {
+			history = VCC_BEGINNING_DESC
+			ideology = communism
+			ideas={
+				absolute_power
+			}
+			focuses = {
+			}
+		}
+
+		"---"={
+			history = "OTHER_BEGINNING_DESC"
+		}
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

@@ -1,0 +1,96 @@
+capital = 254
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+oob = "LOM_2018"
+
+add_ideas = {
+	soul_of_organization
+	disorganization
+}
+
+set_convoys = 10
+set_research_slots = 3
+set_stability = 0.4
+set_war_support = 0.5
+
+2020.1.1 = {
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	set_technology = {
+		tech_support = 1
+		tech_recon = 1
+		support_weapons = 1
+		gw_artillery = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		fuel_silos = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+		set_popularities = {
+			fascism = 100
+		}
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "2018.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	fascism = 70
+	communism = 10
+	neutrality = 20
+}
+
+create_country_leader = {
+    name = "Ivan Bazhenov"
+    desc = "LEADER_IVAN_DESC"
+    picture = "gfx/leaders/LOM/portrait_lom_ivan.dds"
+    expire = "2050.1.1"
+    ideology = nazism
+    traits = {
+        warmonger
+		dictator
+		conservative_nationalist
+		fascist_sympathies
+		#
+		dislikes_brf
+    }
+}

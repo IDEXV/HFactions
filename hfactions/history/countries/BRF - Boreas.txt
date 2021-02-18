@@ -1,0 +1,141 @@
+capital = 574
+
+oob = "BRF_2018"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+add_ideas = {
+	soul_of_organization
+	research_focus
+}
+set_convoys = 50
+set_research_slots = 4
+set_stability = 1
+set_war_support = 0.5
+
+2020.1.1 = {
+	
+	create_faction = "Организация Объединённых Группировок"
+	add_to_faction = GSR
+	add_to_faction = NDF
+
+	remove_ideas = {
+		research_focus
+	}
+
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	set_technology = {
+		tech_support = 1
+		tech_recon = 1
+		support_weapons = 1
+		gw_artillery = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		fuel_silos = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+
+		set_politics = {
+			ruling_party = democratic
+			last_election = "2020.8.14"
+			election_frequency = 48
+			elections_allowed = no
+		}
+
+		set_popularities = {
+			democratic = 85
+			neutrality = 15
+		}
+		
+		create_country_leader = {
+    		name = "Denis URAKOLOUY"
+    		desc = "LEADER_DEN_DESC"
+    		picture = "gfx/leaders/BRF/portrait_brf_den.dds"
+    		expire = "2050.1.1"
+    		ideology = conservatism
+    		traits = {
+				headstrong
+				head_of_intelligence
+				ideological_crusader
+				#
+				nuclear_scientist
+				dislikes_duty
+				dislikes_lom
+    		}
+		}
+
+		create_country_leader = {
+    		name = "Igor Elcyn"
+    		desc = ""
+    		picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+    		expire = "2050.1.1"
+    		ideology = centrism
+    		traits = {
+        		#
+    		}
+		}
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2018.11.28"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 100
+}
+
+create_country_leader = {
+    name = "Denis URAKOLOUY"
+    desc = "LEADER_DEN_DESC"
+    picture = "gfx/leaders/BRF/portrait_brf_den.dds"
+    expire = "2050.1.1"
+    ideology = centrism
+    traits = {
+		headstrong
+		head_of_intelligence
+		ideological_crusader
+		#
+		nuclear_scientist
+		dislikes_duty
+		dislikes_lom
+    }
+}
+
+add_opinion_modifier = { target = GSR modifier = dam_relations }	

@@ -1,0 +1,156 @@
+capital = 218
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+oob = "DUT_2018"
+
+add_ideas = {
+	soul_of_organization
+	danil_forces
+	heavy_military
+}
+set_convoys = 35
+set_research_slots = 3
+set_stability = 0.6
+set_war_support = 0.8
+
+2020.1.1 = {
+
+	remove_ideas = {
+		danil_forces
+	}
+
+	create_faction = "Anti-Manipulation League"
+
+	declare_war_on = {
+	target = NDF
+	type = topple_government
+	}
+	declare_war_on = {
+	target = BRF
+	type = topple_government
+	}
+	declare_war_on = {
+	target = GSR
+	type = topple_government
+	}
+	declare_war_on = {
+	target = LOM
+	type = topple_government
+	}
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	set_technology = {
+		tech_support = 1
+		tech_recon = 1
+		support_weapons = 1
+		gw_artillery = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		fuel_silos = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+
+		set_politics = {
+			ruling_party = fascism
+			last_election = "2019.6.10"
+			election_frequency = 48
+			elections_allowed = no
+		}
+
+		set_popularities = {
+			fascism = 95
+			communism = 5
+		}
+}
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "2018.1.1"
+	election_frequency = 17
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 80
+	fascism = 10
+	communism = 10
+}
+
+create_country_leader = {
+    name = "General Voronin"
+    desc = ""
+    picture = "gfx/leaders/DUT/portrait_dut_voronin.dds"
+    expire = "2050.1.1"
+    ideology = liberalism
+    traits = {
+        warmonger
+		cabinet_crisis
+		headstrong
+    }
+}
+
+create_country_leader = {
+    name = "Danil Plaksin"
+    desc = "LEADER_DANIL_DESC"
+    picture = "gfx/leaders/DUT/portrait_dut_danil.dds"
+    expire = "2050.1.1"
+    ideology = nazism
+    traits = {
+        dictator
+		warmonger
+		national_integralist
+		nationalist_symbol
+		#
+		dislikes_gsr
+		dislikes_brf
+    }
+}
+
+create_country_leader = {
+    name = "Dima Samotlyagin"
+    desc = "LEADER_DMETR_SAMO_DESC"
+    picture = "gfx/leaders/DUT/portrait_dut_dima.dds"
+    expire = "2050.1.1"
+    ideology = stalinism
+    traits = {
+        ideological_crusader
+		socialite_connections
+		marxist_academic
+		revolutionary_author
+    }
+}

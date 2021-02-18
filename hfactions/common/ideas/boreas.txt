@@ -1,0 +1,24 @@
+ideas = {
+
+    country = {
+
+        research_focus = {
+
+            picture = generic_research_bonus
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+            modifier = {
+				research_speed_factor = 1
+            }
+		}
+    }
+}
