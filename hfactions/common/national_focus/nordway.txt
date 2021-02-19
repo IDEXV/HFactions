@@ -572,7 +572,7 @@ focus_tree = {
 	focus = {
 		id = ndf_rexage_raiding
 		icon = GFX_goal_generic_political_pressure
-		cost = 3,00
+		cost = 5,00
 		prerequisite = {
 			focus = ndf_new_people
 		}
@@ -653,6 +653,7 @@ focus_tree = {
 			add_war_support = 0.2
 			add_stability = -0.2
 			army_experience = 10
+			custom_effect_tooltip = efmd_generation_text
 			division_template = {
     			name = "Elektrostal Family Members"
     			regiments = {
@@ -703,7 +704,7 @@ focus_tree = {
 			focus = ndf_narcotics_raids
 		}
 		completion_reward = {
-			declare_war_on = {
+			create_wargoal = {
     			target = REX
     			type = annex_everything
 			}			
@@ -716,9 +717,6 @@ focus_tree = {
 		id = ndf_rexage_members
 		icon = GFX_goal_generic_improve_relations
 		cost = 3,00
-		bypass = {
-			NOT = { country_exists = REX }
-		}
 		available = {
 			NOT = { country_exists = REX }
 		NOT = {
@@ -746,9 +744,6 @@ focus_tree = {
 		id = ndf_rexage_weaponry
 		icon = GFX_goal_generic_small_arms
 		cost = 3,00
-		bypass = {
-			NOT = { country_exists = REX }
-		}
 		available = {
 			NOT = { country_exists = REX }
 		NOT = {
@@ -777,9 +772,6 @@ focus_tree = {
 		id = ndf_rexage_vehicles
 		icon = GFX_goal_generic_army_motorized
 		cost = 3,00
-		bypass = {
-			NOT = { country_exists = REX }
-		}
 		available = {
 			NOT = { country_exists = REX }
 		NOT = {
@@ -2894,7 +2886,7 @@ focus_tree = {
 	focus = {
 		id = ndf_ilya_commander
 		icon = GFX_goal_support_democracy
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = ndf_commander_choosing
 		}
@@ -2904,8 +2896,7 @@ focus_tree = {
 		completion_reward = {
 			create_corps_commander = {
 				name = "Ilya Alvarov"
-				picture = "gfx/leaders/REX/portrait_rex_ilya.dds"
-				traits = { brilliant_strategist }
+				portrait_path = "gfx/leaders/REX/portrait_rex_ilya.dds"
 				skill = 4
 				attack_skill = 2
 				defense_skill = 2
@@ -2925,9 +2916,6 @@ focus_tree = {
 		id = ndf_rexage_nationalisation
 		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5,00
-		bypass = {
-			NOT = { country_exists = REX }
-		}
 		available = {
 			NOT = { country_exists = REX }
 		NOT = {
@@ -2958,9 +2946,6 @@ focus_tree = {
 		id = ndf_commander_choosing
 		icon = GFX_focus_hol_the_foundations_of_defense
 		cost = 1,00
-		bypass = {
-			NOT = { country_exists = REX }
-		}
 		available = {
 			NOT = { country_exists = REX }
 		NOT = {
@@ -3007,8 +2992,7 @@ focus_tree = {
 		completion_reward = {
 			create_corps_commander = {
 				name = "Artem Simakin"
-				picture = "gfx/leaders/REX/portrait_rex_artem.dds"
-				traits = { brilliant_strategist }
+				portrait_path = "gfx/leaders/REX/portrait_rex_artem.dds"
 				skill = 4
 				attack_skill = 4
 				defense_skill = 1
@@ -3194,9 +3178,6 @@ focus_tree = {
 		id = ndf_lomonosia_weaponry
 		icon = GFX_goal_generic_small_arms
 		cost = 3,00
-		bypass = {
-			NOT = { country_exists = LOM }
-		}
 		available = {
 			NOT = { country_exists = LOM }
 		NOT = {
@@ -3233,9 +3214,6 @@ focus_tree = {
 		id = ndf_lomonosia_members
 		icon = GFX_goal_generic_axis_build_infantry
 		cost = 3,00
-		bypass = {
-			NOT = { country_exists = LOM }
-		}
 		available = {
 			NOT = { country_exists = LOM }
 		NOT = {
@@ -3262,9 +3240,6 @@ focus_tree = {
 		id = ndf_lomonosia_vehicles
 		icon = GFX_goal_generic_army_motorized
 		cost = 3,00
-		bypass = {
-			NOT = { country_exists = LOM }
-		}
 		available = {
 			NOT = { country_exists = LOM }
 		NOT = {
@@ -3339,7 +3314,7 @@ focus_tree = {
 			add_stability = -0.1
 			create_corps_commander = {
 				name = "Ivan Bazhenov"
-				picture = "gfx/leaders/LOM/portrait_lom_ivan.dds"
+				portrait_path = "gfx/leaders/LOM/portrait_lom_ivan.dds"
 				skill = 3
 				attack_skill = 4
 				defense_skill = 3
@@ -3376,6 +3351,26 @@ focus_tree = {
 		id = ndf_ballas_major_expansion
 		icon = GFX_focus_generic_strike_at_democracy1
 		cost = 5,00
+		available = {
+			NOT = { country_exists = BRF }
+			NOT = { country_exists = GSR }
+		NOT = {
+			any_state = {
+				is_core_of = BRF
+				NOT = {
+					is_owned_by = ROOT
+				}
+			}
+		}
+		NOT = {
+			any_state = {
+				is_core_of = GSR
+				NOT = {
+					is_owned_by = ROOT
+				}
+			}
+		}			
+		}
 		prerequisite = {
 			focus = ndf_boreas_conflict
 		}
@@ -3409,6 +3404,10 @@ focus_tree = {
 			add_war_support = 0.3
 			set_state_controller = 219
 			set_state_owner = 219
+			reverse_add_opinion_modifier = {
+				target = RUS
+				modifier = took_our_territories
+			}
 		}
 		x = 18
 		y = 19
@@ -3418,9 +3417,6 @@ focus_tree = {
 		id = ndf_annex_russia
 		icon = GFX_goal_generic_position_armies
 		cost = 4,00
-		bypass = {
-			NOT = { country_exists = RUS }
-		}
 		available = {
 			strength_ratio = { tag = RUS ratio > 2 }
 		}
@@ -3441,9 +3437,6 @@ focus_tree = {
 		id = ndf_russian_conflict
 		icon = GFX_goal_generic_major_war
 		cost = 2,00
-		bypass = {
-			NOT = { country_exists = RUS }
-		}
 		prerequisite = {
 			focus = ndf_takeover_moscow
 		}
@@ -3464,9 +3457,6 @@ focus_tree = {
 		id = ndf_lomonosia_nationalisation
 		icon = GFX_goal_generic_construct_civ_factory
 		cost = 5,00
-		bypass = {
-			NOT = { country_exists = LOM }
-		}
 		available = {
 			NOT = { country_exists = LOM }
 		NOT = {
@@ -3534,7 +3524,7 @@ focus_tree = {
 		icon = GFX_goal_generic_demand_territory
 		cost = 5,00
 		bypass = {
-			NOT = { country_exists = RUS }
+			NOT = { country_exists = UKR }
 		}
 		available = {
 			NOT = { country_exists = RUS }
@@ -3553,7 +3543,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_state_controller = 202
-			set_state_owner = 202			
+			set_state_owner = 202
+			reverse_add_opinion_modifier = {
+				target = UKR
+				modifier = took_our_territories
+			}			
 		}
 		x = 18
 		y = 21
@@ -3563,9 +3557,6 @@ focus_tree = {
 		id = ndf_ukrainian_conflict
 		icon = GFX_goal_generic_major_war
 		cost = 2,00
-		bypass = {
-			NOT = { country_exists = RUS }
-		}
 		prerequisite = {
 			focus = ndf_takeover_kiev
 		}
@@ -3586,9 +3577,6 @@ focus_tree = {
 		id = ndf_annex_ukraine
 		icon = GFX_goal_generic_position_armies
 		cost = 4,00
-		bypass = {
-			NOT = { country_exists = RUS }
-		}
 		available = {
 			strength_ratio = { tag = UKR ratio > 2 }
 		}
@@ -3613,10 +3601,10 @@ focus_tree = {
 			NOT = { country_exists = VCC }
 		}
 		available = {
-			NOT = { country_exists = VCC }
+			NOT = { country_exists = UKR }
 		NOT = {
 			any_state = {
-				is_core_of = VCC
+				is_core_of = UKR
 				NOT = {
 					is_owned_by = ROOT
 				}
@@ -3638,6 +3626,10 @@ focus_tree = {
 			set_state_owner = 247
 			set_state_owner = 12
 			set_state_owner = 13
+			reverse_add_opinion_modifier = {
+				target = VCC
+				modifier = took_our_territories
+			}
 		}
 		x = 18
 		y = 23
@@ -3647,9 +3639,6 @@ focus_tree = {
 		id = ndf_annex_vcc
 		icon = GFX_goal_generic_position_armies
 		cost = 4,00
-		bypass = {
-			NOT = { country_exists = VCC }
-		}
 		available = {
 			strength_ratio = { tag = VCC ratio > 2 }
 		}
@@ -3670,9 +3659,6 @@ focus_tree = {
 		id = ndf_vcc_conflict
 		icon = GFX_goal_generic_major_war
 		cost = 2,00
-		bypass = {
-			NOT = { country_exists = VCC }
-		}
 		prerequisite = {
 			focus = ndf_pressure_vcc
 		}
@@ -3715,7 +3701,7 @@ focus_tree = {
 			add_war_support = 0.3
 			create_field_marshal = {
 				name = "Viktor Vuldemar"
-				picture = "gfx/leaders/VCC/portrait_vcc_vuldemar.dds"
+				portrait_path = "gfx/leaders/VCC/portrait_vcc_vuldemar.dds"
 				traits = { brilliant_strategist }
 				skill = 6
 				attack_skill = 4
@@ -3758,8 +3744,7 @@ focus_tree = {
 			add_stability = 0.3
 			create_field_marshal = {
 				name = "Vladimir Putin"
-				picture = "gfx/leaders/RUS/portrait_rus_putin.dds"
-				traits = { brilliant_strategist }
+				portrait_path = "gfx/leaders/RUS/portrait_rus_putin.dds"
 				skill = 6
 				attack_skill = 3
 				defense_skill = 5
@@ -3868,8 +3853,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = ndf_vuldemar_commander
-		}
-		prerequisite = {
 			focus = ndf_putin_commander
 		}
 		completion_reward = {

@@ -14,6 +14,7 @@
  ndf_militarism:0 "Ультранационализм" 
  ndf_diskripneity_plan:0 "План 'DisKripNeity'"
  ndf_border_army:0 "Внешняя оборона"
+ efmd_generation_text:0 "Создаст шаблон дивизий §Y'Elektrostal Family Members'"
  ndf_center_army:0 "Внутренняя оборона"
  ndf_infantry_tech_bonus:0 "Оружие Nordway"
  ndf_armor_tech_bonus:0 "Исследования танков"
