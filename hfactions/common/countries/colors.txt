@@ -25,8 +25,8 @@ UUD = {
 	color_ui = RGB { 50 50 50 }
 }
 UKR = {
-	color = RGB { 153 153 255 }
-	color_ui = RGB { 153 153 255 }
+	color = RGB { 84 58 232 }
+	color_ui = RGB { 84 58 232 }
 }
 BRF = {
 	color = RGB { 207 227 227 }

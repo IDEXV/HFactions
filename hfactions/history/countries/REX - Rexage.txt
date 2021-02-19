@@ -8,7 +8,7 @@ set_technology = {
 oob = "REX_2018"
 
 add_ideas = {
-	soul_of_organization
+	soul_of_gang
 	unstability
 }
 

@@ -11,6 +11,8 @@ add_ideas = {
 	soul_of_organization
 }
 
+create_faction = "Combine Collaborationists"
+
 set_convoys = 30
 set_research_slots = 4
 set_stability = 0.6

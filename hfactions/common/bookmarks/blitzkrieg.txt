@@ -16,6 +16,7 @@ bookmarks = {
 			}
 			focuses = {
 				ndf_militarism
+				ndf_cj_past
 			}
 		}
 		"BRF" = {
@@ -31,7 +32,7 @@ bookmarks = {
 			history = REX_WARZONE_DESC
 			ideology = neutrality
 			ideas={
-				soul_of_organization
+				soul_of_gang
 				unstability
 			}
 			focuses = {

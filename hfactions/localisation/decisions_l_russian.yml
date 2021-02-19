@@ -14,6 +14,7 @@
  resource_prospect:0 "Начать поиск ресурсов"
  organization_reformation:0 "Стать организацией"
  pmc_reformation:0 "Стать ЧВК"
+ gang_reformation:0 "Стать группировкой"
  conscription_increase:0 "Провести особый призыв"
  improve_workerks_conditions:0 "Улучшить условия рабочих"
  anti_neutrality_raids:0 "Антинейтралитетные рейды"

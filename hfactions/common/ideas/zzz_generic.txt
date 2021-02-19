@@ -121,10 +121,14 @@ ideas = {
 				lend_lease_tension = -0.5
 				send_volunteers_tension = -0.5
 				guarantee_tension = -0.5
+				civil_war_involvement_tension = -0.5
+				stability_weekly = 0.2
+				war_support_weekly = 0.2
             }
 
             rule = {
 	            can_create_factions = yes
+				can_declare_war_without_wargoal_when_in_war = yes
                 can_boost_other_ideologies = yes
                 can_declare_war_on_same_ideology = yes
             }
@@ -146,13 +150,17 @@ ideas = {
 
             modifier = {
                 generate_wargoal_tension = -1
+				lend_lease_tension = -1
 				send_volunteers_tension = -1
 				guarantee_tension = -1
+				civil_war_involvement_tension = -1
+				justify_war_goal_time = -0.1
+				surrender_limit = 0.5
+				war_support_weekly = 0.3
             }
 
             rule = {
                 can_declare_war_on_same_ideology = yes
-				can_declare_war_without_wargoal_when_in_war = yes
 				can_lower_tension = yes
             }
 		}
@@ -172,6 +180,9 @@ ideas = {
 			removal_cost = -1
 
             modifier = {
+                generate_wargoal_tension = -1
+				justify_war_goal_time = -1
+				surrender_limit = 1
                 stability_weekly = -0.3
 				war_support_weekly = 0.3
             }
@@ -181,6 +192,38 @@ ideas = {
 				can_be_called_to_war = no 
 				can_force_government = yes
 				can_occupy_non_war = yes
+			}
+		}
+
+        soul_of_gang = {
+
+            picture = generic_war_preparation
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+            modifier = {
+                generate_wargoal_tension = -1
+				justify_war_goal_time = -0.5
+                stability_weekly = 0.1
+				war_support_weekly = 0.5
+				research_speed_factor = -0.2
+            }
+
+			rule = {
+				can_declare_war_on_same_ideology = yes
+				can_be_called_to_war = yes
+				can_declare_war_without_wargoal_when_in_war = yes
+				can_join_opposite_factions = no
+				can_join_factions = no
+				can_create_factions = no
 			}
 		}
 

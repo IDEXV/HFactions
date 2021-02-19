@@ -6,3 +6,23 @@ NDF_elektrostal_families = {
 	color = rgb { 6 122 45 }
 	color_ui = rgb { 6 122 45 }
 }
+NDF_ballas_reconstruction = {
+	color = rgb { 186 102 255 }
+	color_ui = rgb { 186 102 255 }
+}
+NDF_ballas_families = {
+	color = rgb { 112 0 204 }
+	color_ui = rgb { 112 0 204 }
+}
+NDF_grove_reconstruction = {
+	color = rgb { 0 102 0 }
+	color_ui = rgb { 0 102 0 }
+}
+NDF_grove_street = {
+	color = rgb { 0 255 0 }
+	color_ui = rgb { 0 255 0 }
+}
+NDF_great_elektrostal = {
+	color = rgb { 255 143 31 }
+	color_ui = rgb { 255 143 31 }
+}
