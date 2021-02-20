@@ -98,19 +98,19 @@ focus_tree = {
 							name = infantry
 							bonus = 1.0
 							uses = 1
-							category = infantry_weapons
+							category = Cat_INF_WEP
 						}
 					add_tech_bonus = {
 							name = armor
 							bonus = 1.0
 							uses = 1
-							category = armor
+							category = Cat_MBT
 						}
 					add_tech_bonus = {
 							name = support
 							bonus = 1.0
 							uses = 1
-							category = artillery
+							category = Cat_ARTY
 						}
 				}
 
@@ -192,7 +192,7 @@ focus_tree = {
 							name = industry
 							bonus = 1
 							uses = 1
-							category = industry
+							category = Cat_3D
 						}
 					add_stability = 0.05
 					random_owned_controlled_state = {
@@ -314,22 +314,22 @@ focus_tree = {
 					add_tech_bonus = {
 							bonus = 1
 							uses = 1
-							category = armor
+							category = Cat_IFV
 						}
 					add_tech_bonus = {
 							bonus = 1
 							uses = 1
-							category = cat_light_armor
+							category = Cat_APC
 						}
 					add_tech_bonus = {
 							bonus = 1
 							uses = 1
-							category = cat_medium_armor
+							category = Cat_UTIL
 						}
 					add_tech_bonus = {
 							bonus = 1
 							uses = 1
-							category = cat_heavy_armor
+							category = Cat_MBT
 						}
 				}
 
@@ -407,12 +407,12 @@ focus_tree = {
 					add_tech_bonus = {
 							bonus = 1
 							uses = 1
-							category = motorized_equipment
+							category = Cat_APC
 						}
 					add_tech_bonus = {
 							bonus = 1
 							uses = 1
-							category = cat_mechanized_equipment
+							category = Cat_UTIL
 						}
 				}
 
@@ -430,17 +430,17 @@ focus_tree = {
 					add_tech_bonus = {
 							bonus = 1
 							uses = 1
-							category = light_air
+							category = Cat_HELI
 						}
 					add_tech_bonus = {
 							bonus = 1
 							uses = 1
-							category = medium_air
+							category = Cat_FIGHTER
 						}
 					add_tech_bonus = {
 							bonus = 1
 							uses = 1
-							category = heavy_air
+							category = Cat_H_AIR
 						}
 				}
 
@@ -461,17 +461,17 @@ focus_tree = {
 					add_tech_bonus = {
 							bonus = 1
 							uses = 1
-							category = cas_bomber
+							category = Cat_CAS
 						}
 					add_tech_bonus = {
 							bonus = 1
 							uses = 1
-							category = light_fighter
+							category = Cat_STR_BOMBER
 						}
 					add_tech_bonus = {
 							bonus = 1
 							uses = 1
-							category = cat_heavy_fighter
+							category = Cat_H_AIR
 						}
 				}
 
@@ -607,16 +607,16 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 1
 				uses = 1
-				category = infantry_tech
+				category = Cat_INF
 			}
 			add_tech_bonus = {
 				bonus = 1
 				uses = 1
-				category = infantry_weapons
+				category = Cat_INF_WEP
 			}
 			add_war_support = 0.1
 			add_equipment_to_stockpile = {
-				type = infantry_equipment
+				type = Cat_INF_WEP
 				amount = 50000
 			}
 		}
@@ -657,10 +657,10 @@ focus_tree = {
 			division_template = {
     			name = "Elektrostal Family Members"
     			regiments = {
-        			infantry = { x = 0 y = 0 }
-        			infantry = { x = 0 y = 1 }
-        			infantry = { x = 0 y = 2 }
-        			infantry = { x = 0 y = 3 }
+        			L_Inf_Bat = { x = 0 y = 0 }
+        			L_Inf_Bat = { x = 0 y = 1 }
+        			L_Inf_Bat = { x = 0 y = 2 }
+        			L_Inf_Bat = { x = 0 y = 3 }
     			} 
 			}
 		}
@@ -760,7 +760,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_equipment_to_stockpile = {
-				type = infantry_equipment
+				type = infantry_weapons
 				amount = 50000
 			}
 		}
@@ -790,12 +790,12 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 1
 				uses = 1
-				category = motorized_equipment
+				category = Cat_APC
 			}
 			add_tech_bonus = {
 				bonus = 1
 				uses = 1
-				category = cat_mechanized_equipment
+				category = Cat_IFV
 				}			
 		}
 		x = 18
@@ -815,12 +815,12 @@ focus_tree = {
 					add_tech_bonus = {
 							bonus = 1
 							uses = 1
-							category = infantry_tech
+							category = Cat_INF
 						}
 					add_tech_bonus = {
 							bonus = 1
 							uses = 1
-							category = infantry_weapons
+							category = Cat_INF_WEP
 						}
 				}
 
@@ -841,7 +841,7 @@ focus_tree = {
 					add_tech_bonus = {
 							bonus = 1
 							uses = 1
-							category = artillery
+							category = Cat_ARTILLERY
 						}
 				}
 
@@ -1112,7 +1112,7 @@ focus_tree = {
 							is_subject = no
 							is_puppet_of = BRF
 						}
-					MUST = {
+					NOT = {
 							has_war_with = BRF
 						}
 					OR = {
@@ -1346,15 +1346,11 @@ focus_tree = {
 						}
 				}
 			completion_reward = {
+					add_nuclear_bombs = 5
 					add_tech_bonus = {
 							bonus = 1
 							uses = 1
-							category = nuclear
-						}
-					add_tech_bonus = {
-							bonus = 1
-							uses = 1
-							category = jet_technology
+							category = Cat_FIGHTER
 						}
 					add_tech_bonus = {
 							bonus = 1
@@ -1453,12 +1449,12 @@ focus_tree = {
 					add_tech_bonus = {
 							bonus = 2
 							uses = 1
-							category = infantry_weapons
+							category = Cat_INF_WEP
 						}
 					add_tech_bonus = {
 							bonus = 2
 							uses = 1
-							category = armor
+							category = Cat_MBT
 						}
 				}
 
@@ -1667,12 +1663,12 @@ focus_tree = {
 					add_tech_bonus = {
 							bonus = 0.5
 							uses = 1
-							category = infantry_weapons
+							category = Cat_INF_WEP
 						}
 					add_tech_bonus = {
 							bonus = 0.5
 							uses = 1
-							category = armor
+							category = Cat_MBT
 						}
 				}
 
@@ -1953,16 +1949,12 @@ focus_tree = {
 			completion_reward = {
 					add_war_support = 0.1
 					add_equipment_to_stockpile = {
-							type = infantry_equipment
+							type = infantry_weapons
 							amount = 50000
 						}
 					add_equipment_to_stockpile = {
-							type = support_equipment
-							amount = 10000
-						}
-					add_equipment_to_stockpile = {
 							type = artillery_equipment
-							amount = 5000
+							amount = 10000
 						}
 				}
 
@@ -1999,35 +1991,35 @@ focus_tree = {
 					add_tech_bonus = {
 							bonus = 1
 							uses = 1
-							category = cas_bomber
+							category = Cat_CAS
 						}
 					add_tech_bonus = {
 							bonus = 1
 							uses = 1
-							category = light_fighter
+							category = Cat_MR_FIGHTER
 						}
 					add_tech_bonus = {
 							bonus = 1
 							uses = 1
-							category = cat_heavy_fighter
+							category = Cat_CV_MR_FIGHTER
 						}
 					add_tech_bonus = {
 							name = infantry
 							bonus = 1.0
 							uses = 1
-							category = infantry_weapons
+							category = Cat_INF_WEP
 						}
 					add_tech_bonus = {
 							name = armor
 							bonus = 1.0
 							uses = 1
-							category = armor
+							category = Cat_MBT
 						}
 					add_tech_bonus = {
 							name = support
 							bonus = 1.0
 							uses = 1
-							category = artillery
+							category = Cat_ARTILLERY
 						}
 				}
 
@@ -2164,13 +2156,13 @@ focus_tree = {
 							name = infantry
 							bonus = 1.0
 							uses = 1
-							category = infantry_weapons
+							category = Cat_INF_WEP
 						}
 					add_tech_bonus = {
 							name = support
 							bonus = 1.0
 							uses = 1
-							category = artillery
+							category = Cat_ARTILLERY
 						}
 				}
 
@@ -2253,7 +2245,7 @@ focus_tree = {
 							name = armor
 							bonus = 1.0
 							uses = 1
-							category = armor
+							category = Cat_MBT
 						}
 				}
 
@@ -2272,17 +2264,17 @@ focus_tree = {
 					add_tech_bonus = {
 							bonus = 1
 							uses = 1
-							category = cas_bomber
+							category = Cat_CAS
 						}
 					add_tech_bonus = {
 							bonus = 1
 							uses = 1
-							category = light_fighter
+							category = Cat_MR_FIGHTER
 						}
 					add_tech_bonus = {
 							bonus = 1
 							uses = 1
-							category = cat_heavy_fighter
+							category = Cat_S_FIGHTER
 						}
 				}
 
@@ -2339,7 +2331,7 @@ focus_tree = {
 					air_experience = 25
 					add_manpower = 100000
 					add_equipment_to_stockpile = {
-							type = infantry_equipment
+							type = Cat_INF_WEP
 							amount = 50000
 						}
 					add_equipment_to_stockpile = {
@@ -3194,12 +3186,8 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_equipment_to_stockpile = {
-				type = infantry_equipment
+				type = infantry_weapons
 				amount = 50000
-			}
-			add_equipment_to_stockpile = {
-				type = support_equipment
-				amount = 20000
 			}
 			add_equipment_to_stockpile = {
 				type = artillery_equipment
@@ -3267,12 +3255,12 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 1
 				uses = 1
-				category = motorized_equipment
+				category = Cat_APC
 			}
 			add_tech_bonus = {
 				bonus = 1
 				uses = 1
-				category = cat_mechanized_equipment
+				category = Cat_IFV
 			}				
 		}
 		x = 18
@@ -3504,11 +3492,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.1
 			add_research_slot = 1
-			add_tech_bonus = {
-				bonus = 0.5
-				uses = 1
-				category = nuclear
-			}
+			add_nuclear_bombs = 2
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 1

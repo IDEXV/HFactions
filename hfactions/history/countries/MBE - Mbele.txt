@@ -16,6 +16,40 @@ set_research_slots = 2
 set_stability = 0.3
 set_war_support = 1
 
+	set_technology = {
+		legacy_doctrines = 1
+		modern_blitzkrieg = 1
+		forward_defense = 1
+		encourage_nco_iniative = 1
+		air_land_battle = 1
+		util_vehicle_0 = 1
+
+		#For templates
+		infantry_weapons = 1
+		combat_eng_equipment = 1
+		command_control_equipment = 1
+		Anti_tank_0 = 1
+		Heavy_Anti_tank_0 = 1
+		artillery_0 = 1
+		SP_arty_0 = 1
+		Anti_Air_0 = 1
+		SP_Anti_Air_0 = 1
+		Early_APC = 1
+		APC_1 = 1
+		IFV_1 = 1
+		MBT_1 = 1
+		support_weapons = 1
+		special_forces = 1
+
+		basic_computing = 1
+		integrated_circuit = 1
+		computing1 = 1
+		decryption1 = 1
+		encryption1 = 1
+		radar = 1
+		fuel_silos =1
+	}
+
 2020.1.1 = {
 	
 	#generic focuses
@@ -28,38 +62,6 @@ set_war_support = 1
 	complete_national_focus = industrial_effort
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
-	
-	set_technology = {
-		tech_support = 1
-		tech_recon = 1
-		support_weapons = 1
-		gw_artillery = 1
-
-		#doctrines
-		air_superiority = 1
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		fuel_silos = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
 }
 
 set_politics = {
