@@ -616,7 +616,7 @@ focus_tree = {
 			}
 			add_war_support = 0.1
 			add_equipment_to_stockpile = {
-				type = Cat_INF_WEP
+				type = infantry_weapons4
 				amount = 50000
 			}
 		}
@@ -760,7 +760,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_equipment_to_stockpile = {
-				type = infantry_weapons
+				type = infantry_weapons4
 				amount = 50000
 			}
 		}
@@ -1606,6 +1606,11 @@ focus_tree = {
 		id = ndf_boreas_rescue_op
 		icon = GFX_goal_generic_dangerous_deal
 		cost = 4,00
+		available = {
+			BRF = {
+				has_completed_focus = brf_agent_capture
+			}
+		}
 		prerequisite = {
 			focus = ndf_narcotics_lab
 			focus = ndf_nordway_research
@@ -1949,7 +1954,7 @@ focus_tree = {
 			completion_reward = {
 					add_war_support = 0.1
 					add_equipment_to_stockpile = {
-							type = infantry_weapons
+							type = infantry_weapons4
 							amount = 50000
 						}
 					add_equipment_to_stockpile = {
@@ -2331,7 +2336,7 @@ focus_tree = {
 					air_experience = 25
 					add_manpower = 100000
 					add_equipment_to_stockpile = {
-							type = Cat_INF_WEP
+							type = infantry_weapons4
 							amount = 50000
 						}
 					add_equipment_to_stockpile = {
@@ -3186,7 +3191,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_equipment_to_stockpile = {
-				type = infantry_weapons
+				type = infantry_weapons4
 				amount = 50000
 			}
 			add_equipment_to_stockpile = {

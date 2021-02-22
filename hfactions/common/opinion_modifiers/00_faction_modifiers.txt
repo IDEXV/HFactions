@@ -42,6 +42,38 @@ opinion_modifiers = {
 		value = -60
 	}
 
+	brf_ndf_capture = {
+		value = -70
+	}
+
+	brf_agent_interrogation2 = {
+		value = -80
+	}
+
+	brf_dut_chernobyl = {
+		value = -40
+	}
+
+	brf_dut_cherno_capture = {
+		value = -60
+	}
+
+	brf_ndf_convoys = {
+		value = -90
+	}
+
+	brf_ndf_ultrahate = {
+		value = -200
+	}
+
+	brf_kerk_using = {
+		value = -50
+	}
+
+	brf_kerk_abandoned = {
+		value = -200
+	}
+
 	dam_relations = {
 		value = 200
 	}

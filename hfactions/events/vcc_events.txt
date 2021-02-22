@@ -35,3 +35,33 @@ country_event = {
         }
 	}
 }
+
+add_namespace = vcc_oog_invitation
+
+country_event = {
+	id = vcc_oog_invitation.1
+    title = oog_title.0.d
+    desc = oog_desc.0.d
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = oog_invite_option.1.a
+        add_stability = 0.2
+        BRF = {
+            add_to_faction = VCC
+            country_event = { days = 1 id = vcc_oog_invite_ace.1 }
+        }
+	}
+    option = {
+		name = oog_invite_option.1.b
+        add_stability = -0.2
+        add_war_support = 0.3
+        BRF = {
+            country_event = { days = 1 id = vcc_oog_invite_dec.1 }
+        }
+	}
+}

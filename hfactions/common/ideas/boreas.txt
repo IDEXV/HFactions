@@ -18,7 +18,106 @@ ideas = {
 
             modifier = {
 				research_speed_factor = 1
+				war_support_weekly = -0.05
+				hidden_modifier = {
+					ai_focus_peaceful_factor = 0.2
+				}
             }
 		}
+
+        increased_war_production = {
+
+            picture = generic_tank_manufacturer_1
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+            modifier = {
+				stability_weekly = -0.05
+				industrial_capacity_factory = 0.2
+				hidden_modifier = {
+					ai_desired_divisions_factor = 0.5
+					ai_focus_military_advancements_factor = 0.5
+					ai_focus_war_production_factor = 0.5
+					ai_badass_factor = 0.5
+				}
+            }
+		}
+
+        brf_nordway_raiding = {
+
+            picture = generic_industrial_concern_3
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				NDF = {
+					country_resource_aluminium = -15
+				}
+				country_resource_aluminium = 15
+			}
+		}
+
+        ndf_agent_interrogated = {
+
+            picture = generic_spy_intel
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = NDF
+				attack_bonus_against = 0.2
+			}
+		}
+
+        brf_agency = {
+
+            picture = generic_spy_intel
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+            modifier = {
+				foreign_subversive_activites = -0.5
+				encryption = 2
+				airforce_intel_to_others = -5
+				civilian_intel_to_others = -5
+				navy_intel_to_others = -5
+				custom_modifier_tooltip = expensive_and_hard_ops = {
+					enemy_operative_capture_chance_factor = 0.2
+					enemy_operative_detection_chance_factor = 0.2
+				}
+            }
+		}	
     }
 }

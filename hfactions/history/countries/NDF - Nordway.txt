@@ -232,7 +232,7 @@ add_ideas = {
 create_country_leader = {
     name = "DisKripNeity"
     desc = "LEADER_DISKRIP_DESC"
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+    picture = "gfx/leaders/NDF/portrait_ndf_diskripneity.dds"
     expire = "2050.1.1"
     ideology = centrism
     traits = {
@@ -246,23 +246,9 @@ create_country_leader = {
 }
 
 create_country_leader = {
-    name = "SladB"
-    desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
-    expire = "2050.1.1"
-    ideology = liberalism
-    traits = {
-        head_of_intelligence
-		headstrong
-		ideological_crusader
-		economist
-    }
-}
-
-create_country_leader = {
     name = "IZERSTAN"
     desc = "LEADER_IZERSTAN_DESC"
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+    picture = "gfx/leaders/NDF/portrait_ndf_dezoneidzhi.dds"
     expire = "2050.1.1"
     ideology = conservatism
     traits = {
@@ -276,7 +262,7 @@ create_country_leader = {
 create_country_leader = {
     name = "Ballard Lars"
     desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+    picture = "gfx/leaders/europe/portrait_europe_generic_4.dds"
     expire = "2050.1.1"
     ideology = anarchist_communism
     traits = {

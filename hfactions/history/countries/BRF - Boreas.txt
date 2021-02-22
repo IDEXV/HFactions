@@ -10,6 +10,8 @@ set_technology = {
 add_ideas = {
 	soul_of_organization
 	research_focus
+	increased_war_production
+	brf_agency
 }
 set_convoys = 50
 set_research_slots = 4
@@ -268,6 +270,14 @@ create_country_leader = {
 		dislikes_duty
 		dislikes_lom
     }
+}
+
+create_country_leader = {
+    name = "Председатель организации B."
+    desc = ""
+    picture = "gfx/leaders/BRF/portrait_brf_unknown.dds"
+    expire = "2050.1.1"
+    ideology = despotism
 }
 
 add_opinion_modifier = { target = GSR modifier = dam_relations }	

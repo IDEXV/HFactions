@@ -1,0 +1,1990 @@
+focus_tree = {
+	id = boreas
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BRF
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 1300 y = 300 }
+	focus = {
+		id = brf_beginning
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5,00
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+				type = industrial_complex
+				level = 4
+				instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+				type = arms_factory
+				level = 4
+				instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+				type = infrastructure
+				level = 4
+				instant_build = yes
+				}
+			}
+		}
+		x = 1
+		y = 0
+
+	}
+	focus = {
+		id = brf_code_red
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 1,00
+		available = {
+			NDF = {
+				has_completed_focus = ndf_boreas_infil_op
+			}
+			has_completed_focus = brf_boreas_research_facility
+		}
+		completion_reward = {
+			add_war_support = 0.4
+			add_stability = -0.2
+			add_manpower = 100000
+			add_command_power = 50
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+				}
+			}
+		}
+		x = 4
+		y = 12
+
+	}
+	focus = {
+		id = brf_finish_with_nordway
+		icon = GFX_goal_generic_political_pressure
+		cost = 3,00
+		available = {
+			NOT = { country_exists = NDF }
+			has_completed_focus = brf_boreas_research_facility
+			NOT = {
+				any_state = {
+					is_core_of = NDF
+						NOT = {
+						is_owned_by = ROOT
+					}
+				}
+			}
+		}
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = NDF
+				}
+				add_core_of = BRF
+			}
+			add_stability = 0.1
+			add_manpower = 100000
+			NDF = {	
+				become_exiled_in = { target = BRF legitimacy = 0.4 }
+			}
+		}
+		x = 16
+		y = 12
+
+	}
+	focus = {
+		id = brf_weaponry
+		icon = GFX_goal_generic_small_arms
+		cost = 2,00
+		prerequisite = {
+			focus = brf_beginning
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = Cat_INF_WEP
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = Cat_ARTILLERY
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_weapons4
+				amount = 50000
+			}
+		}
+		x = 1
+		y = 1
+
+	}
+	focus = {
+		id = brf_armor
+		icon = GFX_goal_generic_army_tanks
+		cost = 2,00
+		prerequisite = {
+			focus = brf_weaponry
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = Cat_TANKS
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = Cat_AFV
+			}			
+		}
+		x = 1
+		y = 2
+
+	}
+	focus = {
+		id = brf_helicopters
+		icon = GFX_goal_generic_air_fighter2
+		cost = 2,00
+		prerequisite = {
+			focus = brf_armor
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = Cat_HELI
+			}					
+		}
+		x = 1
+		y = 3
+
+	}
+	focus = {
+		id = brf_agent_capture
+		icon = GFX_goal_generic_secret_weapon
+		cost = 5,00
+		prerequisite = {
+			focus = brf_code_red
+		}
+		bypass = {
+			NOT = { country_exists = NDF }
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			add_stability = 0.1
+			NDF = {
+				add_stability = -0.2
+				add_war_support = 0.2
+			}
+			reverse_add_opinion_modifier = {
+				target = NDF
+				modifier = brf_ndf_capture
+			}
+		}
+		x = 1
+		y = 13
+
+	}
+	focus = {
+		id = brf_agent_interrogation
+		icon = GFX_goal_generic_political_pressure
+		cost = 4,00
+		available = {
+			NOT = {
+				NDF = {
+					has_idea = boreas_agent_rescued
+				}
+			}
+			NDF = {
+				has_completed_focus = ndf_boreas_rescue_op
+			}
+		}
+		bypass = {
+			NOT = { country_exists = NDF }
+		}
+		prerequisite = {
+			focus = brf_agent_capture
+		}
+		completion_reward = {
+			add_war_support = 0.3
+			add_stability = 0.2
+			add_ideas = {
+				ndf_agent_interrogated
+			}
+			reverse_add_opinion_modifier = {
+				target = NDF
+				modifier = brf_agent_interrogation2
+			}
+		}
+		x = 1
+		y = 14
+
+	}
+	focus = {
+		id = brf_hiring
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 2,00
+		prerequisite = {
+			focus = brf_beginning
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_manpower = 50000
+		}
+		x = 3
+		y = 1
+
+	}
+	focus = {
+		id = brf_new_bases
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 3,00
+		prerequisite = {
+			focus = brf_hiring
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_manpower = 50000
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+				}
+			}
+		}
+		x = 3
+		y = 2
+
+	}
+	focus = {
+		id = brf_research_centers
+		icon = GFX_focus_research2
+		cost = 3,00
+		prerequisite = {
+			focus = brf_new_bases
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_manpower = 50000
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+				}
+			}
+		}
+		x = 3
+		y = 3
+
+	}
+	focus = {
+		id = brf_civ_factories
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 3,00
+		prerequisite = {
+			focus = brf_beginning
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+				}
+			}
+		}
+		x = 5
+		y = 1
+
+	}
+	focus = {
+		id = brf_mil_factories
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 3,00
+		prerequisite = {
+			focus = brf_civ_factories
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+				}
+			}
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = brf_infrastructure_beginning
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 3,00
+		prerequisite = {
+			focus = brf_mil_factories
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			}
+		}
+		x = 5
+		y = 3
+
+	}
+	focus = {
+		id = brf_ships
+		icon = GFX_goal_generic_navy_battleship
+		cost = 2,00
+		prerequisite = {
+			focus = brf_beginning
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+				type = dockyard
+				level = 4
+				instant_build = yes
+				}
+			}			
+		}
+		x = 7
+		y = 1
+
+	}
+	focus = {
+		id = brf_submarines
+		icon = GFX_goal_generic_navy_submarine
+		cost = 2,00
+		prerequisite = {
+			focus = brf_ships
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = Cat_SUB
+			}			
+		}
+		x = 7
+		y = 2
+
+	}
+	focus = {
+		id = brf_carriers
+		icon = GFX_goal_generic_navy_battleship
+		cost = 2,00
+		prerequisite = {
+			focus = brf_submarines
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = Cat_CARRIER
+			}		
+		}
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = brf_finish_buildup
+		icon = GFX_goal_generic_construct_civilian
+		cost = 4,00
+		prerequisite = {
+			focus = brf_helicopters
+		}
+		prerequisite = {
+			focus = brf_research_centers
+		}
+		prerequisite = {
+			focus = brf_infrastructure_beginning
+		}
+		prerequisite = {
+			focus = brf_carriers
+		}
+		completion_reward = {
+			add_stability = 0.1
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+				}
+			}				
+		}
+		x = 3
+		y = 4
+
+	}
+	focus = {
+		id = brf_elections
+		icon = GFX_focus_usa_voter_registration_act
+		cost = 4,00
+		prerequisite = {
+			focus = brf_helicopters
+		}
+		prerequisite = {
+			focus = brf_research_centers
+		}
+		prerequisite = {
+			focus = brf_infrastructure_beginning
+		}
+		prerequisite = {
+			focus = brf_carriers
+		}
+		completion_reward = {
+			add_stability = 0.1
+			hidden_effect = {
+				retire_country_leader = yes
+			}
+		}
+		x = 5
+		y = 4
+
+	}
+	focus = {
+		id = brf_chernobyl_visit
+		icon = GFX_focus_wonderweapons
+		cost = 3,00
+		prerequisite = {
+			focus = brf_code_red
+		}
+		bypass = {
+			NOT = { country_exists = DUT }
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = electronics
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = nuclear
+			}
+			reverse_add_opinion_modifier = {
+				target = DUT
+				modifier = brf_dut_chernobyl
+			}				
+		}
+		x = 7
+		y = 13
+
+	}
+	focus = {
+		id = brf_chernobyl_containment
+		icon = GFX_goal_generic_political_pressure
+		cost = 4,00
+		prerequisite = {
+			focus = brf_chernobyl_visit
+		}
+		bypass = {
+			NOT = { country_exists = DUT }
+		}
+		completion_reward = {
+			add_stability = 0.3
+			add_war_support = 0.1
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = computing_tech
+			}	
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = radar_tech
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = internet_tech
+			}
+			reverse_add_opinion_modifier = {
+				target = DUT
+				modifier = brf_dut_cherno_capture
+			}			
+		}
+		x = 7
+		y = 14
+
+	}
+	focus = {
+		id = brf_boreas_research_facility
+		icon = GFX_goal_support_fascism
+		cost = 2,00
+		prerequisite = {
+			focus = brf_finish_buildup
+		}
+		prerequisite = {
+			focus = brf_elections
+		}
+		completion_reward = {
+			hidden_effect = {
+				retire_ideology_leader = neutrality
+				retire_ideology_leader = fascism
+				create_country_leader = {
+    				name = "Denis URAKOLOUY"
+    				desc = "LEADER_DEN_DESC"
+    				picture = "gfx/leaders/BRF/portrait_brf_den.dds"
+    				expire = "2050.1.1"
+    				ideology = rexism
+    				traits = {
+						headstrong
+						head_of_intelligence
+						ideological_crusader
+						#
+						nuclear_scientist
+						dislikes_duty
+						dislikes_lom
+    				}
+				}
+			}
+			add_popularity = {
+    			ideology = fascism
+    			popularity = 0.8
+			}
+			set_politics = {
+				ruling_party = fascism
+			}			
+		}
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = brf_beginning_research
+		icon = GFX_focus_research2
+		cost = 3,00
+		prerequisite = {
+			focus = brf_boreas_research_facility
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_AI
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_NFIBERS
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_3D
+			}							
+		}
+		x = 8
+		y = 6
+
+	}
+	focus = {
+		id = brf_rocketry
+		icon = GFX_focus_rocketry
+		cost = 3,00
+		prerequisite = {
+			focus = brf_beginning_research
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = jet_technology
+			}		
+		}
+		x = 8
+		y = 7
+
+	}
+	focus = {
+		id = brf_electronics
+		icon = GFX_focus_research2
+		cost = 3,00
+		prerequisite = {
+			focus = brf_rocketry
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = electronics
+			}	
+		}
+		x = 6
+		y = 8
+
+	}
+	focus = {
+		id = brf_nuclear_tech
+		icon = GFX_focus_wonderweapons
+		cost = 4,00
+		prerequisite = {
+			focus = brf_rocketry
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = nuclear
+			}	
+		}
+		x = 8
+		y = 8
+
+	}
+	focus = {
+		id = brf_chemical_researches
+		icon = GFX_focus_research2
+		cost = 3,00
+		prerequisite = {
+			focus = brf_nuclear_tech
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_FUEL_OIL
+			}				
+		}
+		x = 4
+		y = 9
+
+	}
+	focus = {
+		id = brf_minor_researches
+		icon = GFX_focus_research2
+		cost = 2,00
+		prerequisite = {
+			focus = brf_nuclear_tech
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = computing_tech
+			}	
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = radar_tech
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = internet_tech
+			}
+		}
+		x = 8
+		y = 9
+
+	}
+	focus = {
+		id = brf_major_innovations
+		icon = GFX_goal_tfv_generic_tech_sharing
+		cost = 5,00
+		prerequisite = {
+			focus = brf_minor_researches
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_INF
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_AIR_EQP
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_ARTILLERY
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_ARMOR
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_NAVAL_EQP
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_NAVAL_MODULES
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_NAVAL_MISC
+			}											
+		}
+		x = 2
+		y = 10
+
+	}
+	focus = {
+		id = brf_nuclear_production
+		icon = GFX_focus_wonderweapons
+		cost = 4,00
+		prerequisite = {
+			focus = brf_minor_researches
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			add_nuclear_bombs = 5
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = nuclear_reactor
+				level = 2
+				instant_build = yes
+				}
+			}
+		}
+		x = 8
+		y = 10
+
+	}
+	focus = {
+		id = brf_mil_factories2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 3,00
+		prerequisite = {
+			focus = brf_boreas_research_facility
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+				type = arms_factory
+				level = 4
+				instant_build = yes
+				}
+			}
+		}
+		x = 10
+		y = 6
+
+	}
+	focus = {
+		id = brf_infrastructure2
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 3,00
+		prerequisite = {
+			focus = brf_mil_factories2
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+				type = infrastructure
+				level = 4
+				instant_build = yes
+				}
+			}
+		}
+		x = 10
+		y = 7
+
+	}
+	focus = {
+		id = brf_mil_factories3
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 3,00
+		prerequisite = {
+			focus = brf_infrastructure2
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+				type = arms_factory
+				level = 4
+				instant_build = yes
+				}
+			}
+		}
+		x = 10
+		y = 8
+
+	}
+	focus = {
+		id = brf_mil_factories4
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 3,00
+		prerequisite = {
+			focus = brf_mil_factories3
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+				type = arms_factory
+				level = 4
+				instant_build = yes
+				}
+			}
+		}
+		x = 10
+		y = 9
+
+	}
+	focus = {
+		id = brf_infrastructure_expansion
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 3,00
+		prerequisite = {
+			focus = brf_mil_factories4
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+				type = infrastructure
+				level = 4
+				instant_build = yes
+				}
+			}
+		}
+		x = 10
+		y = 10
+
+	}
+	focus = {
+		id = brf_peaceful
+		icon = GFX_goal_generic_improve_relations
+		cost = 1,00
+		prerequisite = {
+			focus = brf_finish_with_nordway
+		}
+		mutually_exclusive = {
+			focus = brf_enemy
+		}
+		completion_reward = {
+			add_stability = 0.3
+			add_war_support = -0.3
+		}
+		x = 11
+		y = 13
+
+	}
+	focus = {
+		id = brf_oog_kerk_invite
+		icon = GFX_goal_generic_improve_relations
+		cost = 2,00
+		available = {
+			NOT = {
+				has_war_with = GSR
+			}
+			OR = {
+				GSR = {
+					has_opinion = {
+					target = BRF
+					value > 79
+					}
+				}
+			}
+			OR = {
+				country_exists = GSR
+			}
+		}
+		bypass = {
+			GSR = {
+				is_in_faction_with = BRF
+			}
+		}
+		prerequisite = {
+			focus = brf_peaceful
+		}
+		completion_reward = {
+			GSR = { country_event = { id = oog_invitation.1 } }			
+		}
+		x = 10
+		y = 14
+
+	}
+	focus = {
+		id = brf_tech_sharing_group
+		icon = GFX_goal_tfv_generic_tech_sharing
+		cost = 3,00
+		available = {
+			GSR = {
+				is_in_faction_with = BRF
+			}
+			VCC = {
+				is_in_faction_with = BRF
+			}
+		}	
+		prerequisite = {
+			focus = brf_oog_kerk_invite
+		}
+		prerequisite = {
+			focus = brf_oog_vcc_invite
+		}
+		completion_reward = {
+			GSR = {
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = jet_technology
+            }
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = electronics
+            }
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = nuclear
+            }    
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = Cat_FUEL_OIL
+            }    
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = computing_tech
+            }    
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = radar_tech
+            }
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = internet_tech
+            }
+			}
+			VCC = {
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = jet_technology
+            }
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = electronics
+            }
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = nuclear
+            }    
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = Cat_FUEL_OIL
+            }    
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = computing_tech
+            }    
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = radar_tech
+            }
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = internet_tech
+            }
+			}
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = jet_technology
+            }
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = electronics
+            }
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = nuclear
+            }    
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = Cat_FUEL_OIL
+            }    
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = computing_tech
+            }    
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = radar_tech
+            }
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = internet_tech
+            }
+		}
+		x = 10
+		y = 15
+
+	}
+	focus = {
+		id = brf_civilian_factories
+		icon = GFX_goal_generic_construct_civilian
+		cost = 3,00
+		prerequisite = {
+			focus = brf_infrastructure2
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+				type = industrial_complex
+				level = 4
+				instant_build = yes
+				}
+			}
+		}
+		x = 12
+		y = 8
+
+	}
+	focus = {
+		id = brf_civilian_factories2
+		icon = GFX_goal_generic_construct_civilian
+		cost = 3,00
+		prerequisite = {
+			focus = brf_mil_factories3
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+				type = industrial_complex
+				level = 4
+				instant_build = yes
+				}
+			}
+		}
+		x = 12
+		y = 9
+
+	}
+	focus = {
+		id = brf_research_facilities
+		icon = GFX_focus_research2
+		cost = 3,00
+		prerequisite = {
+			focus = brf_mil_factories4
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+				type = industrial_complex
+				level = 4
+				instant_build = yes
+				}
+			}
+		}
+		x = 12
+		y = 10
+
+	}
+	focus = {
+		id = brf_oog_vcc_invite
+		icon = GFX_goal_generic_improve_relations
+		cost = 2,00
+		available = {
+			NOT = {
+				has_war_with = VCC
+			}
+			OR = {
+				VCC = {
+					has_opinion = {
+					target = BRF
+					value > 79
+					}
+				}
+			}
+			OR = {
+				country_exists = VCC
+			}
+		}
+		bypass = {
+			VCC = {
+				is_in_faction_with = BRF
+			}
+		}
+		prerequisite = {
+			focus = brf_peaceful
+		}
+		completion_reward = {
+			VCC = { country_event = { id = vcc_oog_invitation.1 } }	
+		}
+		x = 12
+		y = 14
+
+	}
+	focus = {
+		id = brf_oog_finset_invite
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 4,00
+		available = {
+			GSR = {
+				is_in_faction_with = BRF
+			}
+			VCC = {
+				is_in_faction_with = BRF
+			}
+		}
+		prerequisite = {
+			focus = brf_oog_kerk_invite
+		}
+		prerequisite = {
+			focus = brf_oog_vcc_invite
+		}
+		completion_reward = {
+			GSR = {
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_INF
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_AIR_EQP
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_ARTILLERY
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_ARMOR
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_NAVAL_EQP
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_NAVAL_MODULES
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_NAVAL_MISC
+			}
+			}
+			VCC = {
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_INF
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_AIR_EQP
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_ARTILLERY
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_ARMOR
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_NAVAL_EQP
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_NAVAL_MODULES
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_NAVAL_MISC
+			}
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_INF
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_AIR_EQP
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_ARTILLERY
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_ARMOR
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_NAVAL_EQP
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_NAVAL_MODULES
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_NAVAL_MISC
+			}			
+		}
+		x = 12
+		y = 15
+
+	}
+	focus = {
+		id = brf_oog_tackle_duty
+		icon = GFX_goal_generic_major_war
+		cost = 5,00
+		bypass = {
+			NOT = { country_exists = DUT }
+		}
+		prerequisite = {
+			focus = brf_oog_finset_invite
+		}
+		prerequisite = {
+			focus = brf_tech_sharing_group
+		}
+		completion_reward = {
+			create_wargoal = {
+    			target = DUT
+    			type = annex_everything
+			}			
+		}
+		x = 12
+		y = 16
+
+	}
+	focus = {
+		id = brf_oog_tackle_ivan
+		icon = GFX_goal_generic_major_war
+		cost = 5,00
+		bypass = {
+			NOT = { country_exists = LOM }
+		}
+		prerequisite = {
+			focus = brf_tech_sharing_group
+		}
+		prerequisite = {
+			focus = brf_oog_finset_invite
+		}
+		completion_reward = {
+			create_wargoal = {
+    			target = LOM
+    			type = annex_everything
+			}	
+		}
+		x = 10
+		y = 16
+
+	}
+	focus = {
+		id = brf_oog_reformation
+		icon = GFX_goal_generic_national_unity
+		cost = 5,00
+		available = {
+			GSR = {
+				is_in_faction_with = BRF
+			}
+			VCC = {
+				is_in_faction_with = BRF
+			}
+			NOT = { country_exists = DUT }
+			NOT = { country_exists = LOM }
+		}
+		prerequisite = {
+			focus = brf_oog_tackle_ivan
+		}
+		prerequisite = {
+			focus = brf_oog_tackle_duty
+		}
+		completion_reward = {
+			GSR = {
+			add_political_power = 100
+			add_stability = 0.2
+			add_command_power = 50
+			army_experience = 50
+			navy_experience = 50
+			air_experience = 50
+			add_manpower = 150000
+			}
+			VCC = {
+			add_political_power = 100
+			add_stability = 0.2
+			add_command_power = 50
+			army_experience = 50
+			navy_experience = 50
+			air_experience = 50
+			add_manpower = 150000
+			}
+			add_political_power = 100
+			add_stability = 0.2
+			add_command_power = 50
+			army_experience = 50
+			navy_experience = 50
+			air_experience = 50
+			add_manpower = 150000
+		}
+		x = 11
+		y = 17
+
+	}
+	focus = {
+		id = brf_new_bases2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 3,00
+		prerequisite = {
+			focus = brf_mil_factories3
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+				type = arms_factory
+				level = 4
+				instant_build = yes
+				}
+			}
+		}
+		x = 14
+		y = 9
+
+	}
+	focus = {
+		id = brf_military_hangars
+		icon = GFX_goal_generic_air_fighter
+		cost = 3,00
+		prerequisite = {
+			focus = brf_mil_factories4
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+				}
+			}
+		}
+		x = 14
+		y = 10
+
+	}
+	focus = {
+		id = brf_aircraft_buildup
+		icon = GFX_goal_generic_air_fighter2
+		cost = 4,00
+		prerequisite = {
+			focus = brf_mil_factories4
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_AIR_EQP
+			}			
+		}
+		x = 16
+		y = 10
+
+	}
+	focus = {
+		id = brf_enemy
+		icon = GFX_goal_generic_political_pressure
+		cost = 1,00
+		prerequisite = {
+			focus = brf_finish_with_nordway
+		}
+		mutually_exclusive = {
+			focus = brf_peaceful
+		}
+		completion_reward = {
+			add_stability = -0.3
+			add_war_support = 0.3
+		}
+		x = 21
+		y = 13
+
+	}
+	focus = {
+		id = brf_use_kerk_for_ops
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 2,00
+		available = {
+			GSR = {
+				has_opinion = {
+				target = BRF
+				value > 79
+				}
+			}
+		}
+		bypass = {
+			NOT = { country_exists = GSR }
+		}
+		prerequisite = {
+			focus = brf_enemy
+		}
+		completion_reward = {
+			army_experience = 20
+			air_experience = 20
+			navy_experience = 20
+			add_command_power = 30
+			GSR = {
+				add_stability = -0.5
+				add_war_support = -0.4
+				army_experience = -20
+				air_experience = -20
+				navy_experience = -20
+				add_command_power = -30
+			}
+			reverse_add_opinion_modifier = {
+				target = GSR
+				modifier = brf_kerk_using
+			}
+		}
+		x = 21
+		y = 14
+
+	}
+	focus = {
+		id = brf_malden_operations
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 5,00
+		bypass = {
+			NOT = { country_exists = GSR }
+		}
+		prerequisite = {
+			focus = brf_use_kerk_for_ops
+		}
+		completion_reward = {
+			add_war_support = 0.2
+			add_manpower = 50000
+			army_experience = 20
+			air_experience = 20
+			navy_experience = 20
+		}
+		x = 18
+		y = 15
+
+	}
+	focus = {
+		id = brf_altis_operations
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 5,00
+		bypass = {
+			NOT = { country_exists = GSR }
+		}
+		prerequisite = {
+			focus = brf_use_kerk_for_ops
+		}
+		completion_reward = {
+			add_war_support = 0.2
+			add_manpower = 50000
+			army_experience = 20
+			air_experience = 20
+			navy_experience = 20
+		}
+		x = 20
+		y = 15
+
+	}
+	focus = {
+		id = brf_stratis_operations
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 5,00
+		bypass = {
+			NOT = { country_exists = GSR }
+		}
+		prerequisite = {
+			focus = brf_use_kerk_for_ops
+		}
+		completion_reward = {
+			add_war_support = 0.2
+			add_manpower = 50000
+			army_experience = 20
+			air_experience = 20
+			navy_experience = 20
+		}
+		x = 22
+		y = 15
+
+	}
+	focus = {
+		id = brf_tanoa_operations
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 5,00
+		bypass = {
+			NOT = { country_exists = GSR }
+		}
+		prerequisite = {
+			focus = brf_use_kerk_for_ops
+		}
+		completion_reward = {
+			add_war_support = 0.2
+			add_manpower = 50000
+			army_experience = 20
+			air_experience = 20
+			navy_experience = 20
+		}
+		x = 24
+		y = 15
+
+	}
+	focus = {
+		id = brf_impossible_mission
+		icon = GFX_goal_generic_attack_allies
+		cost = 3,00
+		available = {
+			has_war_support = 100
+		}
+		bypass = {
+			NOT = { country_exists = GSR }
+		}
+		prerequisite = {
+			focus = brf_malden_operations
+		}
+		prerequisite = {
+			focus = brf_altis_operations
+		}
+		prerequisite = {
+			focus = brf_stratis_operations
+		}
+		prerequisite = {
+			focus = brf_tanoa_operations
+		}
+		completion_reward = {
+			add_war_support = 0.2
+			add_command_power = 50
+			army_experience = 20
+			air_experience = 20
+			navy_experience = 20
+			reverse_add_opinion_modifier = {
+				target = GSR
+				modifier = brf_kerk_abandoned
+			}
+				GSR = {
+					declare_war_on = {
+   					target = BRF
+    				type = annex_everything				
+				}
+			}
+		}
+		x = 21
+		y = 16
+
+	}
+	focus = {
+		id = brf_destroy_lom
+		icon = GFX_goal_generic_major_war
+		cost = 5,00
+		bypass = {
+			NOT = { country_exists = LOM }
+		}
+		prerequisite = {
+			focus = brf_impossible_mission
+		}
+		completion_reward = {
+			create_wargoal = {
+    			target = LOM
+    			type = annex_everything
+			}				
+		}
+		x = 22
+		y = 17
+
+	}
+	focus = {
+		id = brf_secret_ops_ndf
+		icon = GFX_goal_generic_secret_weapon
+		cost = 4,00
+		bypass = {
+			NOT = { country_exists = NDF }
+		}
+		prerequisite = {
+			focus = brf_r_ds_reveal
+		}
+		completion_reward = {
+			add_ideas = {
+				brf_nordway_raiding
+			}
+			reverse_add_opinion_modifier = {
+				target = NDF
+				modifier = brf_ndf_convoys
+			}
+		}
+		x = 5
+		y = 17
+
+	}
+	focus = {
+		id = brf_redacted_researches
+		icon = GFX_focus_research2
+		cost = 4,00
+		prerequisite = {
+			focus = brf_nuclear_tech
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = nuclear_reactor
+				level = 2
+				instant_build = yes
+				}
+			}			
+		}
+		x = 6
+		y = 9
+
+	}
+	focus = {
+		id = brf_rocket_production
+		icon = GFX_focus_rocketry
+		cost = 4,00
+		prerequisite = {
+			focus = brf_minor_researches
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+				type = rocket_site
+				level = 4
+				instant_build = yes
+				}
+			}				
+		}
+		x = 6
+		y = 10
+
+	}
+	focus = {
+		id = brf_radiation_researches
+		icon = GFX_focus_research2
+		cost = 3,00
+		prerequisite = {
+			focus = brf_minor_researches
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = nuclear
+			}			
+		}
+		x = 4
+		y = 10
+
+	}
+	focus = {
+		id = brf_fake_discord
+		icon = GFX_goal_generic_radar
+		cost = 2,00
+		prerequisite = {
+			focus = brf_code_red
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.3
+			add_manpower = 50000
+		}
+		x = 3
+		y = 13
+
+	}
+	focus = {
+		id = brf_real_discord
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 3,00
+		prerequisite = {
+			focus = brf_code_red
+		}
+		completion_reward = {
+			add_stability = 0.3
+			add_war_support = 0.1
+			add_manpower = 50000
+		}
+		x = 5
+		y = 13
+
+	}
+	focus = {
+		id = brf_r_ds_development
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 3,00
+		prerequisite = {
+			focus = brf_real_discord
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_manpower = 15000
+		}
+		x = 5
+		y = 14
+
+	}
+	focus = {
+		id = brf_f_ds_development
+		icon = GFX_goal_generic_radar
+		cost = 2,00
+		prerequisite = {
+			focus = brf_fake_discord
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_manpower = 15000			
+		}
+		x = 3
+		y = 14
+
+	}
+	focus = {
+		id = brf_f_ds_closure
+		icon = GFX_goal_generic_political_pressure
+		cost = 4,00
+		prerequisite = {
+			focus = brf_f_ds_development
+		}
+		prerequisite = {
+			focus = brf_r_ds_development
+		}
+		completion_reward = {
+			add_stability = -0.1
+			add_war_support = 0.2
+			add_manpower = 5000
+		}
+		x = 4
+		y = 15
+
+	}
+	focus = {
+		id = brf_r_ds_reveal
+		icon = GFX_goal_generic_secret_weapon
+		cost = 5,00
+		prerequisite = {
+			focus = brf_f_ds_closure
+		}
+		completion_reward = {
+			add_stability = -0.1
+			add_war_support = 0.3
+			add_manpower = -15000
+		}
+		x = 4
+		y = 16
+
+	}
+	focus = {
+		id = brf_oog_creation
+		icon = GFX_goal_generic_improve_relations
+		cost = 3,00
+		prerequisite = {
+			focus = brf_r_ds_reveal
+		}
+		completion_reward = {
+			add_stability = 0.2
+			add_war_support = 0.1
+			create_faction = "Организация Объединённых Группировок"
+		}
+		x = 3
+		y = 17
+
+	}
+	focus = {
+		id = brf_fake_agent_kill
+		icon = GFX_goal_generic_attack_allies
+		cost = 5,00
+		available = {
+			NDF = {
+				has_wargoal_against = BRF
+			}
+		}
+		bypass = {
+			NOT = { country_exists = NDF }
+		}
+		prerequisite = {
+			focus = brf_oog_creation
+		}
+		prerequisite = {
+			focus = brf_secret_ops_ndf
+		}
+		completion_reward = {
+			add_war_support = 0.3
+				NDF = {
+					declare_war_on = {
+   					target = BRF
+    				type = annex_everything
+				}				
+			}
+			reverse_add_opinion_modifier = {
+				target = NDF
+				modifier = brf_ndf_ultrahate
+			}
+		}
+		x = 4
+		y = 18
+
+	}
+	focus = {
+		id = brf_destroy_finset
+		icon = GFX_goal_generic_major_war
+		cost = 5,00
+		bypass = {
+			NOT = { country_exists = CMB }
+		}
+		prerequisite = {
+			focus = brf_impossible_mission
+		}
+		completion_reward = {
+			create_wargoal = {
+    			target = CMB
+    			type = annex_everything
+			}
+		}
+		x = 20
+		y = 17
+
+	}
+	focus = {
+		id = brf_destroy_vcc
+		icon = GFX_goal_generic_major_war
+		cost = 5,00
+		bypass = {
+			NOT = { country_exists = VCC }
+		}
+		prerequisite = {
+			focus = brf_impossible_mission
+		}
+		completion_reward = {
+			create_wargoal = {
+    			target = VCC
+    			type = annex_everything
+			}
+		}
+		x = 18
+		y = 17
+
+	}
+	focus = {
+		id = brf_destroy_dut
+		icon = GFX_goal_generic_major_war
+		cost = 5,00
+		bypass = {
+			NOT = { country_exists = DUT }
+		}
+		prerequisite = {
+			focus = brf_impossible_mission
+		}
+		completion_reward = {
+			create_wargoal = {
+    			target = DUT
+    			type = annex_everything
+			}
+		}
+		x = 24
+		y = 17
+
+	}
+}

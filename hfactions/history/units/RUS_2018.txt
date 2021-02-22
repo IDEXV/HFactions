@@ -225,4 +225,184 @@ units = {
 		start_experience_factor = 0.8
 		start_equipment_factor = 1
 	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6380
+		division_template = "Russian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6380
+		division_template = "Russian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6380
+		division_template = "Russian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6380
+		division_template = "Russian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6380
+		division_template = "Russian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6380
+		division_template = "Russian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6380
+		division_template = "Russian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6380
+		division_template = "Russian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6380
+		division_template = "Russian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6380
+		division_template = "Russian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6380
+		division_template = "Russian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6380
+		division_template = "Russian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6380
+		division_template = "Russian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 11254
+		division_template = "Russian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 9351
+		division_template = "Russian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6371
+		division_template = "Russian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 331
+		division_template = "Russian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6340
+		division_template = "Russian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 9396
+		division_template = "Russian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 9396
+		division_template = "Russian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
 }

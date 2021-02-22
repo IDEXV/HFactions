@@ -193,22 +193,25 @@ set_technology = {
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-		set_popularities = {
-			fascism = 100
-		}
+	set_popularities = {
+		fascism = 40
+		neutrality = 60
+	}
+
+	set_cosmetic_tag = LOM_lomonosia_rename
 }
 
 set_politics = {
-	ruling_party = fascism
+	ruling_party = neutrality
 	last_election = "2018.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	fascism = 70
-	communism = 10
-	neutrality = 20
+	fascism = 25
+	communism = 5
+	neutrality = 70
 }
 
 create_country_leader = {
@@ -216,12 +219,12 @@ create_country_leader = {
     desc = "LEADER_IVAN_DESC"
     picture = "gfx/leaders/LOM/portrait_lom_ivan.dds"
     expire = "2050.1.1"
-    ideology = nazism
+    ideology = despotism
     traits = {
         warmonger
-		dictator
-		conservative_nationalist
-		fascist_sympathies
+		popular_figurehead
+		economist
+		war_industrialist
 		#
 		dislikes_brf
     }

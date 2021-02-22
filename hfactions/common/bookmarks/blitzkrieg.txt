@@ -24,8 +24,11 @@ bookmarks = {
 			ideology = neutrality
 			ideas={
 				soul_of_organization
+				increased_war_production
+				brf_agency
 			}
 			focuses = {
+				brf_boreas_research_facility
 			}
 		}
 		"REX" = {
@@ -60,7 +63,7 @@ bookmarks = {
 		}
 		"LOM" = {
 			history = LOM_WARZONE_DESC
-			ideology = fascism
+			ideology = neutrality
 			ideas={
 				soul_of_organization
 				disorganization

@@ -207,4 +207,166 @@ units = {
 		start_experience_factor = 0.8
 		start_equipment_factor = 1
 	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 525
+		division_template = "Ukranian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 525
+		division_template = "Ukranian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 525
+		division_template = "Ukranian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 525
+		division_template = "Ukranian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 525
+		division_template = "Ukranian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 525
+		division_template = "Ukranian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 525
+		division_template = "Ukranian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 525
+		division_template = "Ukranian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 525
+		division_template = "Ukranian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 525
+		division_template = "Ukranian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 525
+		division_template = "Ukranian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 525
+		division_template = "Ukranian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 525
+		division_template = "Ukranian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 525
+		division_template = "Ukranian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 525
+		division_template = "Ukranian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6593
+		division_template = "Ukranian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 9435
+		division_template = "Ukranian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 11703
+		division_template = "Ukranian National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
 }

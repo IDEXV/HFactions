@@ -122,8 +122,14 @@ ideas = {
 				send_volunteers_tension = -0.5
 				guarantee_tension = -0.5
 				civil_war_involvement_tension = -0.5
-				stability_weekly = 0.2
-				war_support_weekly = 0.2
+				stability_weekly = 0.05
+				research_speed_factor = 0.2
+				hidden_modifier = {
+					ai_badass_factor = 0.5
+					ai_focus_peaceful_factor = 0.5
+					ai_focus_military_advancements_factor = 0.5
+					ai_focus_war_production_factor = 0.5
+				}
             }
 
             rule = {
@@ -154,9 +160,11 @@ ideas = {
 				send_volunteers_tension = -1
 				guarantee_tension = -1
 				civil_war_involvement_tension = -1
-				justify_war_goal_time = -0.1
-				surrender_limit = 0.5
-				war_support_weekly = 0.3
+				war_support_weekly = 0.05
+				hidden_modifier = {
+					ai_focus_military_advancements_factor = 0.5
+					ai_focus_war_production_factor = 0.5
+				}
             }
 
             rule = {
@@ -182,9 +190,15 @@ ideas = {
             modifier = {
                 generate_wargoal_tension = -1
 				justify_war_goal_time = -1
-				surrender_limit = 1
-                stability_weekly = -0.3
-				war_support_weekly = 0.3
+				surrender_limit = 0.1
+                stability_weekly = -0.2
+				war_support_weekly = 0.2
+				research_speed_factor = -0.5
+				hidden_modifier = {
+					ai_focus_aggressive_factor = 1
+					ai_focus_military_advancements_factor = 1
+					ai_focus_war_production_factor = 1
+				}
             }
 
 			rule = {
@@ -212,9 +226,15 @@ ideas = {
             modifier = {
                 generate_wargoal_tension = -1
 				justify_war_goal_time = -0.5
-                stability_weekly = 0.1
-				war_support_weekly = 0.5
+                stability_weekly = 0.05
+				war_support_weekly = 0.1
 				research_speed_factor = -0.2
+				hidden_modifier = {
+					ai_desired_divisions_factor = 0.5
+					ai_focus_aggressive_factor = 0.5
+					ai_focus_military_advancements_factor = 0.5
+					ai_focus_war_production_factor = 0.5
+				}
             }
 
 			rule = {
@@ -226,6 +246,42 @@ ideas = {
 				can_create_factions = no
 			}
 		}
+
+        soul_of_government = {
+
+            picture = generic_morale_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+            modifier = {
+				stability_weekly = 0.3
+				foreign_subversive_activites = -0.5
+				trade_opinion_factor = 0.2
+				civil_war_involvement_tension = 0.5
+				generate_wargoal_tension = 0.5
+				guarantee_tension = 0.5
+				lend_lease_tension = 0.5
+				join_faction_tension = 0.5
+				puppet_cost_factor = 0.3
+				annex_cost_factor = 0.1
+				hidden_modifier = {
+					ai_focus_peaceful_factor = 1
+				}
+            }
+
+            rule = {
+	            can_create_factions = yes
+				can_lower_tension = yes
+            }
+		}		
 
 		nationalism = {
 			
