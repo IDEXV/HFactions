@@ -1,0 +1,1124 @@
+division_template = {
+	name = "UN Infantry"
+
+	regiments = {
+		L_Inf_Bat = { x = 0 y = 0 }
+		L_Inf_Bat = { x = 0 y = 1 }
+		L_Inf_Bat = { x = 0 y = 2 }
+		L_Inf_Bat = { x = 1 y = 0 }
+		L_Inf_Bat = { x = 1 y = 1 }
+	}
+	support = {
+		L_Engi_Comp = { x = 0 y = 0 }
+		SP_AA_Battery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "UN Peacemakers"
+
+	regiments = {
+		L_Inf_Bat = { x = 0 y = 0 }
+		L_Inf_Bat = { x = 0 y = 1 }
+		L_Inf_Bat = { x = 0 y = 2 }
+		L_Inf_Bat = { x = 1 y = 0 }
+	}
+	support = {
+		L_Engi_Comp = { x = 0 y = 0 }
+		SP_AA_Battery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "UN Security Division"
+
+	regiments = {
+		L_Inf_Bat = { x = 0 y = 0 }
+		L_Inf_Bat = { x = 0 y = 1 }
+		L_Inf_Bat = { x = 0 y = 2 }
+		L_Inf_Bat = { x = 1 y = 0 }
+	}
+}
+division_template = {
+	name = "UN Armoured Division"
+
+	regiments = {
+		Mech_Inf_Bat = { x = 0 y = 0 }
+	    	Mech_Inf_Bat = { x = 0 y = 1 }
+		Mech_Inf_Bat = { x = 0 y = 2 }
+		Mech_Inf_Bat = { x = 1 y = 0 }
+		Mech_Inf_Bat = { x = 1 y = 1 }
+		Mech_Inf_Bat = { x = 1 y = 2 }
+		Mech_Inf_Bat = { x = 2 y = 0 }
+	    	Mech_Inf_Bat = { x = 2 y = 1 }
+		Mech_Inf_Bat = { x = 2 y = 2 }
+		Mech_Inf_Bat = { x = 3 y = 0 }
+	    	Mech_Inf_Bat = { x = 3 y = 1 }
+	}
+	support = {
+	 	SP_AA_Battery = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 9484
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 540
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 9364
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 9379
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 351
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 9350
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 159
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 11266
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6104
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 11064
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 200
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 385
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 3342
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 9303
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 9284
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 11334
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6318
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6103
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 9484
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 540
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 9364
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 9379
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 351
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 9350
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 159
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 11266
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6104
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 11064
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 200
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 385
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 3342
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 9303
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 9284
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 11334
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6318
+		division_template = "UN Security Division"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+}

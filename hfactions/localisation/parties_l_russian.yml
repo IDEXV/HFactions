@@ -13,6 +13,8 @@
  NDF_democratic_party_long:1 "State Finset"
  NDF_fascism_party:1 "NE"
  NDF_fascism_party_long:1 "Националистическая партия Nordway"
+ UUN_democratic_party:1 "ООН"
+ UUN_democratic_party_long:1 "Секретариат ООН"
  GSR_neutrality_party:1 "C17RP"
  GSR_neutrality_party_long:1 "ЧВК партия C17R"
  GSR_democratic_party:1 "C17RO"

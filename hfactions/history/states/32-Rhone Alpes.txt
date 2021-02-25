@@ -12,7 +12,9 @@ state={
 	}
 
 	history={
-		
+		owner = NGD
+		add_core_of = NGD
+				
 		buildings = {
 			infrastructure = 4
 		}

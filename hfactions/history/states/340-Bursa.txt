@@ -10,7 +10,9 @@ state={
 	state_category = town
 
 	history={
-		
+		owner = TRK
+		add_core_of = TRK
+				
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1

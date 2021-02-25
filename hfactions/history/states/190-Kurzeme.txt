@@ -7,6 +7,9 @@ state={
 	state_category = rural
 	
 	history={
+		owner = AZT
+		add_core_of = AZT
+		
 		victory_points = {
 			9262 3
 		}

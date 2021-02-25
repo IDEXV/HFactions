@@ -10,7 +10,9 @@ state={
 	state_category = city
 
 	history={
-		
+		owner = NGD
+		add_core_of = NGD
+				
 		victory_points = {
 			911 1 
 		}

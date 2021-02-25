@@ -52,6 +52,19 @@ leader_traits = {
 		}		
 	}
 
+	dislikes_rex = {
+		random = no
+		ai_strategy = {
+			type = antagonize
+			id = "REX"			
+			value = 200
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}		
+	}
+
 	dictator = {
 		random = no
 		political_power_factor = 0.25

@@ -529,6 +529,13 @@ focus_tree = {
 							add_ideas = { soul_of_gang }
 						}
 					else_if = {
+							limit = {
+									has_idea = soul_of_mafia
+								}
+							remove_ideas = { soul_of_mafia }
+							add_ideas = { soul_of_gang }
+						}
+					else_if = {
 							add_ideas = { soul_of_gang }
 						}
 					set_cosmetic_tag = NDF_elektrostal_families
@@ -3922,6 +3929,37 @@ focus_tree = {
 			focus = ndf_greater_grove
 		}
 		completion_reward = {
+					if = {
+							limit = {
+									has_idea = soul_of_organization
+								}
+							remove_ideas = { soul_of_organization }
+							add_ideas = { soul_of_mafia }
+						}
+					else_if = {
+							limit = {
+									has_idea = soul_of_rebellion
+								}
+							remove_ideas = { soul_of_rebellion }
+							add_ideas = { soul_of_mafia }
+						}
+					else_if = {
+							limit = {
+									has_idea = soul_of_pmc
+								}
+							remove_ideas = { soul_of_pmc }
+							add_ideas = { soul_of_mafia }
+						}
+					else_if = {
+							limit = {
+									has_idea = soul_of_gang
+								}
+							remove_ideas = { soul_of_gang }
+							add_ideas = { soul_of_mafia }
+						}
+					else_if = {
+							add_ideas = { soul_of_mafia }
+						}
 			set_cosmetic_tag = NDF_great_elektrostal
 			set_politics = {
 				ruling_party = neutrality

@@ -8,6 +8,8 @@ state={
 	}
 
 	history={
+		owner = NGD
+		add_core_of = NGD
 		
 		victory_points = {
 			9737 20 

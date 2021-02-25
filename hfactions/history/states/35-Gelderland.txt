@@ -3,7 +3,8 @@ state={
 	name="STATE_35"
 
 	history={
-		
+		owner = APA
+		add_core_of = APA		
 		
 		buildings = {
 			infrastructure = 7

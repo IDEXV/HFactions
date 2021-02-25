@@ -16,6 +16,50 @@ RUS = {
 	color = RGB { 144 144 232 }
 	color_ui = RGB { 144 144 232 }
 }
+AZT = {
+	color = RGB { 0 191 255 }
+	color_ui = RGB { 0 191 25 }
+}
+VAG = {
+	color = RGB { 216 169 3 }
+	color_ui = RGB { 216 169 3 }
+}
+SRB = {
+	color = RGB { 69 206 162 }
+	color_ui = RGB { 69 206 162 }
+}
+SBR = {
+	color = RGB { 38 145 111 }
+	color_ui = RGB { 38 145 111 }
+}
+TRK = {
+	color = RGB { 255 43 43 }
+	color_ui = RGB { 255 43 43 }
+}
+MBA = {
+	color = RGB { 143 117 0 }
+	color_ui = RGB { 143 117 0 }
+}
+SCA = {
+	color = RGB { 6 122 45 }
+	color_ui = RGB { 6 122 45 }
+}
+NGD = {
+	color = RGB { 42 92 3 }
+	color_ui = RGB { 42 92 3 }
+}
+UUN = {
+	color = RGB { 31 174 233 }
+	color_ui = RGB { 31 174 233 }
+}
+APA = {
+	color = RGB { 188 152 126 }
+	color_ui = RGB { 188 152 126 }
+}
+KLA = {
+	color = RGB { 102 0 0 }
+	color_ui = RGB { 102 0 0 }
+}
 REX = {
 	color = RGB { 1 50 32 }
 	color_ui = RGB { 1 50 32 }
@@ -79,6 +123,14 @@ MUJ = {
 SNI = {
 	color = RGB { 136 112 107 }
 	color_ui = RGB { 136 112 107 }
+}
+NSP = {
+	color = RGB { 154 205 50 }
+	color_ui = RGB { 154 205 50 }
+}
+SWE = {
+	color = rgb { 36 132 247 }
+	color_ui = rgb { 47 172 255 }
 }
 D01 = {
 	color = rgb { 122 179 97 }

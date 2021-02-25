@@ -9,7 +9,9 @@ state=
 
 	history=
 	{
-		
+		owner = UUN
+		add_core_of = UUN
+				
 		buildings = {
 			infrastructure = 6
 		}

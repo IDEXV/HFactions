@@ -7,6 +7,9 @@ state={
 	}
 
 	history={
+		owner = SBR
+		add_core_of = SBR
+		
 		victory_points = {
 			9602 3 
 		}

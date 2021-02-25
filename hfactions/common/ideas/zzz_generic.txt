@@ -247,9 +247,48 @@ ideas = {
 			}
 		}
 
+        soul_of_mafia = {
+
+            picture = generic_secret_police
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+            modifier = {
+                generate_wargoal_tension = -0.5
+				lend_lease_tension = -1
+				send_volunteers_tension = -1
+				guarantee_tension = -1
+				civil_war_involvement_tension = -1
+				stability_weekly = 0.01
+				hidden_modifier = {
+					ai_desired_divisions_factor = 0.5
+					ai_focus_peaceful_factor = 0.5
+					ai_focus_military_advancements_factor = 0.5
+					ai_focus_war_production_factor = 0.5
+				}
+            }
+
+			rule = {
+				can_declare_war_on_same_ideology = yes
+				can_be_called_to_war = yes
+				can_declare_war_without_wargoal_when_in_war = yes
+				can_join_opposite_factions = yes
+				can_join_factions = yes
+				can_create_factions = yes
+			}
+		}
+
         soul_of_government = {
 
-            picture = generic_morale_bonus
+            picture = generic_political_support
 			
 			allowed = {
 				always = no

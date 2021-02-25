@@ -6,6 +6,8 @@ state=
 	
 	state_category = enclave
 	history={
+		owner = NSP
+		add_core_of = NSP
 		
 		victory_points = { 4135 10 }
 		buildings = {

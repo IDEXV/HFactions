@@ -1,0 +1,381 @@
+division_template = {
+	name = "Swedish Infantry"
+
+	regiments = {
+		L_Inf_Bat = { x = 0 y = 0 }
+		L_Inf_Bat = { x = 0 y = 1 }
+		L_Inf_Bat = { x = 0 y = 2 }
+		L_Inf_Bat = { x = 1 y = 0 }
+		L_Inf_Bat = { x = 1 y = 1 }
+	}
+	support = {
+		L_Engi_Comp = { x = 0 y = 0 }
+		SP_AA_Battery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Swedish National Guard"
+
+	regiments = {
+		L_Inf_Bat = { x = 0 y = 0 }
+		L_Inf_Bat = { x = 0 y = 1 }
+		L_Inf_Bat = { x = 0 y = 2 }
+		L_Inf_Bat = { x = 1 y = 0 }
+	}
+}
+division_template = {
+	name = "Swedish Armoured Division"
+
+	regiments = {
+		Mech_Inf_Bat = { x = 0 y = 0 }
+	    	Mech_Inf_Bat = { x = 0 y = 1 }
+		Mech_Inf_Bat = { x = 0 y = 2 }
+		Mech_Inf_Bat = { x = 1 y = 0 }
+		Mech_Inf_Bat = { x = 1 y = 1 }
+		Mech_Inf_Bat = { x = 1 y = 2 }
+		Mech_Inf_Bat = { x = 2 y = 0 }
+	    	Mech_Inf_Bat = { x = 2 y = 1 }
+		Mech_Inf_Bat = { x = 2 y = 2 }
+		Mech_Inf_Bat = { x = 3 y = 0 }
+	    	Mech_Inf_Bat = { x = 3 y = 1 }
+	}
+	support = {
+	 	SP_AA_Battery = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 383
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 383
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 383
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 383
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 383
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 383
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 383
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 383
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 383
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 383
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 383
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 383
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 383
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 383
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 383
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 383
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 383
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 363
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 77
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 9066
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 9134
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 9178
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6170
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 201
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 9220
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 9151
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6050
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6050
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6050
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 102
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 3129
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 27
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 6071
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 3058
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 9042
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 9116
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 11169
+		division_template = "Swedish National Guard"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+}

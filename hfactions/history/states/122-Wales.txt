@@ -12,7 +12,9 @@ state= {
 
 	history=
 	{
-		
+		owner = UUN
+		add_core_of = UUN
+				
 		victory_points = { 377 5 }
 		buildings = {
 			infrastructure = 5

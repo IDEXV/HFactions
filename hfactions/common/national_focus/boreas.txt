@@ -1667,6 +1667,12 @@ focus_tree = {
     				type = annex_everything				
 				}
 			}
+			hidden_effect = {
+				country_event = {
+    				id = brf_od_reform.1
+    				days = 200
+				}
+			}
 		}
 		x = 21
 		y = 16

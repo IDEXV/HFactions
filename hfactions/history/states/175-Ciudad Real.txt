@@ -3,7 +3,9 @@ state={
 	name="STATE_175"
 
 	history={
-		
+		owner = NSP
+		add_core_of = NSP
+				
 		victory_points = {
 			6832 1 
 		}

@@ -9,6 +9,7 @@ state={
 	history={
 		owner = VCC
 		add_core_of = VCC
+		add_claim_by = RUS
 		
 		buildings = {
 			infrastructure = 5

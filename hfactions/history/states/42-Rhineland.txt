@@ -11,6 +11,8 @@ state={
 	state_category = metropolis
 
 	history={
+		owner = APA
+		add_core_of = APA
 		
 		victory_points = { 11435 1 }
 		#victory_points = { 3423 3 }

@@ -281,3 +281,4 @@ create_country_leader = {
 }
 
 add_opinion_modifier = { target = GSR modifier = dam_relations }	
+add_opinion_modifier = { target = UUN modifier = un_alliance }	

@@ -8,7 +8,9 @@ state={
 	
 
 	history={
-		
+		owner = APA
+		add_core_of = APA
+				
 		victory_points = {
 			11506 50 
 		}

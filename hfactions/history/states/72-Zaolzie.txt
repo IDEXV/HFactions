@@ -6,6 +6,8 @@ state={
 	state_category = rural
 	
 	history={
+		owner = KLA
+		add_core_of = KLA
 		
 		buildings = {
 			infrastructure = 6

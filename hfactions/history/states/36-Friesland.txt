@@ -3,7 +3,8 @@ state={
 	name="STATE_36"
 
 	history={
-		
+		owner = APA
+		add_core_of = APA		
 		
 		victory_points = {
 			6241 5 

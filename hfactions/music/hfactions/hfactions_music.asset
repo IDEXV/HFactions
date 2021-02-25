@@ -1,0 +1,55 @@
+
+# MAIN THEME
+music = {
+	name = "maintheme"
+	file = "mainmenu.ogg"
+	volume = 1
+}
+
+music = {
+	name = "oldafr"
+	file = "title1.ogg"
+	volume = 1
+}
+
+music = {
+	name = "newafr"
+	file = "title2.ogg"
+	volume = 1
+}
+
+music = {
+	name = "penultimatum"
+	file = "title4.ogg"
+	volume = 1
+}
+
+music = {
+	name = "abandonedinplace"
+	file = "title5.ogg"
+	volume = 1
+}
+
+music = {
+	name = "eontrap"
+	file = "title6.ogg"
+	volume = 1
+}
+
+music = {
+	name = "mw2s"
+	file = "title7.ogg"
+	volume = 1
+}
+
+music = {
+	name = "mw4s"
+	file = "title8.ogg"
+	volume = 1
+}
+
+music = {
+	name = "mw6s"
+	file = "title9.ogg"
+	volume = 1
+}

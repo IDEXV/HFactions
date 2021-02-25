@@ -7,7 +7,9 @@ state={
 	state_category = town
 	
 	history={
-		
+		owner = AZT
+		add_core_of = AZT
+				
 		victory_points = {
 			6296 5
 		}

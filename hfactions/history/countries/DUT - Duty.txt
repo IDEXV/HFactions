@@ -16,6 +16,7 @@ set_convoys = 35
 set_research_slots = 3
 set_stability = 0.6
 set_war_support = 0.8
+add_nuclear_bombs = 10
 
 set_technology = {
 	legacy_doctrines = 1

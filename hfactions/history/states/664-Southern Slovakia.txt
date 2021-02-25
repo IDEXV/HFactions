@@ -10,7 +10,9 @@ state={
 	state_category = town
 	
 	history={
-		
+		owner = SRB
+		add_core_of = SRB
+				
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 3

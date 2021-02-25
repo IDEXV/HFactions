@@ -7,7 +7,9 @@ state= {
 
 	history=
 	{
-		
+		owner = KLA
+		add_core_of = KLA
+				
 		victory_points = { 
 			6287 20 
 		}

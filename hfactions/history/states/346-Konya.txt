@@ -7,7 +7,9 @@ state={
 	state_category = rural
 
 	history={
-		
+		owner = TRK
+		add_core_of = TRK
+				
 		buildings = {
 			infrastructure = 3
 			air_base = 5

@@ -5,7 +5,9 @@ state={
 	
 	state_category = town
 	history={
-		
+		owner = VAG
+		add_core_of = VAG
+				
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 2

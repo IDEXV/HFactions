@@ -6,7 +6,9 @@ state={
 	state_category = city
 	
 	history={
-		
+		owner = VAG
+		add_core_of = VAG
+				
 		victory_points = {
 			11479 3
 		}

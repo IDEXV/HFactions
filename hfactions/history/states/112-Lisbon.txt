@@ -6,7 +6,9 @@ state={
 	}
 
 	history={
-		
+		owner = NSP
+		add_core_of = NSP
+				
 		victory_points = {
 			11805 20 
 		}

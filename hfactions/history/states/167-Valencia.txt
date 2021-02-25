@@ -7,7 +7,9 @@ state={
 	state_category = large_town
 
 	history={
-		
+		owner = NSP
+		add_core_of = NSP
+				
 		victory_points = {
 			6906 10
 		}

@@ -11,6 +11,8 @@ state={
 	}
 
 	history={
+		owner = TRK
+		add_core_of = TRK
 		
 		buildings = {
 			infrastructure = 1

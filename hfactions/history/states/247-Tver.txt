@@ -8,6 +8,7 @@ state={
 	history={
 		owner = VCC
 		add_core_of = VCC
+		add_claim_by = RUS
 		
 		victory_points = {
 			6245 10 

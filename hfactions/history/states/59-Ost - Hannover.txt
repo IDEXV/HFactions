@@ -10,7 +10,9 @@ state={
 	state_category = large_city
 
 	history={
-		
+		owner = KLA
+		add_core_of = KLA
+				
 		victory_points = {
 			3326 5 
 		}

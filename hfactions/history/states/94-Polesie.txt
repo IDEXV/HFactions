@@ -3,7 +3,9 @@ state={
 	name="STATE_94"
 
 	history={
-		
+		owner = VAG
+		add_core_of = VAG
+				
 		buildings = {
 			infrastructure = 3
 

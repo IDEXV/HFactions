@@ -12,7 +12,8 @@ state= {
 	}
 
 	history= {
-		
+		owner = UUN
+		add_core_of = UUN		
 		
 		victory_points = { 11064 1 }
 		buildings = {

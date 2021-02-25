@@ -7,7 +7,9 @@ state={
 	state_category = town
 
 	history={
-		
+		owner = SCA
+		add_core_of = SCA
+				
 		victory_points = {
 			673 5 
 		}

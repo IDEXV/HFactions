@@ -11,6 +11,9 @@ state={
 	}
 
 	history={
+		owner = SCA 
+		add_core_of = SCA
+		
 		victory_points = {
 			11598 1
 		}

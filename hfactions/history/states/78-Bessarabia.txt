@@ -7,7 +7,8 @@ state=
 	state_category = town
 	
 	history= {
-		
+		owner = VAG
+		add_core_of = VAG		
 		
 		victory_points = {
 			3707 1

@@ -6,6 +6,8 @@ state={
 	
 	state_category = city
 	history={
+		owner = MBA
+		add_core_of = MBA
 		
 		victory_points = {
 			10074 20 

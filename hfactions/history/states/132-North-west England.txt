@@ -11,7 +11,9 @@ state= {
 	}
 
 	history= {
-		
+		owner = UUN
+		add_core_of = UUN
+				
 		victory_points = {
 			6384 30 
 		}

@@ -6,7 +6,8 @@ state={
 	state_category = city
 
 	history={
-		
+		owner = AZT
+		add_core_of = AZT		
 		
 		
 		victory_points = {

@@ -11,7 +11,9 @@ state={
 	}
 
 	history={
-		
+		owner = AZT
+		add_core_of = AZT
+				
 		victory_points = {
 			9483 5
 		}
