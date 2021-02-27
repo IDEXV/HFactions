@@ -165,7 +165,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_modern_carrier_0_medium"
-		texturefile = "gfx/interface/technologies/FRA/NAV/CV1.dds"
+		texturefile = "gfx/interface/technologies/VCC/NAV/CV1.dds"
 	}
 	SpriteType = {
 		name = "GFX_modern_carrier_1_medium"
@@ -307,31 +307,31 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_diesel_attack_submarine_1_medium"
-		texturefile = "gfx/interface/technologies/FRA/NAV/SS1.dds"
+		texturefile = "gfx/interface/technologies/VCC/NAV/SS1.dds"
 	}
 	SpriteType = {
 		name = "GFX_diesel_attack_submarine_2_medium"
-		texturefile = "gfx/interface/technologies/FRA/NAV/SS2.dds"
+		texturefile = "gfx/interface/technologies/VCC/NAV/SS2.dds"
 	}
 	SpriteType = {
 		name = "GFX_diesel_attack_submarine_3_medium"
-		texturefile = "gfx/interface/technologies/FRA/NAV/SS2.dds"
+		texturefile = "gfx/interface/technologies/VCC/NAV/SS2.dds"
 	}
 	SpriteType = {
 		name = "GFX_diesel_attack_submarine_4_medium"
-		texturefile = "gfx/interface/technologies/FRA/NAV/SS4.dds"
+		texturefile = "gfx/interface/technologies/VCC/NAV/SS4.dds"
 	}
 	SpriteType = {
 		name = "GFX_diesel_attack_submarine_5_medium"
-		texturefile = "gfx/interface/technologies/FRA/NAV/SS5.dds"
+		texturefile = "gfx/interface/technologies/VCC/NAV/SS5.dds"
 	}
 	SpriteType = {
 		name = "GFX_diesel_attack_submarine_6_medium"
-		texturefile = "gfx/interface/technologies/FRA/NAV/SS6.dds"
+		texturefile = "gfx/interface/technologies/VCC/NAV/SS6.dds"
 	}
 	SpriteType = {
 		name = "GFX_diesel_attack_submarine_7_medium"
-		texturefile = "gfx/interface/technologies/FRA/NAV/SS7.dds"
+		texturefile = "gfx/interface/technologies/VCC/NAV/SS7.dds"
 	}
 
 	###### Nuclear Attack Submarines ######

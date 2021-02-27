@@ -100,8 +100,8 @@ ideas = {
 	}
 
 	# Special ones that can be applied on other countries through focus system.
-	country = {
-	
+	country = {		
+
         soul_of_organization = {
 
             picture = generic_morale_bonus
@@ -320,7 +320,7 @@ ideas = {
 	            can_create_factions = yes
 				can_lower_tension = yes
             }
-		}		
+		}
 
 		nationalism = {
 			

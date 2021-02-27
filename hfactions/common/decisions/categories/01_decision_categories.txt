@@ -30,28 +30,20 @@ economical_actions = {
 	}
 }
 
+nationalisation_category = {
+	icon = generic_political_actions
+}
+
 fascism_on_the_rise = {
 	icon = generic_fascism
-
-	allowed = {
-		always = yes
-	}
 }
 
 democratic_on_the_rise = {
 	icon = generic_democracy
-
-	allowed = {
-		always = yes
-	}
 }
 
 communism_on_the_rise = {
 	icon = generic_communism
-
-	allowed = {
-		always = yes
-	}
 }
 
 lar_local_recruitment = {

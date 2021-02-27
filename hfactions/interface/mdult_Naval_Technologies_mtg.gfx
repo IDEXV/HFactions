@@ -300,35 +300,35 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_attack_submarine_hull_1_medium"
-		texturefile = "gfx/interface/technologies/FRA/NAV/SS1.dds"
+		texturefile = "gfx/interface/technologies/VCC/NAV/SS1.dds"
 	}
 	SpriteType = {
 		name = "GFX_attack_submarine_hull_2_medium"
-		texturefile = "gfx/interface/technologies/FRA/NAV/SS2.dds"
+		texturefile = "gfx/interface/technologies/VCC/NAV/SS2.dds"
 	}
 	SpriteType = {
 		name = "GFX_attack_submarine_hull_3_medium"
-		texturefile = "gfx/interface/technologies/FRA/NAV/SS2.dds"
+		texturefile = "gfx/interface/technologies/VCC/NAV/SS2.dds"
 	}
 	SpriteType = {
 		name = "GFX_attack_submarine_hull_4_medium"
-		texturefile = "gfx/interface/technologies/FRA/NAV/SS4.dds"
+		texturefile = "gfx/interface/technologies/VCC/NAV/SS4.dds"
 	}
 	SpriteType = {
 		name = "GFX_attack_submarine_hull_5_medium"
-		texturefile = "gfx/interface/technologies/FRA/NAV/SS5.dds"
+		texturefile = "gfx/interface/technologies/VCC/NAV/SS5.dds"
 	}
 	SpriteType = {
 		name = "GFX_attack_submarine_hull_6_medium"
-		texturefile = "gfx/interface/technologies/FRA/NAV/SS6.dds"
+		texturefile = "gfx/interface/technologies/VCC/NAV/SS6.dds"
 	}
 	SpriteType = {
 		name = "GFX_attack_submarine_hull_7_medium"
-		texturefile = "gfx/interface/technologies/FRA/NAV/SS7.dds"
+		texturefile = "gfx/interface/technologies/VCC/NAV/SS7.dds"
 	}
 	SpriteType = {
 		name = "GFX_attack_submarine_hull_8_medium"
-		texturefile = "gfx/interface/technologies/FRA/NAV/SS8.dds"
+		texturefile = "gfx/interface/technologies/VCC/NAV/SS8.dds"
 	}
 
 ##################### GREECE ########################

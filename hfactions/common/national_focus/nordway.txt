@@ -1300,6 +1300,17 @@ focus_tree = {
 		id = ndf_faction_unity
 		icon = GFX_goal_generic_national_unity
 		cost = 4,00
+		available = {
+			NOT = { country_exists = REX }
+			NOT = {
+				any_state = {
+					is_core_of = REX
+					NOT = {
+						is_owned_by = ROOT
+					}
+				}
+			}			
+		}
 		prerequisite = {
 			focus = ndf_a_factory_expansion
 		}
@@ -1314,6 +1325,12 @@ focus_tree = {
 							ideology = neutrality
 							popularity = 0.1
 						}
+					every_state = {
+						limit = {
+							is_core_of = REX
+						}
+						add_core_of = NDF
+					}
 				}
 
 	}
@@ -1586,6 +1603,14 @@ focus_tree = {
 		id = ndf_boreas_infil_op
 		icon = GFX_goal_generic_CAS
 		cost = 4,00
+		available = {
+			BRF = {
+				has_completed_focus = brf_boreas_research_facility				
+			}
+		}
+		bypass = {
+			NOT = { country_exists = BRF }
+		}
 		prerequisite = {
 			focus = ndf_narcotics_lab
 			focus = ndf_nordway_research
@@ -1615,8 +1640,12 @@ focus_tree = {
 		cost = 4,00
 		available = {
 			BRF = {
+				has_completed_focus = brf_boreas_research_facility
 				has_completed_focus = brf_agent_capture
 			}
+		}
+		bypass = {
+			NOT = { country_exists = BRF }
 		}
 		prerequisite = {
 			focus = ndf_narcotics_lab
@@ -1653,6 +1682,11 @@ focus_tree = {
 		id = ndf_war_readiness
 		icon = GFX_goal_generic_propaganda
 		cost = 2,00
+		available = {
+			BRF = {
+				has_completed_focus = brf_boreas_research_facility
+			}
+		}
 		prerequisite = {
 			focus = ndf_narcotics_lab
 			focus = ndf_nordway_research
@@ -1689,6 +1723,14 @@ focus_tree = {
 		id = ndf_boreas_public_ops
 		icon = GFX_goal_generic_political_pressure
 		cost = 3,00
+		available = {
+			BRF = {
+				has_completed_focus = brf_boreas_research_facility
+			}
+		}
+		bypass = {
+			NOT = { country_exists = BRF }
+		}
 		prerequisite = {
 			focus = ndf_war_readiness
 		}
@@ -1723,6 +1765,14 @@ focus_tree = {
 		id = ndf_boreas_war
 		icon = GFX_goal_generic_major_war
 		cost = 5,00
+		available = {
+			BRF = {
+				has_completed_focus = brf_boreas_research_facility
+			}
+		}
+		bypass = {
+			NOT = { country_exists = BRF }
+		}
 		prerequisite = {
 			focus = ndf_boreas_public_ops
 		}
@@ -1743,9 +1793,13 @@ focus_tree = {
 							type = annex_everything
 							target = BRF
 						}
-					country_event = {
+					custom_effect_tooltip = rebels_event
+					hidden_effect = {
+						country_event = {
 							id = ndf_finsetrebels.1
+							days = 100
 						}
+					}
 				}
 
 	}
@@ -1753,6 +1807,9 @@ focus_tree = {
 		id = ndf_repress_civilwar
 		icon = GFX_goal_generic_improve_relations
 		cost = 5,00
+		available = {
+			has_country_flag = rebels_have_risen
+		}
 		prerequisite = {
 			focus = ndf_boreas_war
 		}
@@ -1771,6 +1828,9 @@ focus_tree = {
 		id = ndf_oppress_civilwar
 		icon = GFX_goal_demand_sudetenland
 		cost = 1,00
+		available = {
+			has_country_flag = rebels_have_risen
+		}
 		prerequisite = {
 			focus = ndf_boreas_war
 		}
@@ -1785,10 +1845,7 @@ focus_tree = {
 					add_manpower = -200000
 					start_civil_war = {
 							ideology = democratic
-							size = 0.7
-							only_own_territory = yes
-							capital = 351
-							keep_political_leader = yes
+							size = 0.5
 						}
 				}
 
@@ -2051,6 +2108,7 @@ focus_tree = {
 			available = {
 					NOT = {
 							has_civil_war = yes
+							country_exists = BRF
 						}
 				}
 			completion_reward = {

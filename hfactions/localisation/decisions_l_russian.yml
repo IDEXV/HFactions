@@ -16,6 +16,8 @@
  pmc_reformation:0 "Стать ЧВК"
  gang_reformation:0 "Стать группировкой"
  mafia_reformation:0 "Стать мафией"
+ nationalisation_category:0 "Национализация территорий"
+ nationalise_territory:0 "Национализировать [FROM.GetName]"
  conscription_increase:0 "Провести особый призыв"
  improve_workerks_conditions:0 "Улучшить условия рабочих"
  anti_neutrality_raids:0 "Антинейтралитетные рейды"

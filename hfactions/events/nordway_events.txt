@@ -81,6 +81,7 @@ country_event = {
 	
 	option = {
 		name = ndf_finsetrebels_ok.1.a
+		set_country_flag = rebels_have_risen
 		unlock_decision_category_tooltip = NDF_category_inside_issues
 		unlock_decision_tooltip = NDF_mission_finset_rebellion
 	}

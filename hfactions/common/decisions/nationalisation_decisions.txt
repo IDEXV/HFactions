@@ -1,0 +1,59 @@
+nationalisation_category = {
+
+	nationalise_territory = {
+
+		icon = generic_nationalism
+
+		state_target = yes
+
+		on_map_mode = map_and_decisions_view
+
+		target_array = owned_states
+
+		target_trigger = {
+			FROM = {
+				NOT = {
+					is_core_of = ROOT
+				}
+			}
+		}
+
+		cost = 150
+
+		fire_only_once = yes
+
+		visible = {
+			FROM = {
+				NOT = {
+					is_core_of = ROOT
+				}
+			}
+		}
+
+		available = {
+			has_full_control_of_state = FROM
+			owns_state = FROM
+			FROM = {
+				compliance > 95
+                resistance < 45
+			}
+		}
+
+		ai_will_do = {
+			base = 10
+		}
+
+		days_remove = 120
+
+		modifier = {
+			political_power_factor = -0.1
+            consumer_goods_factor = 0.15
+		}
+
+		remove_effect = {
+			FROM = {
+				add_core_of = ROOT
+			}
+		}
+	}
+}

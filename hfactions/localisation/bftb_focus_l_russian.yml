@@ -15,6 +15,8 @@
  brf_carriers:0 "Авианосцы"
  brf_finish_buildup:0 "Завершить развитие"
  brf_elections:0 "Провести выборы"
+ rebels_event:0 "§RЧерез 100 дней партия State Finset начнёт бунтовать.§!"
+ rebels_have_risen:0 "Приверженцы §Y'State Finset'§! бунтуют"
  brf_boreas_research_facility:0 "Boreas Research Facility"
  brf_beginning_research:0 "Начальные исследования"
  brf_rocketry:0 "Ракетные исследования"

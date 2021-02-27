@@ -1634,7 +1634,7 @@ focus_tree = {
 		icon = GFX_goal_generic_attack_allies
 		cost = 3,00
 		available = {
-			has_war_support = 100
+			has_war_support = 1
 		}
 		bypass = {
 			NOT = { country_exists = GSR }

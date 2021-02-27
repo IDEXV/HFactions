@@ -1307,7 +1307,7 @@ fascism_on_the_rise = {
 
 		available = {
 			has_country_flag = military_support_for_fascist_civil_war
-			has_equipment = { Cat_INF_WEP > 1000 }
+			has_equipment = { infantry_weapons4 > 1000 }
 			command_power > 2
 		}
 
@@ -1329,7 +1329,7 @@ fascism_on_the_rise = {
 		complete_effect = {
 			add_command_power = -2
 			add_equipment_to_stockpile = {
-				type = Cat_INF_WEP
+				type = infantry_weapons4
 				amount = -1000
 			}
 			set_country_flag = siphoned_equipment_stockpiles_for_civil_war
@@ -1876,7 +1876,7 @@ democratic_on_the_rise = {
 
 		available = {
 			has_country_flag = military_support_for_democratic_civil_war
-			has_equipment = { Cat_INF_WEP > 1000 }
+			has_equipment = { infantry_weapons4 > 1000 }
 			command_power > 2
 		}
 
@@ -1898,7 +1898,7 @@ democratic_on_the_rise = {
 		complete_effect = {
 			add_command_power = -2
 			add_equipment_to_stockpile = {
-				type = Cat_INF_WEP
+				type = infantry_weapons4
 				amount = -1000
 			}
 			set_country_flag = siphoned_equipment_stockpiles_for_civil_war
@@ -2443,7 +2443,7 @@ communism_on_the_rise = {
 
 		available = {
 			has_country_flag = military_support_for_communist_civil_war
-			has_equipment = { Cat_INF_WEP > 1000 }
+			has_equipment = { infantry_weapons4 > 1000 }
 			command_power > 2
 		}
 
@@ -2465,7 +2465,7 @@ communism_on_the_rise = {
 		complete_effect = {
 			add_command_power = -2
 			add_equipment_to_stockpile = {
-				type = Cat_INF_WEP
+				type = infantry_weapons4
 				amount = -1000
 			}
 			set_country_flag = siphoned_equipment_stockpiles_for_civil_war
