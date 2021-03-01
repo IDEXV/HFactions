@@ -76,29 +76,26 @@ focus_tree = {
 		icon = GFX_goal_generic_political_pressure
 		cost = 3,00
 		available = {
-			NOT = { country_exists = NDF }
 			has_completed_focus = brf_boreas_research_facility
-			NOT = {
-				any_state = {
-					is_core_of = NDF
-						NOT = {
-						is_owned_by = ROOT
+			has_completed_focus = brf_code_red
+			OR = {
+				NDF = {
+					has_government = democratic
+				}
+				NOT = {
+					any_state = {
+						is_core_of = NDF
 					}
+					NOT = {
+						is_owned_by = ROOT
 				}
 			}
 		}
+		}
 		completion_reward = {
-			every_state = {
-				limit = {
-					is_core_of = NDF
-				}
-				add_core_of = BRF
-			}
-			add_stability = 0.1
+			add_stability = 0.3
+			add_war_support = -0.2
 			add_manpower = 100000
-			NDF = {	
-				become_exiled_in = { target = BRF legitimacy = 0.4 }
-			}
 		}
 		x = 16
 		y = 12
@@ -1682,6 +1679,9 @@ focus_tree = {
 		id = brf_destroy_lom
 		icon = GFX_goal_generic_major_war
 		cost = 5,00
+		available = {
+			NOT = { country_exists = GSR }
+		}
 		bypass = {
 			NOT = { country_exists = LOM }
 		}
@@ -1903,12 +1903,17 @@ focus_tree = {
 		icon = GFX_goal_generic_attack_allies
 		cost = 5,00
 		available = {
-			NDF = {
-				has_wargoal_against = BRF
+			GSR = {
+				has_opinion = {
+				target = BRF
+				value > 99
+				}
 			}
 		}
 		bypass = {
-			NOT = { country_exists = NDF }
+			NDF = {
+				has_war_with = BRF
+			}
 		}
 		prerequisite = {
 			focus = brf_oog_creation
@@ -1937,6 +1942,9 @@ focus_tree = {
 		id = brf_destroy_finset
 		icon = GFX_goal_generic_major_war
 		cost = 5,00
+		available = {
+			NOT = { country_exists = GSR }
+		}
 		bypass = {
 			NOT = { country_exists = CMB }
 		}
@@ -1957,6 +1965,9 @@ focus_tree = {
 		id = brf_destroy_vcc
 		icon = GFX_goal_generic_major_war
 		cost = 5,00
+		available = {
+			NOT = { country_exists = GSR }
+		}
 		bypass = {
 			NOT = { country_exists = VCC }
 		}
@@ -1977,6 +1988,9 @@ focus_tree = {
 		id = brf_destroy_dut
 		icon = GFX_goal_generic_major_war
 		cost = 5,00
+		available = {
+			NOT = { country_exists = GSR }
+		}
 		bypass = {
 			NOT = { country_exists = DUT }
 		}

@@ -81,4 +81,13 @@ units = {
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
 	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 3151
+		division_template = "UUD National Guard"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
 }

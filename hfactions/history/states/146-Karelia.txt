@@ -5,8 +5,8 @@ state={
 	state_category = town
 
 	history={
-		owner = GSR
-		add_core_of = GSR		
+		owner = UUD
+		add_core_of = UUD		
 		
 		buildings = {
 			infrastructure = 5

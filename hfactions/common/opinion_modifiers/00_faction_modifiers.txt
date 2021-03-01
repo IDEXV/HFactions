@@ -86,6 +86,14 @@ opinion_modifiers = {
 		value = 100
 	}
 
+	vcc_rus_conflict = {
+		value = -200
+	}
+
+	vcc_rus_conflict2 = {
+		value = -200
+	}
+
 	hostile_status = { #special used for civil wars that are on hold and blocks faction stuff
 		value = -100
 	}

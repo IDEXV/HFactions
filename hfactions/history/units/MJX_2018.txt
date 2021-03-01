@@ -1,0 +1,93 @@
+division_template = {
+	name = "MJX23 Infantry"
+
+	regiments = {
+		L_Inf_Bat = { x = 0 y = 0 }
+		L_Inf_Bat = { x = 0 y = 1 }
+		L_Inf_Bat = { x = 0 y = 2 }
+		L_Inf_Bat = { x = 1 y = 0 }
+		L_Inf_Bat = { x = 1 y = 1 }
+	}
+	support = {
+		L_Engi_Comp = { x = 0 y = 0 }
+		SP_AA_Battery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "MJX23 National Guard"
+
+	regiments = {
+		L_Inf_Bat = { x = 0 y = 0 }
+		L_Inf_Bat = { x = 0 y = 1 }
+		L_Inf_Bat = { x = 0 y = 2 }
+		L_Inf_Bat = { x = 1 y = 0 }
+	}
+}
+division_template = {
+	name = "MJX23 Armoured Division"
+
+	regiments = {
+		Mech_Inf_Bat = { x = 0 y = 0 }
+	    	Mech_Inf_Bat = { x = 0 y = 1 }
+		Mech_Inf_Bat = { x = 0 y = 2 }
+		Mech_Inf_Bat = { x = 1 y = 0 }
+		Mech_Inf_Bat = { x = 1 y = 1 }
+		Mech_Inf_Bat = { x = 1 y = 2 }
+		Mech_Inf_Bat = { x = 2 y = 0 }
+	    	Mech_Inf_Bat = { x = 2 y = 1 }
+		Mech_Inf_Bat = { x = 2 y = 2 }
+		Mech_Inf_Bat = { x = 3 y = 0 }
+	    	Mech_Inf_Bat = { x = 3 y = 1 }
+	}
+	support = {
+	 	SP_AA_Battery = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 12704
+		division_template = "MJX23 National Guard"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division = {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 12832
+		division_template = "MJX23 National Guard"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division = {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 12788
+		division_template = "MJX23 National Guard"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division = {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 8013
+		division_template = "MJX23 National Guard"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+	division = {	
+		division_name = {
+				is_name_ordered = yes
+		}
+		location = 4891
+		division_template = "MJX23 National Guard"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+}

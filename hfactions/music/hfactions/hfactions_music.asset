@@ -53,3 +53,21 @@ music = {
 	file = "title9.ogg"
 	volume = 1
 }
+
+music = {
+	name = "collateral"
+	file = "collateral.ogg"
+	volume = 1
+}
+
+music = {
+	name = "danger_close"
+	file = "danger_close.ogg"
+	volume = 1
+}
+
+music = {
+	name = "kne"
+	file = "kne.ogg"
+	volume = 1
+}

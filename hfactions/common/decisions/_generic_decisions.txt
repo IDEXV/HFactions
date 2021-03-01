@@ -853,7 +853,7 @@ party_actions = {
 		}
 
 		modifier = {
-			democratic_drift = -100
+			democratic_drift = -2
 		}
 
 		days_remove = -1
@@ -879,7 +879,7 @@ party_actions = {
 		}
 
 		available = {
-			communism < 0.2
+			communism < -0.2
         }
 	
 		remove_trigger = {
@@ -889,7 +889,7 @@ party_actions = {
 		}
 
 		modifier = {
-			communism_drift = -100
+			communism_drift = -2
 		}
 
 		days_remove = -1
@@ -925,7 +925,7 @@ party_actions = {
 		}
 
 		modifier = {
-			fascism_drift = -100
+			fascism_drift = -2
 		}
 
 		days_remove = -1
@@ -961,7 +961,7 @@ party_actions = {
 		}
 
 		modifier = {
-			neutrality_drift = -100
+			neutrality_drift = -2
 		}
 
 		days_remove = -1

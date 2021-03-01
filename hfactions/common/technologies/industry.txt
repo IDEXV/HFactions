@@ -2239,7 +2239,7 @@ technologies = {
 	DNA_fingerprinting = {
 		research_cost = 1.5
 		start_year = 1985
-		stability_weekly = 0.2
+		stability_weekly = 0.05
 
 		on_research_complete = {
 			log = "[GetDateText]: [Root.GetName]: add tech DNA_fingerprinting"

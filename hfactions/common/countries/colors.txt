@@ -40,6 +40,18 @@ MBA = {
 	color = RGB { 143 117 0 }
 	color_ui = RGB { 143 117 0 }
 }
+FON = {
+	color = RGB { 68 148 74 }
+	color_ui = RGB { 68 148 74 }
+}
+NDC = {
+	color = RGB { 193 0 32 }
+	color_ui = RGB { 193 0 32 }
+}
+MJX = {
+	color = RGB { 23 128 109 }
+	color_ui = RGB { 23 128 109 }
+}
 SCA = {
 	color = RGB { 6 122 45 }
 	color_ui = RGB { 6 122 45 }

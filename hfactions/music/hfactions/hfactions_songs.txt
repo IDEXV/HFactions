@@ -81,3 +81,30 @@ music = {
 		}		
 	}
 }
+
+music = {
+	song = "collateral"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+
+music = {
+	song = "danger_close"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+
+music = {
+	song = "kne"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}

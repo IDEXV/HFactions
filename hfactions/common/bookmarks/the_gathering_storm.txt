@@ -81,6 +81,7 @@ bookmarks = {
 			ideology = communism
 			ideas={
 				absolute_power
+				soul_of_organization
 			}
 			focuses = {
 			}

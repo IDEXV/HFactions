@@ -273,8 +273,6 @@ Militia_generic = {
 				factor = 0
 				OR = {
 					is_major = yes
-					has_idea = NATO_member
-					has_idea = sco_member
 				}
 			}
 			modifier = {
@@ -358,8 +356,6 @@ Militia_generic = {
 				factor = 0
 				OR = {
 					is_major = yes
-					has_idea = NATO_member
-					has_idea = sco_member
 				}
 			}
 			modifier = {
@@ -448,8 +444,6 @@ Militia_generic = {
 				factor = 0
 				OR = {
 					is_major = yes
-					has_idea = NATO_member
-					has_idea = sco_member
 				}
 			}
 			modifier = {
@@ -1745,25 +1739,14 @@ mechanized_generic = {
 			}
 			modifier = { #Use like normal
 				factor = 1
-				NOT = {
-					has_idea = great_power
-					has_idea = large_power
-					has_idea = superpower
-					is_major = yes
-				}
 			}
 			modifier = { #Half as likely
 				factor = 0.50
-				OR = {
-					has_idea = great_power
-					has_idea = large_power
-				}
 			}
 			modifier = { #If Major Ignore Brigades
 				factor = 0
 				OR = {
 					is_major = yes
-					has_idea = superpower
 				}
 			}
 			modifier = { #Ignore brigades if you have more than 75 factories
@@ -1866,24 +1849,16 @@ mechanized_generic = {
 			modifier = { #Use like normal
 				factor = 1
 				NOT = {
-					has_idea = great_power
-					has_idea = large_power
-					has_idea = superpower
 					is_major = yes
 				}
 			}
 			modifier = { #50% more likely
 				factor = 1.50
-				OR = {
-					has_idea = great_power
-					has_idea = large_power
-				}
 			}
 			modifier = { #
 				factor = 5
 				OR = {
 					is_major = yes
-					has_idea = superpower
 				}
 			}
 			modifier = { #Ignore brigades if you have more than 75 factories
@@ -1988,24 +1963,16 @@ mechanized_generic = {
 			modifier = { #Use like normal
 				factor = 1
 				NOT = {
-					has_idea = great_power
-					has_idea = large_power
-					has_idea = superpower
 					is_major = yes
 				}
 			}
 			modifier = { #Half as likely
 				factor = 0.50
-				OR = {
-					has_idea = great_power
-					has_idea = large_power
-				}
 			}
 			modifier = { #If Major Ignore Brigades
 				factor = 0
 				OR = {
 					is_major = yes
-					has_idea = superpower
 				}
 			}
 			modifier = { #Ignore brigades if you have more than 75 factories
@@ -2134,24 +2101,16 @@ mechanized_generic = {
 			modifier = { #Use like normal
 				factor = 1
 				NOT = {
-					has_idea = great_power
-					has_idea = large_power
-					has_idea = superpower
 					is_major = yes
 				}
 			}
 			modifier = { #50% more likely
 				factor = 1.50
-				OR = {
-					has_idea = great_power
-					has_idea = large_power
-				}
 			}
 			modifier = { #
 				factor = 5
 				OR = {
 					is_major = yes
-					has_idea = superpower
 				}
 			}
 			modifier = { #Ignore brigades if you have more than 75 factories

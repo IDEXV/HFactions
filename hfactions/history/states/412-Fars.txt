@@ -10,8 +10,8 @@ state={
 
 	state_category = rural
 	history={
-		owner = GSR
-		add_core_of = GSR
+		owner = MJX
+		add_core_of = MJX
 
 		victory_points = {
 			8117 3 

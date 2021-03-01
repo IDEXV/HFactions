@@ -9,11 +9,14 @@ oob = "VCC_2018"
 
 add_ideas = {
 	absolute_power
+	soul_of_organization
 }
 set_convoys = 20
 set_research_slots = 3
 set_stability = 0.7
 set_war_support = 0.5
+
+add_opinion_modifier = { target = RUS modifier = vcc_rus_conflict2 }	
 
 set_autonomy = {
 	target = UUD
@@ -184,10 +187,6 @@ set_technology = {
 }
 
 2020.1.1 = {
-
-	add_ideas = {
-		soul_of_organization
-	}
 	
 	#generic focuses
 	complete_national_focus = army_effort

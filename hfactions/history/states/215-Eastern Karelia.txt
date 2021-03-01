@@ -6,8 +6,8 @@ state={
 	}
 
 	history={
-		owner = GSR
-		add_core_of = GSR
+		owner = FON
+		add_core_of = FON
 		
 		buildings = {
 			infrastructure = 3
