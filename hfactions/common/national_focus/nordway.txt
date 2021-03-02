@@ -45,7 +45,7 @@ focus_tree = {
 							load_oob = "NDC_2018"
 							declare_war_on = {
 								target = NDF
-								type = topple_government
+								type = civil_war
 							}
 						}
 					}
