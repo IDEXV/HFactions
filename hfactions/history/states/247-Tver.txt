@@ -6,9 +6,9 @@ state={
 	state_category = town
 
 	history={
-		owner = VCC
-		add_core_of = VCC
-		add_claim_by = RUS
+		owner = RUS
+		add_core_of = RUS
+		add_claim_by = VCC
 		
 		victory_points = {
 			6245 10 
