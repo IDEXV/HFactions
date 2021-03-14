@@ -38,8 +38,18 @@ ideas = {
 			removal_cost = -1
 
             modifier = {
-				war_support_weekly = -0.3
+				war_support_weekly = -0.5
+				stability_weekly = -0.5
+				political_power_factor = -0.5
+				hidden_effect = {
+					ai_focus_peaceful_factor = 1
+				}
             }
+			
+			rule = {
+				can_create_factions = no
+				can_join_factions = no
+			}
 		}
     }
 }

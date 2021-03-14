@@ -1,0 +1,60 @@
+add_namespace = vcc_red_event
+
+country_event = {
+	id = vcc_red_event.1
+    title = vcc_red_event.0.d
+    desc = vcc_red_event_desc.0.d
+	picture = GFX_report_event_generic_riot # Image displayed alongside the text.
+
+	is_triggered_only = yes
+	
+	option = {
+		name = vcc_red_event_option.1.a
+        ai_chance = { factor = 50 }
+        add_stability = 0.4
+        add_war_support = 0.3
+        add_manpower = 100000
+        add_political_power = 50
+		add_popularity = {
+			ideology = communism
+			popularity = 1
+		}
+        set_politics = {
+			ruling_party = communism
+		}
+	}
+    option = {
+		name = vcc_red_event_option.1.b
+        ai_chance = { factor = 50 }
+		random_list = {
+			50 = {
+                add_stability = -1
+                add_war_support = -1
+                add_political_power = -150
+                add_popularity = {
+                    ideology = communism
+                    popularity = 0.7
+                }
+                start_civil_war = {
+    			    ideology = communism
+    			    size = 0.8
+			    }               
+			}
+			50 = {
+                add_stability = 0.3
+                add_war_support = 0.2
+                add_political_power = -50
+                add_popularity = {
+                    ideology = communism
+                    popularity = -0.7
+                }
+                VCC = {
+                    create_wargoal = {
+                        type = topple_government
+                        target = ROOT
+                    }
+                }
+			}
+		}
+	}
+}

@@ -12,18 +12,17 @@ bookmarks = {
 			ideology = democratic
 			ideas={
 				friendly_army
-				soul_of_organization
 			}
 			focuses = {
 				ndf_militarism
 				ndf_cj_past
+				ndf_Finset_on_the_rise
 			}
 		}
 		"BRF" = {
 			history = BRF_WARZONE_DESC
 			ideology = neutrality
 			ideas={
-				soul_of_organization
 				increased_war_production
 				brf_agency
 			}
@@ -35,7 +34,6 @@ bookmarks = {
 			history = REX_WARZONE_DESC
 			ideology = neutrality
 			ideas={
-				soul_of_gang
 				unstability
 			}
 			focuses = {
@@ -45,7 +43,6 @@ bookmarks = {
 			history = GSR_WARZONE_DESC
 			ideology = neutrality
 			ideas={
-				soul_of_organization
 				three_leaders
 			}
 			focuses = {
@@ -55,7 +52,6 @@ bookmarks = {
 			history = DUT_WARZONE_DESC
 			ideology = fascism
 			ideas={
-				soul_of_organization
 				heavy_military
 			}
 			focuses = {
@@ -65,7 +61,6 @@ bookmarks = {
 			history = LOM_WARZONE_DESC
 			ideology = neutrality
 			ideas={
-				soul_of_organization
 				disorganization
 			}
 			focuses = {
@@ -75,10 +70,12 @@ bookmarks = {
 			history = VCC_WARZONE_DESC
 			ideology = communism
 			ideas={
-				soul_of_organization
 				absolute_power
 			}
 			focuses = {
+				Fascism
+				Communism
+				Neutral
 			}
 		}
 

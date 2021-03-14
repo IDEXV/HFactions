@@ -220,6 +220,7 @@ focus_tree = {
 						}
 					add_stability = 0.05
 					random_owned_controlled_state = {
+						add_extra_state_shared_building_slots = 4
 							add_building_construction = {
 									type = infrastructure
 									level = 4
@@ -255,6 +256,24 @@ focus_tree = {
 						NDC = {
 							retire_country_leader = yes
 						}
+						DUT = {
+							create_country_leader = {
+    							name = "Danil Plaksin"
+   								desc = "LEADER_DANIL_DESC"
+    							picture = "gfx/leaders/DUT/portrait_dut_danil.dds"
+    							expire = "2050.1.1"
+    							ideology = nazism
+    						traits = {
+        						dictator
+								warmonger
+								national_integralist
+								nationalist_symbol
+								#
+								dislikes_gsr
+								dislikes_brf
+    							}
+							}
+						}
 					}
 					add_stability = 0.2
 					add_war_support = 0.2
@@ -271,6 +290,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = ndf_cj_past
+			focus = ndf_Finset_on_the_rise
 		}
 		x = 6
 		y = 5
@@ -538,6 +558,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = ndf_militarism
+			focus = ndf_Finset_on_the_rise
 		}
 		x = 15
 		y = 5
@@ -4060,6 +4081,1378 @@ focus_tree = {
 		}
 		x = 19
 		y = 27
+
+	}
+	focus = {
+		id = ndf_Finset_on_the_rise
+		icon = GFX_goal_support_democracy
+		prerequisite = {
+			focus = ndf_new_leaders
+		}
+		mutually_exclusive = {
+			focus = ndf_cj_past
+			focus = ndf_militarism
+		}
+		completion_reward = {
+			add_war_support = -0.2
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = no
+			}
+		}
+		cost = 2,00
+		x = 28
+		y = 5
+
+	}
+	focus = {
+		id = ndf_he_izerstan_conspiracy
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		cost = 3,00
+		prerequisite = {
+			focus = ndf_Finset_on_the_rise
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = -0.2
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+		}
+		x = 28
+		y = 6
+
+	}
+	focus = {
+		id = ndf_warehouse_finset
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 3,00
+		prerequisite = {
+			focus = ndf_he_izerstan_conspiracy
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_weapons4
+				amount = 50000
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}			
+		}
+		x = 26
+		y = 7
+
+	}
+	focus = {
+		id = ndf_supply_of_weapons
+		icon = GFX_goal_generic_small_arms
+		cost = 3,00
+		prerequisite = {
+			focus = ndf_warehouse_finset
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			add_stability = -0.1
+			add_equipment_to_stockpile = {
+				type = infantry_weapons4
+				amount = 100000
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_1
+				amount = 50000
+			}
+			add_equipment_to_stockpile = {
+				type = SP_R_arty_1
+				amount = 50000
+			}
+		}
+		x = 26
+		y = 8
+
+	}
+	focus = {
+		id = ndf_our_in_politics
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 2,00
+		prerequisite = {
+			focus = ndf_he_izerstan_conspiracy
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = -0.1
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+			custom_effect_tooltip = sladb_unlocked			
+		}
+		x = 28
+		y = 7
+
+	}
+	focus = {
+		id = ndf_support_of_the_people
+		icon = GFX_goal_support_democracy
+		cost = 2,00
+		prerequisite = {
+			focus = ndf_he_izerstan_conspiracy
+		}
+		completion_reward = {
+			add_stability = 0.2
+			add_war_support = -0.2
+			add_manpower = 50000
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.2
+			}
+		}
+		x = 30
+		y = 7
+
+	}
+	focus = {
+		id = ndf_civil_guards
+		icon = GFX_focus_generic_little_entente
+		cost = 3,00
+		prerequisite = {
+			focus = ndf_support_of_the_people
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.1
+			add_manpower = 100000
+			custom_effect_tooltip = civil_protection_spawn
+			hidden_effect = {
+				load_oob = "NDF_GUARDS"				
+			}
+		}
+		x = 30
+		y = 8
+
+	}
+	focus = {
+		id = ndf_finset_path_of_war
+		icon = GFX_goal_generic_territory_or_war
+		cost = 2,00
+		prerequisite = {
+			focus = ndf_civil_guards
+		}
+		prerequisite = {
+			focus = ndf_supply_of_weapons
+		}
+		prerequisite = {
+			focus = ndf_our_in_politics
+		}
+		completion_reward = {
+			add_stability = -0.2
+			add_war_support = 0.2
+			add_manpower = 50000
+			add_command_power = 50
+			army_experience = 20
+			air_experience = 20
+		}
+		x = 28
+		y = 9
+
+	}
+	focus = {
+		id = ndf_neutral_policy
+		icon = GFX_goal_generic_alliance
+		cost = 2,00
+		prerequisite = {
+			focus = ndf_new_reforms
+		}
+		completion_reward = {
+			add_stability = 0.3
+			add_war_support = -0.4
+			add_ideas = {
+				fns_neutrality_idea
+			}
+		}
+		x = 28
+		y = 13
+
+	}
+	focus = {
+		id = ndf_industry_development
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 4,00
+		prerequisite = {
+			focus = ndf_new_reforms
+		}
+		completion_reward = {
+			add_stability = 0.05
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}		
+		}
+		x = 26
+		y = 13
+
+	}
+	focus = {
+		id = ndf_Army_development
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 3,00
+		prerequisite = {
+			focus = ndf_new_reforms
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_tech_bonus = {
+				name = infantry
+				bonus = 1.0
+				uses = 1
+				category = Cat_INF_WEP
+			}
+			add_tech_bonus = {
+				name = land_doctrine
+				bonus = 2
+				uses = 1
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				name = air_doctrine
+				bonus = 2
+				uses = 1
+				category = air_doctrine
+			}		
+		}
+		x = 30
+		y = 13
+
+	}
+	focus = {
+		id = ndf_more_factories
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 4,00
+		prerequisite = {
+			focus = ndf_industry_development
+		}
+		completion_reward = {
+			add_stability = 0.05
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}	
+		}
+		x = 26
+		y = 14
+
+	}
+	focus = {
+		id = ndf_More_factories_2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 4,00
+		prerequisite = {
+			focus = ndf_more_factories
+		}
+		completion_reward = {
+			add_stability = 0.05
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}	
+		}
+		x = 26
+		y = 15
+
+	}
+	focus = {
+		id = ndf_the_future_will_show
+		icon = GFX_goal_generic_political_pressure
+		cost = 3,00
+		prerequisite = {
+			focus = ndf_izerstan_in_power
+		}
+		completion_reward = {
+			add_stability = 0.2
+			add_war_support = -0.2
+			add_political_power = -50
+			add_manpower = -50000
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.2
+			}
+			add_ideas = {
+				beasts_in_cage
+			}
+		}
+		x = 29
+		y = 11
+
+	}
+	focus = {
+		id = ndf_new_reforms
+		icon = GFX_focus_generic_treaty
+		cost = 2,00
+		available = {
+			NOT = { has_country_flag = nc_are_fighting }
+		}
+		prerequisite = {
+			focus = ndf_the_future_will_show
+		}
+		prerequisite = {
+			focus = ndf_quell_the_riots
+		}
+		completion_reward = {
+			add_stability = 0.3
+			add_war_support = 0.3
+			add_political_power = 100
+			add_command_power = 50
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.5
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = -1
+			}
+		}
+		x = 28
+		y = 12
+
+	}
+	focus = {
+		id = ndf_combat_ready_army
+		icon = GFX_goal_generic_army_doctrines
+		cost = 3,00
+		prerequisite = {
+			focus = ndf_Army_development
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_tech_bonus = {
+				name = infantry
+				bonus = 1.0
+				uses = 1
+				category = Cat_INF_WEP
+			}
+			add_tech_bonus = {
+				name = support
+				bonus = 1.0
+				uses = 1
+				category = Cat_ARTY
+			}
+			add_tech_bonus = {
+				name = land_doctrine
+				bonus = 2
+				uses = 1
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				name = air_doctrine
+				bonus = 2
+				uses = 1
+				category = air_doctrine
+			}
+		}
+		x = 30
+		y = 14
+
+	}
+	focus = {
+		id = ndf_motorized_division
+		icon = GFX_goal_generic_army_motorized
+		cost = 3,00
+		prerequisite = {
+			focus = ndf_motorization
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_AFV
+			}
+			custom_effect_tooltip = motorized_infantry_spawn
+			hidden_effect = {
+				load_oob "NDF_MOTOR"
+			}			
+		}
+		x = 32
+		y = 15
+
+	}
+	focus = {
+		id = ndf_motorization
+		icon = GFX_goal_generic_army_tanks
+		cost = 3,00
+		prerequisite = {
+			focus = ndf_Army_development
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = Cat_APC
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = Cat_AMPH_APC
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = Cat_AIR_APC
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = Cat_UTIL
+			}
+		}
+		x = 32
+		y = 14
+
+	}
+	focus = {
+		id = ndf_weapons_supply
+		icon = GFX_goal_generic_small_arms
+		cost = 3,00
+		prerequisite = {
+			focus = ndf_combat_ready_army
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_equipment_to_stockpile = {
+				type = infantry_weapons4
+				amount = 100000
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_1
+				amount = 50000
+			}
+			add_equipment_to_stockpile = {
+				type = SP_R_arty_1
+				amount = 50000
+			}
+		}
+		x = 30
+		y = 15
+
+	}
+	focus = {
+		id = ndf_Time_to_go_home
+		icon = GFX_goal_generic_secret_weapon
+		cost = 2,00
+		prerequisite = {
+			focus = ndf_neutral_policy
+		}
+		completion_reward = {
+			add_stability = 0.2
+			add_war_support = -0.5
+			delete_unit_template_and_units = {
+    			division_template = "Nordway Infantry"
+    			disband = yes #will refund equipment and manpower
+			}
+			delete_unit_template_and_units = {
+    			division_template = "Nordway National Guard"
+    			disband = yes #will refund equipment and manpower
+			}
+			delete_unit_template_and_units = {
+    			division_template = "Nordway Armoured Division"
+    			disband = yes #will refund equipment and manpower
+			}
+		}
+		x = 28
+		y = 14
+
+	}
+	focus = {
+		id = ndf_we_are_not_alone
+		icon = GFX_goal_generic_improve_relations
+		cost = 2,00
+		prerequisite = {
+			focus = ndf_Time_to_go_home
+		}
+		completion_reward = {
+			add_stability = -0.1
+			add_war_support = 0.2
+			add_ideas = {
+				alone_buff
+			}
+		}
+		x = 28
+		y = 15
+
+	}
+	focus = {
+		id = ndf_what_we_fought_for
+		icon = GFX_goal_generic_political_pressure
+		cost = 1,00
+		prerequisite = {
+			focus = ndf_our_policy
+		}
+		mutually_exclusive = {
+			focus = ndf_izerstan_plan
+		}
+		completion_reward = {
+			add_stability = -0.4
+			add_war_support = 0.4
+			add_manpower = 100000
+		}
+		x = 31
+		y = 17
+
+	}
+	focus = {
+		id = ndf_izerstan_plan
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 1,00
+		prerequisite = {
+			focus = ndf_our_policy
+		}
+		mutually_exclusive = {
+			focus = ndf_what_we_fought_for
+		}
+		completion_reward = {
+			add_stability = 0.4
+			add_war_support = -0.4
+		}
+		x = 25
+		y = 17
+
+	}
+	focus = {
+		id = ndf_our_policy
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 2,00
+		prerequisite = {
+			focus = ndf_we_are_not_alone
+		}
+		prerequisite = {
+			focus = ndf_weapons_supply
+		}
+		prerequisite = {
+			focus = ndf_motorized_division
+		}
+		prerequisite = {
+			focus = ndf_More_factories_2
+		}
+		prerequisite = {
+			focus = ndf_more_military_factories_2
+		}
+		completion_reward = {
+			add_stability = 0.3
+			add_war_support = 0.2
+			add_political_power = 150
+			add_command_power = 20
+			army_experience = 20
+			air_experience = 20
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.2
+			}
+		}
+		x = 28
+		y = 16
+
+	}
+	focus = {
+		id = ndf_declare_yourself
+		icon = GFX_goal_generic_propaganda
+		cost = 2,00
+		prerequisite = {
+			focus = ndf_izerstan_plan
+		}
+		completion_reward = {
+			add_stability = 0.3
+			add_political_power = 200
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.5
+			}
+		}
+		x = 25
+		y = 18
+
+	}
+	focus = {
+		id = ndf_Radio_Broadcasting
+		icon = GFX_goal_generic_radar
+		cost = 2,00
+		prerequisite = {
+			focus = ndf_declare_yourself
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = radar_station
+					level = 2
+					instant_build = yes
+				}
+			}			
+		}
+		x = 25
+		y = 19
+
+	}
+	focus = {
+		id = ndf_Let_there_be_light
+		icon = GFX_focus_research
+		cost = 3,00
+		prerequisite = {
+			focus = ndf_declare_yourself
+		}
+		completion_reward = {
+			add_stability = 0.05
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = electronics
+            }  
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = Cat_FUEL_OIL
+            }    
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = computing_tech
+            }    
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = radar_tech
+            }
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = internet_tech
+            }
+		}
+		x = 27
+		y = 19
+
+	}
+	focus = {
+		id = ndf_Depth_of_knowledge
+		icon = GFX_focus_research2
+		cost = 4,00
+		prerequisite = {
+			focus = ndf_SRC
+		}
+		completion_reward = {
+			add_stability = 0.05
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = jet_technology
+            }
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = electronics
+            }
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = nuclear
+            }    
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = Cat_FUEL_OIL
+            }    
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = computing_tech
+            }    
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = radar_tech
+            }
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = internet_tech
+            }
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = jet_technology
+            }
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = electronics
+            }
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = nuclear
+            }    
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = Cat_FUEL_OIL
+            }    
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = computing_tech
+            }    
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = radar_tech
+            }
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = internet_tech
+            }
+		}
+		x = 23
+		y = 20
+
+	}
+	focus = {
+		id = ndf_Finset_Agency
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 3,00
+		prerequisite = {
+			focus = ndf_Radio_Broadcasting
+		}
+		completion_reward = {
+			add_ideas = {
+				fns_agency
+			}
+		}
+		x = 25
+		y = 20
+
+	}
+	focus = {
+		id = ndf_Nuclear_weapons
+		icon = GFX_focus_wonderweapons
+		cost = 5,00
+		prerequisite = {
+			focus = ndf_Let_there_be_light
+		}
+		completion_reward = {
+			add_war_support = 0.3
+			add_stability = -0.3
+            add_tech_bonus = {
+                bonus = 2
+                uses = 1
+                category = nuclear
+            }
+			add_nuclear_bombs = 5
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = nuclear_reactor
+					level = 1
+					instant_build = yes
+				}
+			}	
+		}
+		x = 27
+		y = 20
+
+	}
+	focus = {
+		id = ndf_Army_training
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 3,00
+		prerequisite = {
+			focus = ndf_we_dont_need_it
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			army_experience = 50
+			add_tech_bonus = {
+				name = infantry
+				bonus = 1.0
+				uses = 1
+				category = Cat_INF_WEP
+			}
+			add_tech_bonus = {
+				name = support
+				bonus = 1.0
+				uses = 1
+				category = Cat_ARTY
+			}
+			add_tech_bonus = {
+				name = land_doctrine
+				bonus = 2
+				uses = 1
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				name = air_doctrine
+				bonus = 2
+				uses = 1
+				category = air_doctrine
+			}			
+		}
+		x = 29
+		y = 19
+
+	}
+	focus = {
+		id = ndf_Establish_transport
+		icon = GFX_goal_generic_army_motorized
+		cost = 3,00
+		prerequisite = {
+			focus = ndf_we_dont_need_it
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = Cat_APC
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = Cat_AMPH_APC
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = Cat_AIR_APC
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = Cat_UTIL
+			}
+		}
+		x = 31
+		y = 19
+
+	}
+	focus = {
+		id = ndf_aviation
+		icon = GFX_goal_generic_air_fighter2
+		cost = 3,00
+		prerequisite = {
+			focus = ndf_we_dont_need_it
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_war_support = 0.05
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = Cat_H_AIR
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = Cat_FIGHTER
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = Cat_HELI
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = Cat_NAVAL_AIR
+			}
+		}
+		x = 33
+		y = 19
+
+	}
+	focus = {
+		id = ndf_ban_free_speech
+		icon = GFX_focus_usa_voter_registration_act
+		cost = 2,00
+		prerequisite = {
+			focus = ndf_strengthen_the_power
+		}
+		completion_reward = {
+			add_stability = -0.3
+			add_ideas = {
+				banned_speech
+			}
+		}
+		x = 24
+		y = 22
+
+	}
+	focus = {
+		id = ndf_the_Neutrality_Act
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 2,00
+		prerequisite = {
+			focus = ndf_strengthen_the_power
+		}
+		completion_reward = {
+			add_political_power = 150
+			add_ideas = {
+				political_stablesh
+			}
+		}
+		x = 26
+		y = 22
+
+	}
+	focus = {
+		id = ndf_strengthen_your_position
+		icon = GFX_goal_fortify_the_westwall
+		cost = 4,00
+		prerequisite = {
+			focus = ndf_this_is_war
+		}
+		completion_reward = {
+			add_war_support = 0.05
+					351 = {
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = {
+											all_provinces = yes
+											limit_to_border = yes
+										}
+								}
+						}
+					400 = {
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = {
+											all_provinces = yes
+											limit_to_border = yes
+										}
+								}
+						}
+					248 = {
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = {
+											all_provinces = yes
+											limit_to_border = yes
+										}
+								}
+						}
+					253 = {
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = {
+											all_provinces = yes
+											limit_to_border = yes
+										}
+								}
+						}
+		}
+		x = 29
+		y = 21
+
+	}
+	focus = {
+		id = ndf_theft_of_weapons
+		icon = GFX_goal_generic_small_arms
+		cost = 3,00
+		prerequisite = {
+			focus = ndf_this_is_war
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_equipment_to_stockpile = {
+				type = infantry_weapons4
+				amount = 100000
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_1
+				amount = 50000
+			}
+			add_equipment_to_stockpile = {
+				type = SP_R_arty_1
+				amount = 50000
+			}
+		}
+		x = 31
+		y = 21
+
+	}
+	focus = {
+		id = ndf_alpha_group
+		icon = GFX_goal_generic_special_forces
+		cost = 4,00
+		prerequisite = {
+			focus = ndf_this_is_war
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			custom_effect_tooltip = alpha_spawn
+			hidden_effect = {
+				load_oob = "NDF_ALPHA"
+			}
+		}
+		x = 33
+		y = 21
+
+	}
+	focus = {
+		id = ndf_delta_group
+		icon = GFX_focus_eng_special_air_service
+		cost = 4,00
+		prerequisite = {
+			focus = ndf_alpha_group
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			custom_effect_tooltip = delta_spawn
+			hidden_effect = {
+				load_oob = "NDF_DELTA"
+			}
+		}
+		x = 33
+		y = 22
+
+	}
+	focus = {
+		id = ndf_more_artillery
+		icon = GFX_goal_generic_army_artillery
+		cost = 3,00
+		prerequisite = {
+			focus = ndf_theft_of_weapons
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_tech_bonus = {
+				name = support
+				bonus = 2
+				uses = 1
+				category = Cat_ARTY
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_1
+				amount = 50000
+			}
+		}
+		x = 31
+		y = 22
+
+	}
+	focus = {
+		id = ndf_strengthen_the_center
+		icon = GFX_goal_generic_fortify_city
+		cost = 4,00
+		prerequisite = {
+			focus = ndf_strengthen_your_position
+		}
+		completion_reward = {
+			add_war_support = 0.05
+					253 = {
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = {
+											all_provinces = yes
+										}
+								}
+						}
+					248 = {
+							add_building_construction = {
+									type = bunker
+									level = 1
+									instant_build = yes
+									province = {
+											all_provinces = yes
+										}
+								}
+						}
+		}
+		x = 29
+		y = 22
+
+	}
+	focus = {
+		id = ndf_State_Finset
+		icon = GFX_goal_support_democracy
+		cost = 5,00
+		prerequisite = {
+			focus = ndf_the_Neutrality_Act
+		}
+		prerequisite = {
+			focus = ndf_ban_free_speech
+		}
+		completion_reward = {
+			add_stability = 0.5
+			add_war_support = -0.5
+			add_political_power = 50
+			add_command_power = 20
+			set_cosmetic_tag = NDF_state_finset
+		}
+		x = 25
+		y = 23
+
+	}
+	focus = {
+		id = ndf_Council_of_Parties
+		icon = GFX_goal_generic_improve_relations
+		cost = 5,00
+		prerequisite = {
+			focus = ndf_delta_group
+		}
+		prerequisite = {
+			focus = ndf_more_artillery
+		}
+		prerequisite = {
+			focus = ndf_strengthen_the_center
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_political_power = 150
+			add_command_power = 20
+			add_popularity = {
+				ideology = communism
+				popularity = 0.2
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.2
+			}
+		}
+		x = 31
+		y = 23
+
+	}
+	focus = {
+		id = ndf_quell_the_riots
+		icon = GFX_goal_generic_improve_relations
+		cost = 3,00
+		prerequisite = {
+			focus = ndf_izerstan_in_power
+		}
+		completion_reward = {
+			add_stability = 0.2
+			add_war_support = -0.2
+			add_political_power = -50
+			add_manpower = -50000
+			add_popularity = {
+				ideology = neutrality
+				popularity = -0.2
+			}
+		}
+		x = 27
+		y = 11
+
+	}
+	focus = {
+		id = ndf_izerstan_in_power
+		icon = GFX_focus_generic_military_academy
+		cost = 2,00
+		prerequisite = {
+			focus = ndf_finset_path_of_war
+		}
+		completion_reward = {
+			add_stability = 0.2
+			add_war_support = -0.4
+			add_political_power = 150
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.4
+			}
+			custom_effect_tooltip = fns_nc_conflict
+			hidden_effect = {
+				add_ideas = {
+					nordway_coalition_rebels
+				}
+				add_popularity = {
+					ideology = neutrality
+					popularity = 0.3
+				}
+				unlock_decision_category_tooltip = NDF_category_political_infighting
+				unlock_decision_tooltip = NDF_mission_nc_rebellion
+				unlock_decision_tooltip = NDF_peace_negotiations_with_nc
+				unlock_decision_tooltip = NDF_arrest_nc_members
+				unlock_decision_tooltip = NDF_ban_nc
+				set_country_flag = nc_are_fighting
+			}
+		}
+		x = 28
+		y = 10
+
+	}
+	focus = {
+		id = ndf_more_military
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 4,00
+		prerequisite = {
+			focus = ndf_industry_development
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}	
+		}
+		x = 24
+		y = 14
+
+	}
+	focus = {
+		id = ndf_more_military_factories_2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 4,00
+		prerequisite = {
+			focus = ndf_more_military
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+		x = 24
+		y = 15
+
+	}
+	focus = {
+		id = ndf_SRC
+		icon = GFX_focus_research2
+		cost = 4,00
+		prerequisite = {
+			focus = ndf_declare_yourself
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_AI
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_NFIBERS
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_3D
+			}	
+		}
+		x = 23
+		y = 19
+
+	}
+	focus = {
+		id = ndf_strengthen_the_power
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 3,00
+		prerequisite = {
+			focus = ndf_Depth_of_knowledge
+		}
+		prerequisite = {
+			focus = ndf_Finset_Agency
+		}
+		prerequisite = {
+			focus = ndf_Nuclear_weapons
+		}
+		completion_reward = {
+			add_ideas = {
+				enforced_politics
+			}
+		}
+		x = 25
+		y = 21
+
+	}
+	focus = {
+		id = ndf_we_dont_need_it
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 4,00
+		prerequisite = {
+			focus = ndf_what_we_fought_for
+		}
+		completion_reward = {
+			add_stability = -0.7
+			add_war_support = 0.5
+			kill_ideology_leader = democratic
+		}
+		x = 31
+		y = 18
+
+	}
+	focus = {
+		id = ndf_this_is_war
+		icon = GFX_goal_generic_major_war
+		cost = 2,00
+		prerequisite = {
+			focus = ndf_Army_training
+		}
+		prerequisite = {
+			focus = ndf_Establish_transport
+		}
+		prerequisite = {
+			focus = ndf_aviation
+		}
+		completion_reward = {
+			add_war_support = 0.2
+			add_stability = -0.1
+			add_ideas = {
+				this_is_war
+			}
+			remove_ideas = {
+				fns_neutrality_idea
+				alone_buff
+			}
+		}
+		x = 31
+		y = 20
 
 	}
 }

@@ -64,6 +64,16 @@ idea_categories = {
 		cost = 150
 		removal_cost = 0
 	}
+
+	organization_politics = {
+		slot = group_type
+		slot = focusing_on1
+
+		ledger = civilian
+		
+		cost = 300
+		removal_cost = 0		
+	}
 }
 
 

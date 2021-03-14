@@ -1,0 +1,2441 @@
+focus_tree = {
+	id = vuldemar
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = VCC
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 2000 y = 1100 }
+
+	reset_on_civilwar = no
+	initial_show_position = {
+		focus = Expansion
+	}
+	focus = {
+		id = Expansion
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 4,00
+		completion_reward = {
+			set_state_controller = 247
+			add_state_core = 247						
+			set_state_owner = 247
+			set_state_controller = 264
+			add_state_core = 264						
+			set_state_owner = 264
+			set_state_controller = 244
+			add_state_core = 244						
+			set_state_owner = 244
+			set_state_controller = 247
+			add_state_core = 247						
+			set_state_owner = 247
+			set_state_controller = 263
+			add_state_core = 263					
+			set_state_owner = 263
+			set_state_controller = 210
+			add_state_core = 210				
+			set_state_owner = 210
+			set_state_controller = 12
+			add_state_core = 12						
+			set_state_owner = 12
+			set_state_controller = 13
+			add_state_core = 13						
+			set_state_owner = 13
+			set_state_controller = 247
+			add_state_core = 247						
+			set_state_owner = 247
+			set_state_controller = 191
+			add_state_core = 191						
+			set_state_owner = 191
+			set_state_controller = 209
+			add_state_core = 209						
+			set_state_owner = 209
+			set_state_controller = 208
+			add_state_core = 208						
+			set_state_owner = 208
+		}
+		x = 13
+		y = 0
+
+	}
+	focus = {
+		id = Collaboration
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = {
+			focus = Expansion
+		}
+		mutually_exclusive = {
+			focus = Submission
+		}
+		available = {
+			country_exists = UUD
+			UUD = {
+				is_puppet_of = VCC
+			}
+		}
+		completion_reward = {
+			add_manpower = 15000
+			add_stability = 0.05
+			add_country_leader_trait = head_of_intelligence
+		}
+		cost = 2,00
+		x = 12
+		y = 2
+
+	}
+	focus = {
+		id = Submission
+		icon = GFX_focus_BUL_free_balkan_states
+		cost = 2,00
+		prerequisite = {
+			focus = Expansion
+		}
+		mutually_exclusive = {
+			focus = Collaboration
+		}
+		available = {
+			country_exists = UUD
+			UUD = {
+				is_puppet_of = VCC
+			}
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			UUD = {
+				add_autonomy_score = {
+    				value = -200
+    				localization = Submission
+				}
+			}
+		}
+		x = 14
+		y = 2
+
+	}
+	focus = {
+		id = Industrialization
+		icon = GFX_focus_generic_industry_3
+		cost = 4,00
+		prerequisite = {
+			focus = Expansion
+		}
+		completion_reward = {
+			add_stability = 0.05
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = infrastructure
+				level = 2
+				instant_build = yes
+				}
+			}			
+		}
+		x = 3
+		y = 1
+
+	}
+	focus = {
+		id = Demolition_Of_Abandoned
+		icon = GFX_goal_generic_construct_civilian
+		cost = 4,00
+		prerequisite = {
+			focus = Industrialization
+		}
+		completion_reward = {
+			add_stability = -0.05
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+				type = infrastructure
+				level = 4
+				instant_build = yes
+				}
+			}
+		}
+		x = 1
+		y = 2
+
+	}
+	focus = {
+		id = Purchase_Place
+		icon = GFX_goal_generic_fortify_city
+		cost = 5,00
+		prerequisite = {
+			focus = Demolition_Of_Abandoned
+		}
+		completion_reward = {
+			add_stability = 0.05
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+				type = infrastructure
+				level = 4
+				instant_build = yes
+				}
+			}
+		}
+		x = 1
+		y = 3
+
+	}
+	focus = {
+		id = Build_Fabric
+		icon = GFX_goal_generic_construction
+		cost = 4,00
+		prerequisite = {
+			focus = Industrialization
+		}
+		completion_reward = {
+			add_stability = 0.05
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+				type = industrial_complex
+				level = 4
+				instant_build = yes
+				}
+			}
+		}
+		x = 3
+		y = 2
+
+	}
+	focus = {
+		id = Build_Military_Fabric
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 4,00
+		prerequisite = {
+			focus = Industrialization
+		}
+		completion_reward = {
+			add_stability = 0.05
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+				type = arms_factory
+				level = 4
+				instant_build = yes
+				}
+			}
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = Build_Shipyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 4,00
+		prerequisite = {
+			focus = Industrialization
+		}
+		completion_reward = {
+			add_stability = 0.05
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+				type = dockyard
+				level = 4
+				instant_build = yes
+				}
+			}
+		}
+		x = 7
+		y = 2
+
+	}
+	focus = {
+		id = Nationalization
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		cost = 4,00
+		prerequisite = {
+			focus = Build_Fabric
+		}
+		prerequisite = {
+			focus = Build_Military_Fabric
+		}
+		prerequisite = {
+			focus = Build_Shipyards
+		}
+		mutually_exclusive = {
+			focus = Purchase
+		}
+		completion_reward = {
+			add_stability = -0.1
+			add_war_support = 0.2
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+				type = arms_factory
+				level = 4
+				instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+				type = dockyard
+				level = 4
+				instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+				type = industrial_complex
+				level = 4
+				instant_build = yes
+				}
+			}
+		}
+		x = 4
+		y = 3
+
+	}
+	focus = {
+		id = Purchase
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		cost = 3,00
+		prerequisite = {
+			focus = Build_Fabric
+		}
+		prerequisite = {
+			focus = Build_Military_Fabric
+		}
+		prerequisite = {
+			focus = Build_Shipyards
+		}
+		mutually_exclusive = {
+			focus = Nationalization
+		}
+		completion_reward = {
+			add_stability = 0.2
+			add_war_support = -0.1
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+				}
+			}
+		}
+		x = 6
+		y = 3
+
+	}
+	focus = {
+		id = Investment_In_Fabric
+		icon = GFX_focus_mex_privatisation
+		cost = 3,00
+		prerequisite = {
+			focus = Purchase
+			focus = Nationalization
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
+			}
+		}
+		x = 5
+		y = 4
+
+	}
+	focus = {
+		id = Agency
+		icon = GFX_focus_usa_build_the_pentagon
+		cost = 3,00
+		prerequisite = {
+			focus = Collaboration
+		}
+		available = {
+			country_exists = UUD
+			UUD = {
+				is_puppet_of = VCC
+			}
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_ideas = {
+				uud_agency
+			}
+			custom_effect_tooltip = uud_agency_creation
+			hidden_effect = {
+				create_intelligence_agency = yes
+			}
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = Agents
+		icon = GFX_focus_BUL_form_a_regency_council
+		cost = 3,00
+		prerequisite = {
+			focus = Agency
+		}
+		available = {
+			country_exists = UUD
+			UUD = {
+				is_puppet_of = VCC
+			}
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_ideas = {
+				uud_agents
+			}
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = Liberation
+		icon = GFX_goal_continuous_boost_freedom
+		cost = 5,00
+		prerequisite = {
+			focus = Agents
+		}
+		available = {
+			country_exists = UUD
+			UUD = {
+				is_puppet_of = VCC
+			}
+		}
+		completion_reward = {
+			add_stability = 0.1
+			set_autonomy = {
+    			target = UUD
+    			autonomy_state = autonomy_free
+			}			
+		}
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = Stabilization
+		icon = GFX_goal_generic_national_unity
+		cost = 3,00
+		prerequisite = {
+			focus = Expansion
+		}
+		completion_reward = {
+			add_stability = 0.2
+			add_war_support = 0.2
+			RUS = {
+				remove_state_core = 247						
+				remove_state_core = 264						
+				remove_state_core = 244						
+				remove_state_core = 247						
+				remove_state_core = 263					
+				remove_state_core = 210				
+				remove_state_core = 12						
+				remove_state_core = 13						
+				remove_state_core = 247						
+				remove_state_core = 191						
+				remove_state_core = 209						
+				remove_state_core = 208
+				remove_state_core = 246						
+			}			
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = Elections_2018
+		icon = GFX_focus_usa_voter_registration_act
+		cost = 2,00
+		available = {
+			has_completed_focus = Support_Main
+		}
+		prerequisite = {
+			focus = Stabilization
+		}
+		completion_reward = {
+			add_stability = 0.1
+			set_country_flag = elections_happened
+			country_event = {
+				id = vcc_elections.1
+			}
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = Support_Main
+		icon = GFX_goal_generic_demand_territory
+		cost = 3,00
+		prerequisite = {
+			focus = Stabilization
+		}
+		completion_reward = {
+			add_stability = 0.2
+			add_war_support = 0.2
+			add_political_power = 100
+		}
+		x = 14
+		y = 4
+
+	}
+	focus = {
+		id = Communism
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 1,00
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = Elections_2018
+		}
+		prerequisite = {
+			focus = Support_Main
+		}
+		mutually_exclusive = {
+			focus = Fascism
+			focus = Neutral
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_stability = 0.05
+			add_popularity = {
+				ideology = communism
+				popularity = 0.5
+			}
+		}
+		x = 13
+		y = 5
+
+	}
+	focus = {
+		id = Fascism
+		icon = GFX_focus_TUR_the_sun_language_theory
+		cost = 1,00
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = Elections_2018
+		}
+		prerequisite = {
+			focus = Support_Main
+		}
+		mutually_exclusive = {
+			focus = Communism
+			focus = Neutral
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_stability = 0.05
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.5
+			}
+		}
+		x = 11
+		y = 5
+
+	}
+	focus = {
+		id = For_Communism
+		icon = GFX_focus_generic_socialist_science
+		cost = 1,00
+		prerequisite = {
+			focus = Communism
+		}
+		available = {
+			communism > 0.5
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_research_slot = 1
+		}
+		x = 13
+		y = 6
+
+	}
+	focus = {
+		id = New_Friends
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		cost = 3,00
+		prerequisite = {
+			focus = For_Communism
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.1
+			every_neighbor_country = {
+				add_opinion_modifier = {
+					target = ROOT
+    				modifier = vcc_improved_relat
+				}
+				reverse_add_opinion_modifier = {
+					target = ROOT
+    				modifier = vcc_improved_relat
+				}
+			}
+		}
+		x = 12
+		y = 8
+
+	}
+	focus = {
+		id = More_Friends
+		icon = GFX_focus_chi_cooperation_with_the_communists
+		cost = 4,00
+		prerequisite = {
+			focus = New_Friends
+		}
+		available = {
+			communism = 1
+			has_stability > 0.7
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			create_faction = "Коминтерн"
+		}
+		x = 10
+		y = 9
+
+	}
+	focus = {
+		id = Operation_Red
+		icon = GFX_focus_generic_soviet_politics
+		cost = 5,00
+		available = {
+			has_completed_focus = Communism
+			has_intelligence_agency = yes
+			agency_upgrade_number > 5
+			has_war_support > 0.8
+			has_stability = 1
+			has_government = communism
+			has_country_leader = {
+    			name = "Viktor Vuldemar"
+   			 	ruling_only = yes
+			}
+			num_of_military_factories > 20
+			num_of_civilian_factories > 20
+			num_divisions > 50
+		}
+		completion_reward = {
+			add_war_support = 0.3
+			add_political_power = 200
+			add_manpower = 100000
+			add_popularity = {
+				ideology = communism
+				popularity = 1
+			}
+		}
+		x = 13
+		y = 12
+
+	}
+	focus = {
+		id = Prapoganda
+		icon = GFX_focus_por_workers_of_iberia
+		cost = 2,00
+		prerequisite = {
+			focus = Operation_Red
+		}
+		available = {
+			has_intelligence_agency = yes
+			has_done_agency_upgrade = upgrade_portable_radios
+			has_done_agency_upgrade = upgrade_psycho_warfare
+			has_done_agency_upgrade = upgrade_diplo_training
+			communism = 1
+		}
+		completion_reward = {
+			every_other_country = {
+				add_timed_idea = {
+    				idea = communist_propoganda
+    				days = 250
+				}
+			}
+		}
+		x = 13
+		y = 13
+
+	}
+	focus = {
+		id = Power
+		icon = GFX_focus_focus_fra_fascist_threat
+		cost = 2,00
+		prerequisite = {
+			focus = For_Communism
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_manpower = 50000
+			army_experience = 20
+			add_command_power = 50
+			air_experience = 20
+			navy_experience = 20
+		}
+		x = 14
+		y = 8
+
+	}
+	focus = {
+		id = Alpha
+		icon = GFX_focus_eng_special_air_service
+		cost = 3,00
+		prerequisite = {
+			focus = Power
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			custom_effect_tooltip = alpha_spawn2
+			hidden_effect = {
+				load_oob = "VCC_ALPHA"
+			}
+		}
+		x = 14
+		y = 9
+
+	}
+	focus = {
+		id = Integration
+		icon = GFX_focus_YUG_pan_slavic_congress
+		cost = 5,00
+		prerequisite = {
+			focus = Operation_Red
+		}
+		available = {
+			has_intelligence_agency = yes
+			has_done_agency_upgrade = upgrade_training_centers
+		}
+		completion_reward = {
+			add_ideas = {
+				decryption_buff
+			}
+		}
+		x = 15
+		y = 13
+
+	}
+	focus = {
+		id = Agents_Communism
+		icon = GFX_focus_generic_military_mission
+		cost = 3,00
+		prerequisite = {
+			focus = Operation_Red
+		}
+		available = {
+			has_intelligence_agency = yes
+		}
+		completion_reward = {
+			add_ideas = {
+				communist_agents
+			}
+		}
+		x = 11
+		y = 13
+
+	}
+	focus = {
+		id = Multi_Passer
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 4,00
+		prerequisite = {
+			focus = Prapoganda
+		}
+		prerequisite = {
+			focus = Integration
+		}
+		prerequisite = {
+			focus = Agents_Communism
+		}
+		available = {
+			has_intelligence_agency = yes
+			has_done_agency_upgrade = upgrade_commando_training
+			UKR = {
+				has_stability < 0.5
+			}
+		}
+		completion_reward = {
+			UKR = {
+				add_stability = -0.4
+				add_war_support = -0.3
+				leave_faction = yes
+			}			
+		}
+		x = 14
+		y = 14
+
+	}
+	focus = {
+		id = Tenacious
+		icon = GFX_focus_generic_aegean_sea_focus
+		cost = 3,00
+		prerequisite = {
+			focus = Submission
+		}
+		available = {
+			country_exists = UUD
+			UUD = {
+				is_puppet_of = VCC
+			}
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			UUD = {
+				add_autonomy_score = {
+    				value = -150
+    				localization = Tenacious
+				}
+			}
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = Neutral
+		icon = GFX_goal_generic_defence
+		cost = 1,00
+		available = {
+			always = no
+		}
+		prerequisite = {
+			focus = Support_Main
+		}
+		prerequisite = {
+			focus = Elections_2018
+		}
+		mutually_exclusive = {
+			focus = Fascism
+			focus = Communism
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_stability = 0.05
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.5
+			}
+		}
+		x = 15
+		y = 5
+
+	}
+	focus = {
+		id = For_Corporation
+		icon = GFX_focus_spa_the_spanish_miracle
+		cost = 4,00
+		prerequisite = {
+			focus = Neutral
+		}
+		mutually_exclusive = {
+			focus = This_Is_Normal
+		}
+		available = {
+			neutrality > 0.5
+		}
+		completion_reward = {
+			add_ideas = {
+				construction_buff
+			}
+		}
+		x = 15
+		y = 6
+
+	}
+	focus = {
+		id = Partners
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 3,00
+		prerequisite = {
+			focus = For_Corporation
+		}
+		completion_reward = {
+			create_faction = "Конфедерация Независимых Стран"
+		}
+		x = 15
+		y = 7
+
+	}
+	focus = {
+		id = Upgrade
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 4,00
+		prerequisite = {
+			focus = Power
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			custom_effect_tooltip = infantry_spawn
+			hidden_effect = {
+				load_oob = { VCC_INFANTRY }
+			}
+		}
+		x = 16
+		y = 9
+
+	}
+	focus = {
+		id = Return
+		icon = GFX_goal_generic_political_pressure
+		cost = 5,00
+		prerequisite = {
+			focus = Upgrade
+		}
+		prerequisite = {
+			focus = Alpha
+		}
+		prerequisite = {
+			focus = Trade
+		}
+		prerequisite = {
+			focus = More_Friends
+		}
+		available = {
+			strength_ratio = {
+    			tag = RUS
+    			ratio > 1
+			}			
+		}
+		bypass = {
+			OR = {
+				has_war_with = RUS
+				NOT = { country_exists = RUS }
+			}
+		}
+		completion_reward = {
+			add_war_support = 0.3
+			declare_war_on = {
+    			target = RUS
+    			type = annex_everything
+			}
+		}
+		x = 13
+		y = 10
+
+	}
+	focus = {
+		id = RSFSR
+		icon = GFX_focus_prc_agrarian_socialism
+		cost = 5,00
+		available = {
+			NOT = { country_exists = RUS }
+			NOT = {
+				any_state = {
+					is_core_of = RUS
+					NOT = {
+						is_owned_by = ROOT
+					}
+				}
+			}
+		}
+		prerequisite = {
+			focus = Return
+		}
+		completion_reward = {
+			add_stability = 0.2
+			add_war_support = 0.2
+			army_experience = 20
+			navy_experience = 20
+			air_experience = 20
+			add_command_power = 50
+			add_political_power = 150
+			set_cosmetic_tag = VCC_rsfsr
+		}
+		x = 13
+		y = 11
+
+	}
+	focus = {
+		id = Miss
+		icon = GFX_goal_generic_CAS
+		cost = 3,00
+		prerequisite = {
+			focus = Tenacious
+		}
+		available = {
+			country_exists = UUD
+			UUD = {
+				is_puppet_of = VCC
+			}
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			UUD = {
+				add_autonomy_score = {
+    				value = -100
+    				localization = Miss
+				}
+			}
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = DIE
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		cost = 5,00
+		prerequisite = {
+			focus = Miss
+		}
+		available = {
+			country_exists = UUD
+			UUD = {
+				is_puppet_of = VCC
+			}
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			UUD = {
+				add_autonomy_score = {
+    				value = -50
+    				localization = DIE
+				}
+			}
+		}
+		x = 17
+		y = 5
+
+	}
+	focus = {
+		id = This_Is_Normal
+		icon = GFX_goal_support_democracy
+		cost = 4,00
+		prerequisite = {
+			focus = Neutral
+		}
+		mutually_exclusive = {
+			focus = For_Corporation
+		}
+		available = {
+			democratic > 0.5
+		}
+		completion_reward = {
+			add_stability = 0.5
+			add_war_support = -0.5
+			add_political_power = 150
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.8
+			}
+			set_politics = {
+				ruling_party = democratic
+			}
+		}
+		x = 17
+		y = 6
+
+	}
+	focus = {
+		id = Academi
+		icon = GFX_focus_eng_special_air_service
+		cost = 3,00
+		prerequisite = {
+			focus = For_Corporation
+		}
+		available = {
+			BLK = {
+				has_opinion = {
+				target = VCC
+				value > 74
+				}
+			}
+			NOT = { has_war_with = BLK }
+		}
+		bypass = {
+			NOT = { country_exists = BLK }
+		}
+		completion_reward = {
+			add_war_support = 0.2
+			add_stability = -0.1
+			custom_effect_tooltip = academi_spawn
+			hidden_effect = {
+				load_oob = "VCC_ACADEMI"
+			}
+		}
+		x = 17
+		y = 7
+
+	}
+	focus = {
+		id = New_Places
+		icon = GFX_focus_BUL_free_balkan_states
+		cost = 4,00
+		prerequisite = {
+			focus = Partners
+		}
+		prerequisite = {
+			focus = Academi
+		}
+		completion_reward = {
+			create_wargoal = {
+    			type = annex_everything
+    			target = AZT
+			}
+			create_wargoal = {
+    			type = annex_everything
+    			target = VAG
+			}
+		}
+		x = 17
+		y = 8
+
+	}
+	focus = {
+		id = Mega_Corporation
+		icon = GFX_focus_generic_monarchy_1
+		cost = 5,00
+		prerequisite = {
+			focus = New_Places
+		}
+		available = {
+			NOT = { country_exists = AZT }
+			NOT = { country_exists = VAG }
+			NOT = {
+				any_state = {
+					is_core_of = AZT
+					NOT = {
+						is_owned_by = ROOT
+					}
+				}
+			}
+			NOT = {
+				any_state = {
+					is_core_of = VAG
+					NOT = {
+						is_owned_by = ROOT
+					}
+				}
+			}
+		}
+		completion_reward = {
+			add_stability = 0.4
+			add_war_support = 0.2
+			add_political_power = 150
+			add_command_power = 50
+			set_cosmetic_tag = VCC_mega_corp
+		}
+		x = 18
+		y = 9
+
+	}
+	focus = {
+		id = Defenseless_Countries
+		icon = GFX_focus_generic_military_academy
+		cost = 5,00
+		prerequisite = {
+			focus = Mega_Corporation
+		}
+		available = {
+			strength_ratio = {
+    			tag = KLA
+    			ratio > 1
+			}
+			strength_ratio = {
+    			tag = SRB
+    			ratio > 1
+			}
+			strength_ratio = {
+    			tag = SBR
+    			ratio > 1
+			}
+			strength_ratio = {
+    			tag = SCA
+    			ratio > 1
+			}
+			strength_ratio = {
+    			tag = MBA
+    			ratio > 1
+			}
+			strength_ratio = {
+    			tag = APA
+    			ratio > 1
+			}
+			strength_ratio = {
+    			tag = NGD
+    			ratio > 1
+			}
+			strength_ratio = {
+    			tag = NSP
+    			ratio > 1
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+    			type = annex_everything
+    			target = KLA
+			}
+			create_wargoal = {
+    			type = annex_everything
+    			target = SRB
+			}
+			create_wargoal = {
+    			type = annex_everything
+    			target = SBR
+			}
+			create_wargoal = {
+    			type = annex_everything
+    			target = SCA
+			}
+			create_wargoal = {
+    			type = annex_everything
+    			target = MBA
+			}
+			create_wargoal = {
+    			type = annex_everything
+    			target = APA
+			}
+			create_wargoal = {
+    			type = annex_everything
+    			target = NGD
+			}
+			create_wargoal = {
+    			type = annex_everything
+    			target = NSP
+			}
+		}
+		x = 18
+		y = 10
+
+	}
+	focus = {
+		id = Investments_In_Boreas
+		icon = GFX_focus_mex_privatisation
+		cost = 3,00
+		prerequisite = {
+			focus = For_Corporation
+		}
+		available = {
+			country_exists = BRF
+			BRF = {
+				has_opinion = {
+				target = VCC
+				value > 74
+				}
+			}
+			NOT = { has_war_with = BRF }			
+		}
+		completion_reward = {
+			add_stability = 0.2
+			add_war_support = -0.05
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_INF
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_AIR_EQP
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_ARTILLERY
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_ARMOR
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_NAVAL_EQP
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_NAVAL_MODULES
+			}
+			add_tech_bonus = {
+				bonus = 2
+				uses = 1
+				category = Cat_NAVAL_MISC
+			}
+			add_research_slot = 1
+		}
+		x = 19
+		y = 7
+
+	}
+	focus = {
+		id = Reserch
+		icon = GFX_goal_tfv_generic_tech_sharing
+		cost = 3,00
+		prerequisite = {
+			focus = Expansion
+		}
+		completion_reward = {
+			add_stability = 0.1
+            add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = Cat_FUEL_OIL
+            }    
+            add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = computing_tech
+            }    
+            add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = radar_tech
+            }
+            add_tech_bonus = {
+                bonus = 1
+                uses = 1
+                category = internet_tech
+            }
+		}
+		x = 32
+		y = 1
+
+	}
+	focus = {
+		id = Military_Research
+		icon = GFX_focus_eng_organise_the_blackshirts
+		cost = 3,00
+		prerequisite = {
+			focus = Reserch
+		}
+		completion_reward = {
+			add_war_support 0.05
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_INF_WEP
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_ARTILLERY
+			}
+		}
+		x = 26
+		y = 2
+
+	}
+	focus = {
+		id = Aircraft_Manufacturing
+		icon = GFX_goal_continuous_air_production
+		cost = 4,00
+		prerequisite = {
+			focus = Military_Research
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+				}
+			}			
+		}
+		x = 23
+		y = 3
+
+	}
+	focus = {
+		id = Domination
+		icon = GFX_goal_generic_air_fighter
+		cost = 3,00
+		prerequisite = {
+			focus = Aircraft_Manufacturing
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_MR_FIGHTER
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_CV_MR_FIGHTER
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_S_FIGHTER
+			}
+		}
+		x = 21
+		y = 4
+
+	}
+	focus = {
+		id = Support_Aircraft
+		icon = GFX_goal_generic_air_bomber
+		cost = 3,00
+		prerequisite = {
+			focus = Aircraft_Manufacturing
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_CAS
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_STR_BOMBER
+			}
+		}
+		x = 25
+		y = 4
+
+	}
+	focus = {
+		id = Mechanical_Engeniring
+		icon = GFX_goal_continuous_armor_production
+		cost = 3,00
+		prerequisite = {
+			focus = Military_Research
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+				}
+			}
+		}
+		x = 29
+		y = 3
+
+	}
+	focus = {
+		id = Heavy_Armor
+		icon = GFX_focus_generic_steel
+		cost = 3,00
+		prerequisite = {
+			focus = Mechanical_Engeniring
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_MBT
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_ENG_MBT
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_REC_TANK
+			}
+		}
+		x = 27
+		y = 4
+
+	}
+	focus = {
+		id = Equipment
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		cost = 3,00
+		prerequisite = {
+			focus = Heavy_Armor
+		}
+		prerequisite = {
+			focus = Medium_Armor
+		}
+		prerequisite = {
+			focus = Light_Armor
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_INF_WEP
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_H_INF_WEP
+			}					
+		}
+		x = 29
+		y = 5
+
+	}
+	focus = {
+		id = Guns
+		icon = GFX_goal_generic_small_arms
+		cost = 3,00
+		prerequisite = {
+			focus = Equipment
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_ARTY
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_SP_ARTY
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_SP_R_ARTY
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_AA
+			}			
+		}
+		x = 27
+		y = 6
+
+	}
+	focus = {
+		id = Medium_Armor
+		icon = GFX_focus_generic_tungsten
+		cost = 3,00
+		prerequisite = {
+			focus = Mechanical_Engeniring
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_IFV
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_APC
+			}
+		}
+		x = 29
+		y = 4
+
+	}
+	focus = {
+		id = Special_Forces
+		icon = GFX_focus_eng_special_air_service
+		cost = 4,00
+		prerequisite = {
+			focus = Equipment
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_SPECIAL_FORCES
+			}
+			add_ideas = {
+				special_forces
+			}
+			custom_effect_tooltip = specops_spawn
+			hidden_effect = {
+				load_oob = "VCC_SPECOPS"
+			}			
+		}
+		x = 29
+		y = 6
+
+	}
+	focus = {
+		id = Light_Armor
+		icon = GFX_focus_generic_aluminum
+		cost = 3,00
+		prerequisite = {
+			focus = Mechanical_Engeniring
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_UTIL
+			}
+		}
+		x = 31
+		y = 4
+
+	}
+	focus = {
+		id = Instrumentation_Army
+		icon = GFX_goal_continuous_reduce_training_time
+		cost = 3,00
+		prerequisite = {
+			focus = Equipment
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_SUPPORT_WEAPONS
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_CnC
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_ENG_EQP
+			}
+		}
+		x = 31
+		y = 6
+
+	}
+	focus = {
+		id = scientific_reserch
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 3,00
+		prerequisite = {
+			focus = Reserch
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_ideas = {
+				research_buff2
+			}
+		}
+		x = 37
+		y = 2
+
+	}
+	focus = {
+		id = Technic
+		icon = GFX_focus_generic_industry_1
+		cost = 3,00
+		prerequisite = {
+			focus = scientific_reserch
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = decryption_tech
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = computing_tech
+			}	
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = encryption_tech
+			}			
+		}
+		x = 33
+		y = 3
+
+	}
+	focus = {
+		id = AI
+		icon = GFX_focus_research
+		cost = 4,00
+		prerequisite = {
+			focus = scientific_reserch
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_AI
+			}				
+		}
+		x = 35
+		y = 3
+
+	}
+	focus = {
+		id = Scientists_From_Other_Countries
+		icon = GFX_focus_mex_privatisation
+		cost = 4,00
+		prerequisite = {
+			focus = Technic
+		}
+		prerequisite = {
+			focus = AI
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_ideas = {
+				research_buff4
+			}
+		}
+		x = 34
+		y = 4
+
+	}
+	focus = {
+		id = Oil
+		icon = GFX_goal_generic_oil_refinery
+		cost = 3,00
+		prerequisite = {
+			focus = scientific_reserch
+		}
+		completion_reward = {
+			add_stability = 0.01
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_FUEL_OIL
+			}				
+		}
+		x = 37
+		y = 3
+
+	}
+	focus = {
+		id = Production
+		icon = GFX_goal_generic_consumer_goods
+		cost = 3,00
+		prerequisite = {
+			focus = scientific_reserch
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_NFIBERS
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_3D
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = construction_tech
+			}							
+		}
+		x = 39
+		y = 3
+
+	}
+	focus = {
+		id = Investment_In_Projects
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		cost = 4,00
+		prerequisite = {
+			focus = Oil
+		}
+		prerequisite = {
+			focus = Production
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_ideas = {
+				research_buff3
+			}
+		}
+		x = 38
+		y = 4
+
+	}
+	focus = {
+		id = War_With_UN
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
+		cost = 5,00
+		available = {
+			DUT = {
+				is_in_faction_with = VCC
+			}
+			LOM = {
+				is_in_faction_with = VCC
+			}
+			VAG = {
+				is_in_faction_with = VCC
+			}
+			KLA = {
+				is_in_faction_with = VCC
+			}
+			NGD = {
+				is_in_faction_with = VCC
+			}
+			NSP = {
+				is_in_faction_with = VCC
+			}
+			SBR = {
+				is_in_faction_with = VCC
+			}
+		}
+		bypass = {
+			NOT = { country_exists = RUS }
+			NOT = { country_exists = UKR }
+			NOT = { country_exists = SWE }
+			NOT = { country_exists = UUN }
+		}
+		prerequisite = {
+			focus = unholy_alliance
+		}
+		completion_reward = {
+			declare_war_on = {
+    			target = RUS
+    			type = annex_everything
+			}
+			declare_war_on = {
+    			target = UKR
+    			type = annex_everything
+			}
+			declare_war_on = {
+    			target = SWE
+    			type = annex_everything
+			}
+			declare_war_on = {
+    			target = UUN
+    			type = annex_everything
+			}
+		}
+		x = 8
+		y = 9
+
+	}
+	focus = {
+		id = Vuldemar_Empire
+		icon = GFX_focus_eng_imperial_federation
+		cost = 5,00
+		available = {
+			NOT = { country_exists = RUS }
+			NOT = { country_exists = UKR }
+			NOT = { country_exists = SWE }
+			NOT = { country_exists = UUN }
+			NOT = {
+				any_state = {
+					is_core_of = RUS
+					NOT = {
+						is_owned_by = ROOT
+					}
+				}
+			}			
+		}
+		prerequisite = {
+			focus = War_With_UN
+		}
+		completion_reward = {
+			add_war_support = 0.5
+			add_stability = 0.2
+			add_manpower = 200000
+			add_command_power = 50
+			army_experience = 30
+			air_experience = 30
+			navy_experience = 30
+			add_political_power = 200
+			set_cosmetic_tag = VCC_russian_empire
+		}
+		x = 8
+		y = 10
+
+	}
+	focus = {
+		id = Trade
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 3,00
+		prerequisite = {
+			focus = New_Friends
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_ideas = {
+				trade_buff
+			}
+		}
+		x = 12
+		y = 9
+
+	}
+	focus = {
+		id = Glory_Of_The_Empire
+		icon = GFX_goal_tfv_saf_support_ossebrandwag
+		cost = 5,00
+		prerequisite = {
+			focus = Fascism
+		}
+		mutually_exclusive = {
+			focus = The_Real_Ruler
+		}
+		available = {
+			fascism > 0.5
+		}
+		completion_reward = {
+			add_war_support = 0.3
+			add_manpower = 50000
+			add_ideas = {
+				glory_to_the_empire
+			}
+		}
+		x = 11
+		y = 6
+
+	}
+	focus = {
+		id = Associates
+		icon = GFX_focus_ger_reichskommisariats
+		cost = 2,00
+		prerequisite = {
+			focus = Glory_Of_The_Empire
+		}
+		available = {
+			country_exists = VAG
+			country_exists = KLA
+			country_exists = NGD
+			country_exists = NSP
+			country_exists = SBR
+			VAG = {
+				has_government = fascism
+			}
+			KLA = {
+				has_government = fascism
+			}
+			NGD = {
+				has_government = fascism
+			}
+			NSP = {
+				has_government = fascism
+			}
+			SBR = {
+				has_government = fascism
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = { country_exists = SBR }
+				NOT = { country_exists = NGD }
+			}
+		}
+		completion_reward = {
+			add_manpower = 50000
+			add_war_support = 0.3
+			army_experience = 20
+			air_experience = 20
+			navy_experience = 20
+			add_command_power = 50
+			add_opinion_modifier = {
+    			target = VAG
+    			modifier = vcc_improved_relat
+			}
+			reverse_add_opinion_modifier = {
+    			target = VAG
+    			modifier = vcc_improved_relat
+			}
+			add_opinion_modifier = {
+    			target = KLA
+    			modifier = vcc_improved_relat
+			}
+			reverse_add_opinion_modifier = {
+    			target = KLA
+    			modifier = vcc_improved_relat
+			}
+			add_opinion_modifier = {
+    			target = NGD
+    			modifier = vcc_improved_relat
+			}
+			reverse_add_opinion_modifier = {
+    			target = NGD
+    			modifier = vcc_improved_relat
+			}
+			add_opinion_modifier = {
+    			target = NSP
+    			modifier = vcc_improved_relat
+			}
+			reverse_add_opinion_modifier = {
+    			target = NSP
+    			modifier = vcc_improved_relat
+			}
+			add_opinion_modifier = {
+    			target = SBR
+    			modifier = vcc_improved_relat
+			}
+			reverse_add_opinion_modifier = {
+    			target = SBR
+    			modifier = vcc_improved_relat
+			}
+		}
+		x = 11
+		y = 7
+
+	}
+	focus = {
+		id = Death_Corpus
+		icon = GFX_focus_eng_special_air_service
+		cost = 4,00
+		prerequisite = {
+			focus = Glory_Of_The_Empire
+		}
+		completion_reward = {
+			add_war_support = 0.2
+			custom_effect_tooltip = corpus_spawn
+			hidden_effect = {
+				load_oob = "VCC_CORPUS"
+			}
+		}
+		x = 9
+		y = 7
+
+	}
+	focus = {
+		id = The_Real_Ruler
+		icon = GFX_focus_hun_elect_a_king
+		cost = 5,00
+		prerequisite = {
+			focus = Fascism
+		}
+		mutually_exclusive = {
+			focus = Glory_Of_The_Empire
+		}
+		available = {
+			communism > 0.5
+		}
+		completion_reward = {
+			add_stability = 0.2
+			add_war_support = 0.2
+			add_political_power = 100
+			add_manpower = 100000
+			add_ideas = {
+				glory_to_the_empire
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.8
+			}
+			set_politics = {
+				ruling_party = communism
+			}
+			set_cosmetic_tag = VCC_imperialistic_kimry
+		}
+		x = 9
+		y = 6
+
+	}
+	focus = {
+		id = More_Power
+		icon = GFX_focus_hol_abandon_the_gold_standard
+		cost = 4,00
+		prerequisite = {
+			focus = Glory_Of_The_Empire
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			add_manpower = 50000
+			add_ideas = {
+				power_buff
+			}
+		}
+		x = 7
+		y = 7
+
+	}
+	focus = {
+		id = Red_Planet
+		icon = GFX_focus_spr_anarchism_knows_no_borders
+		cost = 5,00
+		prerequisite = {
+			focus = Time_for_Action
+		}
+		prerequisite = {
+			focus = Multi_Passer
+		}
+		available = {
+			has_intelligence_agency = yes
+			agency_upgrade_number > 15
+			all_country = {
+				communism > 0.2
+			}
+			has_stability = 1
+			has_war_support > 0.8
+			has_government = communism
+			has_country_leader = {
+    			name = "Viktor Vuldemar"
+   			 	ruling_only = yes
+			}
+			num_of_military_factories > 30
+			num_of_civilian_factories > 30
+			num_divisions > 70
+		}
+		completion_reward = {
+			every_other_country = {
+				country_event = {
+    				id = vcc_red_event.1
+				}
+			}
+		}
+		x = 13
+		y = 15
+
+	}
+	focus = {
+		id = Time_for_Action
+		icon = GFX_focus_generic_little_entente
+		cost = 4,00
+		prerequisite = {
+			focus = Agents_Communism
+		}
+		prerequisite = {
+			focus = Prapoganda
+		}
+		prerequisite = {
+			focus = Integration
+		}
+		available = {
+			has_intelligence_agency = yes
+			has_done_agency_upgrade = upgrade_commando_training
+			RUS = {
+				has_stability < 0.5
+			}
+		}
+		completion_reward = {
+			RUS = {
+				add_stability = -0.4
+				add_war_support = -0.3
+				leave_faction = yes
+			}
+		}
+		x = 12
+		y = 14
+
+	}
+	focus = {
+		id = Cargo
+		icon = GFX_focus_usa_escort_fighters
+		cost = 3,00
+		prerequisite = {
+			focus = Aircraft_Manufacturing
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_TRANS_PLANE
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_NAVAL_PLANE
+			}	
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_TRANS_HELI
+			}					
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = Shipbuilding
+		icon = GFX_focus_generic_destroyer
+		cost = 3,00
+		prerequisite = {
+			focus = Domination
+		}
+		prerequisite = {
+			focus = Cargo
+		}
+		prerequisite = {
+			focus = Support_Aircraft
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+				}
+			}
+		}
+		x = 23
+		y = 5
+
+	}
+	focus = {
+		id = Submarine
+		icon = GFX_goal_generic_navy_submarine
+		cost = 3,00
+		prerequisite = {
+			focus = Shipbuilding
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_SUB
+			}				
+		}
+		x = 21
+		y = 6
+
+	}
+	focus = {
+		id = Fleet
+		icon = GFX_goal_generic_navy_battleship
+		cost = 3,00
+		prerequisite = {
+			focus = Shipbuilding
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_SURFACE_SHIP
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_CARRIER
+			}
+		}
+		x = 23
+		y = 6
+
+	}
+	focus = {
+		id = Instrumentation_Fleet
+		icon = GFX_goal_generic_navy_carrier
+		cost = 3,00
+		prerequisite = {
+			focus = Shipbuilding
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_NAVAL_MODULES
+			}	
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_NAVAL_MISC
+			}			
+		}
+		x = 25
+		y = 6
+
+	}
+	focus = {
+		id = unholy_alliance
+		icon = GFX_goal_generic_alliance
+		cost = 4,00
+		available = {
+			DUT = { has_government = fascism }
+			LOM = { has_government = fascism }
+			VAG = { has_government = fascism }
+			KLA = { has_government = fascism }
+			NGD = { has_government = fascism }
+			NSP = { has_government = fascism }
+			SBR = { has_government = fascism }
+			DUT = {
+				has_opinion = {
+				target = VCC
+				value > 79
+				}
+			}
+			LOM = {
+				has_opinion = {
+				target = VCC
+				value > 79
+				}
+			}
+			VAG = {
+				has_opinion = {
+				target = VCC
+				value > 79
+				}
+			}
+			KLA = {
+				has_opinion = {
+				target = VCC
+				value > 79
+				}
+			}
+			NGD = {
+				has_opinion = {
+				target = VCC
+				value > 79
+				}
+			}
+			NSP = {
+				has_opinion = {
+				target = VCC
+				value > 79
+				}
+			}
+			SBR = {
+				has_opinion = {
+				target = VCC
+				value > 79
+				}
+			}
+		}
+		prerequisite = {
+			focus = More_Power
+		}
+		prerequisite = {
+			focus = Death_Corpus
+		}
+		prerequisite = {
+			focus = Associates
+		}
+		bypass = {
+			NOT = { country_exists = DUT }
+			NOT = { country_exists = LOM }
+			NOT = { country_exists = VAG }
+			NOT = { country_exists = KLA }
+			NOT = { country_exists = NGD }
+			NOT = { country_exists = NSP }
+			NOT = { country_exists = SBR }
+		}
+		completion_reward = {
+			create_faction = "Империя"
+			add_to_faction = DUT
+			add_to_faction = LOM
+			add_to_faction = VAG
+			add_to_faction = KLA
+			add_to_faction = NGD
+			add_to_faction = NSP
+			add_to_faction = SBR
+		}
+		x = 9
+		y = 8
+
+	}
+	focus = {
+		id = We_Need_More_Space
+		icon = GFX_focus_generic_concessions
+		cost = 4,00
+		prerequisite = {
+			focus = Vuldemar_Empire
+		}
+		available = {
+			strength_ratio = {
+    			tag = DUT
+    			ratio > 1
+			}
+			strength_ratio = {
+    			tag = LOM
+    			ratio > 1
+			}
+			has_war_support > 0.7
+			has_stability > 0.6
+		}
+		bypass = {
+			NOT = { country_exists = DUT }
+			NOT = { country_exists = LOM }
+			NOT = { country_exists = NDF }
+			NOT = { country_exists = REX }
+			NOT = { country_exists = BLK }
+		}
+		completion_reward = {
+			remove_from_faction = DUT
+			remove_from_faction = LOM
+			create_wargoal = {
+    			target = DUT
+    			type = annex_everything
+			}	
+			create_wargoal = {
+    			target = LOM
+    			type = annex_everything
+			}		
+			create_wargoal = {
+    			target = NDF
+    			type = annex_everything
+			}
+			create_wargoal = {
+    			target = REX
+    			type = annex_everything
+			}
+			create_wargoal = {
+    			target = BLK
+    			type = annex_everything
+			}				
+		}
+		x = 8
+		y = 11
+
+	}
+	focus = {
+		id = Medicine
+		icon = GFX_goal_continuous_def_against_influence
+		cost = 3,00
+		prerequisite = {
+			focus = scientific_reserch
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = Cat_GENES
+			}				
+		}
+		x = 41
+		y = 3
+
+	}
+}

@@ -4,7 +4,7 @@ country_event = {
 	id = oog_invite_ace.1
     title = oog_invite_ace_title.0.d
     desc = oog_invite_ace_desc.0.d
-	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+	picture = GFX_report_event_generic_sign_treaty2 # Image displayed alongside the text.
 
 	is_triggered_only = yes
 
@@ -21,7 +21,7 @@ country_event = {
 	id = oog_invite_dec.1
     title = oog_invite_dec_title.0.d
     desc = oog_invite_dec_desc.0.d
-	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+	picture = GFX_report_event_generic_sign_treaty2 # Image displayed alongside the text.
 
 	is_triggered_only = yes
 
@@ -38,7 +38,7 @@ country_event = {
 	id = vcc_oog_invite_ace.1
     title = vcc_oog_invite_ace_title.0.d
     desc = vcc_oog_invite_ace_desc.0.d
-	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+	picture = GFX_report_event_generic_sign_treaty2 # Image displayed alongside the text.
 
 	is_triggered_only = yes
 
@@ -55,7 +55,7 @@ country_event = {
 	id = vcc_oog_invite_dec.1
     title = vcc_oog_invite_dec_title.0.d
     desc = vcc_oog_invite_dec_desc.0.d
-	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+	picture = GFX_report_event_generic_sign_treaty2 # Image displayed alongside the text.
 
 	is_triggered_only = yes
 
@@ -72,7 +72,7 @@ country_event = {
 	id = brf_od_reform.1
     title = brf_od_reform_title.0.d
     desc = brf_od_reform_desc.0.d
-	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+	picture = GFX_report_event_generic_rally_3 # Image displayed alongside the text.
 
 	is_triggered_only = yes
 

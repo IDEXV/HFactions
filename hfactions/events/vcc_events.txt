@@ -4,7 +4,7 @@ country_event = {
 	id = vcc_tertrade.1
     title = vcc_tertrade.0.d
     desc = vcc_tertrade_desc.0.d
-	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+	picture = GFX_report_event_generic_sign_treaty3 # Image displayed alongside the text.
 
 	is_triggered_only = yes
 
@@ -42,7 +42,7 @@ country_event = {
 	id = vcc_oog_invitation.1
     title = oog_title.0.d
     desc = oog_desc.0.d
-	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+	picture = GFX_report_event_generic_sign_treaty2 # Image displayed alongside the text.
 
 	is_triggered_only = yes
 
@@ -63,5 +63,58 @@ country_event = {
         BRF = {
             country_event = { days = 1 id = vcc_oog_invite_dec.1 }
         }
+	}
+}
+
+add_namespace = vcc_elections
+
+country_event = {
+	id = vcc_elections.1
+    title = vcc_elections.0.d
+    desc = vcc_elections_desc.0.d
+	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	
+	option = {
+		name = vcc_elections_option.1.a
+        complete_national_focus = Fascism
+        add_war_support = 0.4
+        add_stability = -0.2
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.5
+		}
+        set_politics = {
+			ruling_party = fascism
+		}
+	}
+    option = {
+		name = vcc_elections_option.1.b
+        complete_national_focus = Communism
+        add_war_support = 0.2
+        add_stability = 0.2
+		add_popularity = {
+			ideology = communism
+			popularity = 0.5
+		}
+        set_politics = {
+			ruling_party = communism
+		}
+	}
+    option = {
+		name = vcc_elections_option.1.c
+        complete_national_focus = Neutral
+        add_war_support = -0.2
+        add_stability = 0.4
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.5
+		}
+        set_politics = {
+			ruling_party = neutrality
+		}
 	}
 }

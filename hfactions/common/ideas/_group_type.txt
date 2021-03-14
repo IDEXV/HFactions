@@ -1,0 +1,292 @@
+ideas = {
+
+    group_type = {
+  		law = yes
+        
+        soul_of_organization = {
+
+            picture = generic_morale_bonus
+			
+			allowed = {
+				NOT = { original_tag = RUS }
+				NOT = { original_tag = SWE }
+				NOT = { original_tag = UUN }
+				NOT = { original_tag = UKR }
+				NOT = { original_tag = RES }
+				NOT = { original_tag = MUJ }
+				NOT = { original_tag = MBE }
+				NOT = { original_tag = NDC }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+            modifier = {
+                generate_wargoal_tension = -0.5
+				lend_lease_tension = -0.5
+				send_volunteers_tension = -0.5
+				guarantee_tension = -0.5
+				civil_war_involvement_tension = -0.5
+				stability_weekly = 0.05
+				research_speed_factor = 0.2
+				hidden_modifier = {
+					ai_badass_factor = 0.5
+					ai_focus_peaceful_factor = 0.5
+					ai_focus_military_advancements_factor = 0.5
+					ai_focus_war_production_factor = 0.5
+				}
+            }
+
+            rule = {
+	            can_create_factions = yes
+				can_declare_war_without_wargoal_when_in_war = yes
+                can_boost_other_ideologies = yes
+                can_declare_war_on_same_ideology = yes
+            }
+		}		
+
+        soul_of_pmc = {
+
+            picture = generic_army_war_college
+			
+			allowed = {
+				NOT = { original_tag = RUS }
+				NOT = { original_tag = SWE }
+				NOT = { original_tag = UUN }
+				NOT = { original_tag = UKR }
+				NOT = { original_tag = RES }
+				NOT = { original_tag = MUJ }
+				NOT = { original_tag = MBE }
+				NOT = { original_tag = NDC }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+            modifier = {
+                generate_wargoal_tension = -1
+				lend_lease_tension = -1
+				send_volunteers_tension = -1
+				guarantee_tension = -1
+				civil_war_involvement_tension = -1
+				war_support_weekly = 0.05
+				hidden_modifier = {
+					ai_focus_military_advancements_factor = 0.5
+					ai_focus_war_production_factor = 0.5
+				}
+            }
+
+            rule = {
+                can_declare_war_on_same_ideology = yes
+				can_lower_tension = yes
+            }
+		}
+
+        soul_of_rebellion = {
+
+            picture = generic_disjointed_gov
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+            modifier = {
+                generate_wargoal_tension = -1
+				justify_war_goal_time = -1
+				surrender_limit = 0.1
+                stability_weekly = -0.2
+				war_support_weekly = 0.2
+				research_speed_factor = -0.5
+				hidden_modifier = {
+					ai_focus_aggressive_factor = 1
+					ai_focus_military_advancements_factor = 1
+					ai_focus_war_production_factor = 1
+				}
+            }
+
+			rule = {
+				can_declare_war_on_same_ideology = yes
+				can_force_government = yes
+				can_occupy_non_war = yes
+				can_join_factions = no
+			}
+		}
+
+        soul_of_gang = {
+
+            picture = generic_war_preparation
+			
+			allowed = {
+				NOT = { original_tag = RUS }
+				NOT = { original_tag = SWE }
+				NOT = { original_tag = UUN }
+				NOT = { original_tag = UKR }
+				NOT = { original_tag = RES }
+				NOT = { original_tag = MUJ }
+				NOT = { original_tag = MBE }
+				NOT = { original_tag = NDC }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+            modifier = {
+                generate_wargoal_tension = -1
+				justify_war_goal_time = -0.5
+                stability_weekly = 0.05
+				war_support_weekly = 0.1
+				research_speed_factor = -0.2
+				hidden_modifier = {
+					ai_desired_divisions_factor = 0.5
+					ai_focus_aggressive_factor = 0.5
+					ai_focus_military_advancements_factor = 0.5
+					ai_focus_war_production_factor = 0.5
+				}
+            }
+
+			rule = {
+				can_declare_war_on_same_ideology = yes
+				can_declare_war_without_wargoal_when_in_war = yes
+				can_join_opposite_factions = no
+				can_join_factions = no
+				can_create_factions = no
+			}
+		}
+
+        soul_of_mafia = {
+
+            picture = generic_secret_police
+			
+			allowed = {
+				NOT = { original_tag = RUS }
+				NOT = { original_tag = SWE }
+				NOT = { original_tag = UUN }
+				NOT = { original_tag = UKR }
+				NOT = { original_tag = RES }
+				NOT = { original_tag = MUJ }
+				NOT = { original_tag = MBE }
+				NOT = { original_tag = NDC }
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+            modifier = {
+                generate_wargoal_tension = -0.5
+				lend_lease_tension = -1
+				send_volunteers_tension = -1
+				guarantee_tension = -1
+				civil_war_involvement_tension = -1
+				stability_weekly = 0.01
+				hidden_modifier = {
+					ai_desired_divisions_factor = 0.5
+					ai_focus_peaceful_factor = 0.5
+					ai_focus_military_advancements_factor = 0.5
+					ai_focus_war_production_factor = 0.5
+				}
+            }
+
+			rule = {
+				can_declare_war_on_same_ideology = yes
+				can_declare_war_without_wargoal_when_in_war = yes
+				can_join_opposite_factions = yes
+				can_join_factions = yes
+				can_create_factions = yes
+			}
+		}
+
+        soul_of_government = {
+
+            picture = generic_political_support
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+            modifier = {
+				stability_weekly = 0.3
+				foreign_subversive_activites = -0.5
+				trade_opinion_factor = 0.2
+				civil_war_involvement_tension = 0.5
+				generate_wargoal_tension = 0.5
+				guarantee_tension = 0.5
+				lend_lease_tension = 0.5
+				join_faction_tension = 0.5
+				puppet_cost_factor = 0.3
+				annex_cost_factor = 0.1
+				hidden_modifier = {
+					ai_focus_peaceful_factor = 1
+				}
+            }
+
+            rule = {
+	            can_create_factions = yes
+				can_lower_tension = yes
+            }
+		}
+
+        peacemakers_of_the_world = {
+
+            picture = generic_volunteer_expedition_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+            modifier = {
+				trade_opinion_factor = 0.5
+				civil_war_involvement_tension = 1
+				generate_wargoal_tension = 1
+				guarantee_tension = -0.5
+				lend_lease_tension = -0.5
+				join_faction_tension = 1	
+				stability_weekly = 0.2
+				war_support_weekly = -0.2
+				send_volunteer_divisions_required = -0.5
+				hidden_modifier = {
+					ai_badass_factor = 1
+					ai_focus_peaceful_factor = 1
+					ai_focus_military_advancements_factor = 0.5
+					ai_focus_war_production_factor = 0.5
+				}
+            }
+
+            rule = {
+	            can_create_factions = yes
+				can_lower_tension = yes
+				can_join_opposite_factions = no
+                can_boost_other_ideologies = yes
+            }
+		}
+    }
+}

@@ -1,0 +1,2187 @@
+focus_tree = {
+	id = gsr
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GSR
+		}
+	}
+	default = no
+	focus = {
+		id = gsr_fd11_founding
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 10,00
+		x = 4
+		y = 0
+
+	}
+	focus = {
+		id = gsr_mjx_founding
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 10,00
+		x = 11
+		y = 0
+
+	}
+	focus = {
+		id = gsr_begin_development
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10,00
+		x = 8
+		y = 12
+
+	}
+	focus = {
+		id = gsr_found_the_imrf
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 10,00
+		x = 23
+		y = 19
+
+	}
+	focus = {
+		id = gsr_old_comrades
+		icon = GFX_goal_generic_improve_relations
+		cost = 10,00
+		x = 16
+		y = 29
+
+	}
+	focus = {
+		id = gsr_zrc_brf_aggression
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = {
+			focus = gsr_zrc_brf_outposts
+		}
+		prerequisite = {
+			focus = gsr_zrc_brf_spying
+		}
+		cost = 10,00
+		x = 5
+		y = 31
+
+	}
+	focus = {
+		id = gsr_zrc_anti_brf_operations
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = {
+			focus = gsr_zrc_brf_outposts
+		}
+		prerequisite = {
+			focus = gsr_zrc_brf_spying
+		}
+		cost = 10,00
+		x = 7
+		y = 31
+
+	}
+	focus = {
+		id = gsr_zrc_steal_brf_documents
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_zrc_brf_aggression
+		}
+		prerequisite = {
+			focus = gsr_zrc_anti_brf_operations
+		}
+		x = 4
+		y = 32
+
+	}
+	focus = {
+		id = gsr_zrc_raid_brf_facilities
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = {
+			focus = gsr_zrc_brf_aggression
+		}
+		prerequisite = {
+			focus = gsr_zrc_anti_brf_operations
+		}
+		cost = 10,00
+		x = 6
+		y = 32
+
+	}
+	focus = {
+		id = gsr_zrc_brf_data_collection
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = {
+			focus = gsr_zrc_brf_aggression
+		}
+		prerequisite = {
+			focus = gsr_zrc_anti_brf_operations
+		}
+		cost = 10,00
+		x = 8
+		y = 32
+
+	}
+	focus = {
+		id = gsr_zrc_brf_outposts
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = {
+			focus = gsr_receive_brf_aggression
+		}
+		cost = 10,00
+		x = 5
+		y = 30
+
+	}
+	focus = {
+		id = gsr_zrc_brf_spying
+		icon = GFX_goal_generic_radar
+		prerequisite = {
+			focus = gsr_receive_brf_aggression
+		}
+		cost = 10,00
+		x = 7
+		y = 30
+
+	}
+	focus = {
+		id = gsr_receive_brf_aggression
+		icon = GFX_goal_generic_political_pressure
+		cost = 10,00
+		x = 6
+		y = 29
+
+	}
+	focus = {
+		id = gsr_fd11_discord_server
+		icon = GFX_goal_generic_radar
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_fd11_founding
+		}
+		x = 4
+		y = 1
+
+	}
+	focus = {
+		id = gsr_fd11_internal_network
+		icon = GFX_goal_generic_defence
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_fd11_discord_server
+		}
+		x = 3
+		y = 2
+
+	}
+	focus = {
+		id = gsr_fd11_hire_boreas
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_fd11_discord_server
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = gsr_fd11_underground_ops
+		icon = GFX_goal_generic_secret_weapon
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_fd11_hire_boreas
+		}
+		prerequisite = {
+			focus = gsr_fd11_internal_network
+		}
+		x = 4
+		y = 3
+
+	}
+	focus = {
+		id = gsr_fd11_disband
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_fd11_underground_ops
+		}
+		mutually_exclusive = {
+			focus = gsr_fd11_continue_development
+		}
+		x = 3
+		y = 4
+
+	}
+	focus = {
+		id = gsr_fd11_continue_development
+		icon = GFX_focus_generic_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_fd11_underground_ops
+		}
+		mutually_exclusive = {
+			focus = gsr_fd11_disband
+		}
+		x = 5
+		y = 4
+
+	}
+	focus = {
+		id = gsr_mjx_discord_server
+		icon = GFX_goal_generic_radar
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_mjx_founding
+		}
+		x = 11
+		y = 1
+
+	}
+	focus = {
+		id = gsr_mjx_internal_network
+		icon = GFX_goal_generic_defence
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_mjx_discord_server
+		}
+		x = 10
+		y = 2
+
+	}
+	focus = {
+		id = gsr_mjx_agent_hiring
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_mjx_internal_network
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = gsr_mjx_internal_security
+		icon = GFX_goal_generic_demand_territory
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_mjx_internal_network
+		}
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = gsr_mjx_research_interest
+		icon = GFX_focus_research2
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_mjx_internal_security
+		}
+		prerequisite = {
+			focus = gsr_mjx_agent_hiring
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = gsr_mjx_hire_boreas
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_mjx_discord_server
+		}
+		x = 12
+		y = 2
+
+	}
+	focus = {
+		id = gsr_mjx_external_hiring
+		icon = GFX_goal_generic_improve_relations
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_mjx_hire_boreas
+		}
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = gsr_mjx_external_influence
+		icon = GFX_goal_generic_political_pressure
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_mjx_hire_boreas
+		}
+		x = 14
+		y = 3
+
+	}
+	focus = {
+		id = gsr_mjx_black_ops
+		icon = GFX_goal_generic_military_sphere
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_mjx_external_hiring
+		}
+		prerequisite = {
+			focus = gsr_mjx_external_influence
+		}
+		x = 13
+		y = 4
+
+	}
+	focus = {
+		id = gsr_mjx_reform
+		icon = GFX_focus_generic_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_mjx_research_interest
+		}
+		prerequisite = {
+			focus = gsr_mjx_black_ops
+		}
+		mutually_exclusive = {
+			focus = gsr_mjx_disband
+		}
+		x = 13
+		y = 5
+
+	}
+	focus = {
+		id = gsr_zer_full_reformation
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_mjx_reform
+		}
+		x = 13
+		y = 6
+
+	}
+	focus = {
+		id = gsr_zer_research
+		icon = GFX_focus_research
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_zer_full_reformation
+		}
+		x = 12
+		y = 7
+
+	}
+	focus = {
+		id = gsr_zer_foundations
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_zer_research
+		}
+		x = 10
+		y = 8
+
+	}
+	focus = {
+		id = gsr_zer_anomaly_research
+		icon = GFX_focus_research
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_zer_research
+		}
+		x = 12
+		y = 8
+
+	}
+	focus = {
+		id = gsr_zer_army_focus
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_zer_full_reformation
+		}
+		x = 14
+		y = 7
+
+	}
+	focus = {
+		id = gsr_zer_mjx_operatives
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_zer_army_focus
+		}
+		x = 14
+		y = 8
+
+	}
+	focus = {
+		id = gsr_zer_operations_reborn
+		icon = GFX_goal_generic_political_pressure
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_zer_army_focus
+		}
+		x = 16
+		y = 8
+
+	}
+	focus = {
+		id = gsr_zer_ucs_creation
+		icon = GFX_goal_continuous_research
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_zer_foundations
+		}
+		prerequisite = {
+			focus = gsr_zer_anomaly_research
+		}
+		prerequisite = {
+			focus = gsr_zer_mjx_operatives
+		}
+		prerequisite = {
+			focus = gsr_zer_operations_reborn
+		}
+		x = 13
+		y = 9
+
+	}
+	focus = {
+		id = gsr_zer_ucs_001
+		icon = GFX_focus_research
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_zer_ucs_creation
+		}
+		x = 14
+		y = 10
+
+	}
+	focus = {
+		id = gsr_begin_major_development
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_old_comrades
+		}
+		x = 16
+		y = 30
+
+	}
+	focus = {
+		id = gsr_new_base
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_begin_major_development
+		}
+		x = 13
+		y = 31
+
+	}
+	focus = {
+		id = gsr_new_vehicles
+		icon = GFX_goal_generic_army_motorized
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_begin_major_development
+		}
+		x = 15
+		y = 31
+
+	}
+	focus = {
+		id = gsr_new_people
+		icon = GFX_goal_generic_improve_relations
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_begin_major_development
+		}
+		x = 17
+		y = 31
+
+	}
+	focus = {
+		id = gsr_major_arms_development
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_begin_major_development
+		}
+		x = 19
+		y = 31
+
+	}
+	focus = {
+		id = gsr_pmc_reformation
+		icon = GFX_focus_generic_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_new_base
+		}
+		prerequisite = {
+			focus = gsr_new_vehicles
+		}
+		prerequisite = {
+			focus = gsr_new_people
+		}
+		prerequisite = {
+			focus = gsr_major_arms_development
+		}
+		x = 16
+		y = 32
+
+	}
+	focus = {
+		id = gsr_new_departments
+		icon = GFX_focus_generic_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_pmc_reformation
+		}
+		x = 16
+		y = 33
+
+	}
+	focus = {
+		id = gsr_isd_creation
+		icon = GFX_goal_generic_secret_weapon
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_new_departments
+		}
+		x = 16
+		y = 34
+
+	}
+	focus = {
+		id = gsr_eng_creation
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_new_departments
+		}
+		x = 12
+		y = 34
+
+	}
+	focus = {
+		id = gsr_rd_creation
+		icon = GFX_focus_research2
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_new_departments
+		}
+		x = 14
+		y = 34
+
+	}
+	focus = {
+		id = gsr_med_creation
+		icon = GFX_focus_research
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_new_departments
+		}
+		x = 18
+		y = 34
+
+	}
+	focus = {
+		id = gsr_military_creation
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_new_departments
+		}
+		x = 20
+		y = 34
+
+	}
+	focus = {
+		id = gsr_begin_afghano_ops
+		icon = GFX_goal_generic_major_war
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_eng_creation
+		}
+		prerequisite = {
+			focus = gsr_rd_creation
+		}
+		prerequisite = {
+			focus = gsr_isd_creation
+		}
+		prerequisite = {
+			focus = gsr_med_creation
+		}
+		prerequisite = {
+			focus = gsr_military_creation
+		}
+		x = 16
+		y = 35
+
+	}
+	focus = {
+		id = gsr_intervention_in_the_cmb_war
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_begin_afghano_ops
+		}
+		x = 13
+		y = 36
+
+	}
+	focus = {
+		id = gsr_anti_duty_operations
+		icon = GFX_goal_generic_political_pressure
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_begin_afghano_ops
+		}
+		x = 15
+		y = 36
+
+	}
+	focus = {
+		id = gsr_afghano_hiring
+		icon = GFX_goal_generic_improve_relations
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_begin_afghano_ops
+		}
+		x = 17
+		y = 36
+
+	}
+	focus = {
+		id = gsr_chemical_research
+		icon = GFX_focus_research
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_begin_afghano_ops
+		}
+		x = 19
+		y = 36
+
+	}
+	focus = {
+		id = gsr_begin_african_ops
+		icon = GFX_goal_generic_major_war
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_intervention_in_the_cmb_war
+		}
+		prerequisite = {
+			focus = gsr_anti_duty_operations
+		}
+		prerequisite = {
+			focus = gsr_afghano_hiring
+		}
+		prerequisite = {
+			focus = gsr_chemical_research
+		}
+		x = 16
+		y = 37
+
+	}
+	focus = {
+		id = gsr_war_with_african_pmc
+		icon = GFX_goal_generic_major_war
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_begin_african_ops
+		}
+		x = 13
+		y = 38
+
+	}
+	focus = {
+		id = gsr_anti_xof_ops
+		icon = GFX_goal_generic_political_pressure
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_begin_african_ops
+		}
+		x = 15
+		y = 38
+
+	}
+	focus = {
+		id = gsr_african_hiring
+		icon = GFX_goal_generic_improve_relations
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_begin_african_ops
+		}
+		x = 17
+		y = 38
+
+	}
+	focus = {
+		id = gsr_major_chemical_development
+		icon = GFX_focus_research2
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_begin_african_ops
+		}
+		x = 19
+		y = 38
+
+	}
+	focus = {
+		id = gsr_crackdown_on_xof
+		icon = GFX_goal_generic_secret_weapon
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_war_with_african_pmc
+		}
+		prerequisite = {
+			focus = gsr_anti_xof_ops
+		}
+		prerequisite = {
+			focus = gsr_african_hiring
+		}
+		prerequisite = {
+			focus = gsr_major_chemical_development
+		}
+		x = 16
+		y = 39
+
+	}
+	focus = {
+		id = gsr_afghano_crackdown
+		icon = GFX_goal_generic_secret_weapon
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_crackdown_on_xof
+		}
+		x = 16
+		y = 40
+
+	}
+	focus = {
+		id = gsr_organization_reformation
+		icon = GFX_goal_support_democracy
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_afghano_crackdown
+		}
+		x = 16
+		y = 41
+
+	}
+	focus = {
+		id = gsr_kerk_leader
+		icon = GFX_focus_generic_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_organization_reformation
+		}
+		mutually_exclusive = {
+			focus = gsr_mike_leader
+			focus = gsr_mark_leader
+		}
+		x = 16
+		y = 42
+
+	}
+	focus = {
+		id = gsr_mike_leader
+		icon = GFX_focus_generic_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_organization_reformation
+		}
+		mutually_exclusive = {
+			focus = gsr_kerk_leader
+		}
+		x = 14
+		y = 42
+
+	}
+	focus = {
+		id = gsr_mark_leader
+		icon = GFX_focus_generic_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_organization_reformation
+		}
+		mutually_exclusive = {
+			focus = gsr_kerk_leader
+		}
+		x = 18
+		y = 42
+
+	}
+	focus = {
+		id = gsr_major_military_development
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_mike_leader
+			focus = gsr_kerk_leader
+			focus = gsr_mark_leader
+		}
+		x = 17
+		y = 43
+
+	}
+	focus = {
+		id = gsr_new_m_factories
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_major_military_development
+		}
+		x = 17
+		y = 44
+
+	}
+	focus = {
+		id = gsr_bring_back_the_old_hangars
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_new_m_factories
+		}
+		x = 17
+		y = 45
+
+	}
+	focus = {
+		id = gsr_begin_research
+		icon = GFX_focus_research2
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_found_the_imrf
+		}
+		x = 19
+		y = 20
+
+	}
+	focus = {
+		id = gsr_imrf_bring_back_ucs
+		icon = GFX_goal_continuous_research
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_begin_research
+		}
+		mutually_exclusive = {
+			focus = gsr_imrf_new_ca_procedure
+		}
+		x = 18
+		y = 21
+
+	}
+	focus = {
+		id = gsr_imrf_new_ca_procedure
+		icon = GFX_focus_generic_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_begin_research
+		}
+		mutually_exclusive = {
+			focus = gsr_imrf_bring_back_ucs
+		}
+		x = 20
+		y = 21
+
+	}
+	focus = {
+		id = gsr_imrf_build_new_facilities
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_imrf_bring_back_ucs
+			focus = gsr_imrf_new_ca_procedure
+		}
+		x = 19
+		y = 22
+
+	}
+	focus = {
+		id = gsr_imrf_arms_development
+		icon = GFX_goal_generic_small_arms
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_imrf_build_new_facilities
+		}
+		x = 19
+		y = 23
+
+	}
+	focus = {
+		id = gsr_imrf_military_factories
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_imrf_arms_development
+		}
+		x = 18
+		y = 24
+
+	}
+	focus = {
+		id = gsr_new_factories
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_major_military_development
+		}
+		x = 19
+		y = 44
+
+	}
+	focus = {
+		id = gsr_construct_new_hangars
+		icon = GFX_goal_generic_air_fighter2
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_new_m_factories
+		}
+		x = 19
+		y = 45
+
+	}
+	focus = {
+		id = gsr_new_bases
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_new_m_factories
+		}
+		x = 21
+		y = 45
+
+	}
+	focus = {
+		id = gsr_island_interventions
+		icon = GFX_goal_generic_major_war
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_bring_back_the_old_hangars
+		}
+		prerequisite = {
+			focus = gsr_construct_new_hangars
+		}
+		prerequisite = {
+			focus = gsr_new_bases
+		}
+		x = 19
+		y = 46
+
+	}
+	focus = {
+		id = gsr_stratis_ops
+		icon = GFX_goal_generic_political_pressure
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_island_interventions
+		}
+		x = 17
+		y = 47
+
+	}
+	focus = {
+		id = gsr_malden_ops
+		icon = GFX_goal_generic_political_pressure
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_island_interventions
+		}
+		x = 19
+		y = 47
+
+	}
+	focus = {
+		id = gsr_rahmadi_ops
+		icon = GFX_goal_generic_political_pressure
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_island_interventions
+		}
+		x = 21
+		y = 47
+
+	}
+	focus = {
+		id = gsr_military_interests
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_stratis_ops
+		}
+		prerequisite = {
+			focus = gsr_malden_ops
+		}
+		prerequisite = {
+			focus = gsr_rahmadi_ops
+		}
+		x = 19
+		y = 48
+
+	}
+	focus = {
+		id = gsr_imrf_old_factories
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_imrf_arms_development
+		}
+		x = 20
+		y = 24
+
+	}
+	focus = {
+		id = gsr_new_vehicles2
+		icon = GFX_goal_generic_army_motorized
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_military_interests
+		}
+		x = 20
+		y = 49
+
+	}
+	focus = {
+		id = gsr_imrf_begin_operations
+		icon = GFX_goal_generic_political_pressure
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_found_the_imrf
+		}
+		x = 27
+		y = 20
+
+	}
+	focus = {
+		id = gsr_imrf_military_factories2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_imrf_begin_operations
+		}
+		x = 26
+		y = 21
+
+	}
+	focus = {
+		id = gsr_imrf_external_networks
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_imrf_begin_operations
+		}
+		x = 28
+		y = 21
+
+	}
+	focus = {
+		id = gsr_imrf_military_facilities
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_imrf_military_factories2
+		}
+		prerequisite = {
+			focus = gsr_imrf_external_networks
+		}
+		x = 26
+		y = 22
+
+	}
+	focus = {
+		id = gsr_imrf_military_outposts
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_imrf_military_factories2
+		}
+		prerequisite = {
+			focus = gsr_imrf_external_networks
+		}
+		x = 24
+		y = 22
+
+	}
+	focus = {
+		id = gsr_imrf_data_collection
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_imrf_military_factories2
+		}
+		prerequisite = {
+			focus = gsr_imrf_external_networks
+		}
+		x = 28
+		y = 22
+
+	}
+	focus = {
+		id = gsr_imrf_spying_network
+		icon = GFX_goal_generic_secret_weapon
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_imrf_military_factories2
+		}
+		prerequisite = {
+			focus = gsr_imrf_external_networks
+		}
+		x = 30
+		y = 22
+
+	}
+	focus = {
+		id = gsr_imrf_taskforces
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_imrf_military_outposts
+		}
+		prerequisite = {
+			focus = gsr_imrf_military_facilities
+		}
+		prerequisite = {
+			focus = gsr_imrf_data_collection
+		}
+		prerequisite = {
+			focus = gsr_imrf_spying_network
+		}
+		x = 27
+		y = 23
+
+	}
+	focus = {
+		id = gsr_imrf_internal_departments
+		icon = GFX_focus_generic_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_imrf_taskforces
+		}
+		x = 25
+		y = 24
+
+	}
+	focus = {
+		id = gsr_imrf_classifications
+		icon = GFX_focus_generic_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_imrf_taskforces
+		}
+		x = 27
+		y = 24
+
+	}
+	focus = {
+		id = gsr_imrf_access_levels
+		icon = GFX_focus_generic_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_imrf_taskforces
+		}
+		x = 29
+		y = 24
+
+	}
+	focus = {
+		id = gsr_imrf_industrial_incident
+		icon = GFX_goal_generic_secret_weapon
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_imrf_internal_departments
+		}
+		prerequisite = {
+			focus = gsr_imrf_classifications
+		}
+		prerequisite = {
+			focus = gsr_imrf_access_levels
+		}
+		prerequisite = {
+			focus = gsr_imrf_old_factories
+		}
+		prerequisite = {
+			focus = gsr_imrf_military_factories
+		}
+		x = 23
+		y = 25
+
+	}
+	focus = {
+		id = gsr_imrf_residential_incident
+		icon = GFX_goal_generic_secret_weapon
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_imrf_industrial_incident
+		}
+		x = 22
+		y = 26
+
+	}
+	focus = {
+		id = gsr_zrc_anomaly_research
+		icon = GFX_focus_research
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_zrc_task_forces_weaponry
+		}
+		prerequisite = {
+			focus = gsr_zrc_arms_development
+		}
+		prerequisite = {
+			focus = gsr_zrc_industrial_research
+		}
+		x = 13
+		y = 25
+
+	}
+	focus = {
+		id = gsr_mjx_disband
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_mjx_research_interest
+		}
+		prerequisite = {
+			focus = gsr_mjx_black_ops
+		}
+		mutually_exclusive = {
+			focus = gsr_mjx_reform
+		}
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = gsr_zer_disband
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_zer_ucs_002
+		}
+		prerequisite = {
+			focus = gsr_zer_ucs_001
+		}
+		mutually_exclusive = {
+			focus = gsr_zer_continue_development
+		}
+		x = 11
+		y = 11
+
+	}
+	focus = {
+		id = gsr_zer_continue_development
+		icon = GFX_focus_generic_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_zer_ucs_001
+		}
+		prerequisite = {
+			focus = gsr_zer_ucs_002
+		}
+		mutually_exclusive = {
+			focus = gsr_zer_disband
+		}
+		x = 15
+		y = 11
+
+	}
+	focus = {
+		id = gsr_zer_ucs_002
+		icon = GFX_focus_research
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_zer_ucs_creation
+		}
+		x = 12
+		y = 10
+
+	}
+	focus = {
+		id = gsr_rally_the_trio
+		icon = GFX_goal_generic_improve_relations
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_begin_development
+		}
+		x = 8
+		y = 13
+
+	}
+	focus = {
+		id = gsr_the_refuge
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_rally_the_trio
+		}
+		x = 8
+		y = 14
+
+	}
+	focus = {
+		id = gsr_begin_operations
+		icon = GFX_goal_generic_secret_weapon
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_the_refuge
+		}
+		x = 4
+		y = 15
+
+	}
+	focus = {
+		id = gsr_raid_hostile_warehouses
+		icon = GFX_goal_generic_small_arms
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_begin_operations
+		}
+		x = 1
+		y = 16
+
+	}
+	focus = {
+		id = gsr_skyscraper_takeover
+		icon = GFX_goal_generic_secret_weapon
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_begin_operations
+		}
+		x = 3
+		y = 16
+
+	}
+	focus = {
+		id = gsr_construction_extraction
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_begin_operations
+		}
+		x = 5
+		y = 16
+
+	}
+	focus = {
+		id = gsr_old_conflicts
+		icon = GFX_goal_generic_major_war
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_begin_operations
+		}
+		x = 7
+		y = 16
+
+	}
+	focus = {
+		id = gsr_lab_takeover
+		icon = GFX_focus_research
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_raid_hostile_warehouses
+		}
+		prerequisite = {
+			focus = gsr_skyscraper_takeover
+		}
+		prerequisite = {
+			focus = gsr_construction_extraction
+		}
+		prerequisite = {
+			focus = gsr_old_conflicts
+		}
+		x = 3
+		y = 17
+
+	}
+	focus = {
+		id = gsr_exploration_incident
+		icon = GFX_goal_generic_secret_weapon
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_raid_hostile_warehouses
+		}
+		prerequisite = {
+			focus = gsr_skyscraper_takeover
+		}
+		prerequisite = {
+			focus = gsr_construction_extraction
+		}
+		prerequisite = {
+			focus = gsr_old_conflicts
+		}
+		x = 5
+		y = 17
+
+	}
+	focus = {
+		id = gsr_arms_development
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_the_refuge
+		}
+		x = 12
+		y = 15
+
+	}
+	focus = {
+		id = gsr_new_weaponry
+		icon = GFX_goal_generic_small_arms
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_arms_development
+		}
+		x = 10
+		y = 16
+
+	}
+	focus = {
+		id = gsr_helicopter_design
+		icon = GFX_goal_generic_air_fighter2
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_arms_development
+		}
+		x = 12
+		y = 16
+
+	}
+	focus = {
+		id = gsr_minor_vehicles
+		icon = GFX_goal_generic_army_motorized
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_arms_development
+		}
+		x = 14
+		y = 16
+
+	}
+	focus = {
+		id = gsr_found_the_armory
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_new_weaponry
+		}
+		prerequisite = {
+			focus = gsr_helicopter_design
+		}
+		prerequisite = {
+			focus = gsr_minor_vehicles
+		}
+		x = 11
+		y = 17
+
+	}
+	focus = {
+		id = gsr_temporary_hangars
+		icon = GFX_goal_generic_air_fighter
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_new_weaponry
+		}
+		prerequisite = {
+			focus = gsr_helicopter_design
+		}
+		prerequisite = {
+			focus = gsr_minor_vehicles
+		}
+		x = 13
+		y = 17
+
+	}
+	focus = {
+		id = gsr_c17_incident
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_lab_takeover
+		}
+		prerequisite = {
+			focus = gsr_exploration_incident
+		}
+		prerequisite = {
+			focus = gsr_found_the_armory
+		}
+		prerequisite = {
+			focus = gsr_temporary_hangars
+		}
+		x = 8
+		y = 18
+
+	}
+	focus = {
+		id = gsr_found_the_zrc
+		icon = GFX_focus_research2
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_c17_incident
+		}
+		x = 8
+		y = 19
+
+	}
+	focus = {
+		id = gsr_zrc_begin_research
+		icon = GFX_focus_research
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_found_the_zrc
+		}
+		x = 7
+		y = 20
+
+	}
+	focus = {
+		id = gsr_zrc_outposts
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_found_the_zrc
+		}
+		x = 9
+		y = 20
+
+	}
+	focus = {
+		id = gsr_zrc_facilities
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_found_the_zrc
+		}
+		x = 11
+		y = 20
+
+	}
+	focus = {
+		id = gsr_zrc_military_factories
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_zrc_facilities
+		}
+		prerequisite = {
+			focus = gsr_zrc_outposts
+		}
+		x = 10
+		y = 21
+
+	}
+	focus = {
+		id = gsr_zrc_disband
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_zrc_electronics_research
+		}
+		prerequisite = {
+			focus = gsr_zrc_military_factories
+		}
+		mutually_exclusive = {
+			focus = gsr_zrc_continue_research
+		}
+		x = 6
+		y = 22
+
+	}
+	focus = {
+		id = gsr_zrc_continue_research
+		icon = GFX_goal_continuous_research
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_zrc_electronics_research
+		}
+		prerequisite = {
+			focus = gsr_zrc_military_factories
+		}
+		mutually_exclusive = {
+			focus = gsr_zrc_disband
+		}
+		x = 10
+		y = 22
+
+	}
+	focus = {
+		id = gsr_zrc_electronics_research
+		icon = GFX_focus_research
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_zrc_begin_research
+		}
+		prerequisite = {
+			focus = gsr_zrc_arms_research
+		}
+		x = 6
+		y = 21
+
+	}
+	focus = {
+		id = gsr_zrc_arms_research
+		icon = GFX_goal_generic_small_arms
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_found_the_zrc
+		}
+		x = 5
+		y = 20
+
+	}
+	focus = {
+		id = gsr_zrc_major_brf_war
+		icon = GFX_goal_generic_major_war
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_zrc_steal_brf_documents
+		}
+		prerequisite = {
+			focus = gsr_zrc_raid_brf_facilities
+		}
+		prerequisite = {
+			focus = gsr_zrc_brf_data_collection
+		}
+		x = 6
+		y = 33
+
+	}
+	focus = {
+		id = gsr_zrc_ivan_help
+		icon = GFX_goal_generic_small_arms
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_zrc_major_brf_war
+		}
+		x = 5
+		y = 34
+
+	}
+	focus = {
+		id = gsr_zrc_danil_help
+		icon = GFX_goal_generic_small_arms
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_zrc_major_brf_war
+		}
+		x = 7
+		y = 34
+
+	}
+	focus = {
+		id = gsr_zrc_new_facilities
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_zrc_continue_research
+		}
+		x = 10
+		y = 23
+
+	}
+	focus = {
+		id = gsr_zrc_nuclear_research
+		icon = GFX_focus_wonderweapons
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_zrc_continue_research
+		}
+		x = 12
+		y = 23
+
+	}
+	focus = {
+		id = gsr_zrc_industrial_research
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_zrc_new_facilities
+		}
+		x = 14
+		y = 24
+
+	}
+	focus = {
+		id = gsr_zrc_arms_development
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_zrc_new_facilities
+		}
+		x = 12
+		y = 24
+
+	}
+	focus = {
+		id = gsr_zrc_task_forces_weaponry
+		icon = GFX_goal_generic_small_arms
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_zrc_new_facilities
+		}
+		x = 10
+		y = 24
+
+	}
+	focus = {
+		id = gsr_zrc_bring_back_ucs
+		icon = GFX_goal_continuous_research
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_zrc_task_forces_weaponry
+		}
+		prerequisite = {
+			focus = gsr_zrc_arms_development
+		}
+		prerequisite = {
+			focus = gsr_zrc_industrial_research
+		}
+		x = 11
+		y = 25
+
+	}
+	focus = {
+		id = gsr_zrc_ucs_containment
+		icon = GFX_focus_research2
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_zrc_bring_back_ucs
+		}
+		prerequisite = {
+			focus = gsr_zrc_anomaly_research
+		}
+		x = 12
+		y = 26
+
+	}
+	focus = {
+		id = gsr_zrc_ucs_001
+		icon = GFX_focus_research2
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_zrc_ucs_containment
+		}
+		x = 10
+		y = 27
+
+	}
+	focus = {
+		id = gsr_zrc_ucs_002
+		icon = GFX_focus_research2
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_zrc_ucs_containment
+		}
+		x = 12
+		y = 27
+
+	}
+	focus = {
+		id = gsr_zrc_ucs_003
+		icon = GFX_focus_research2
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_zrc_ucs_containment
+		}
+		x = 14
+		y = 27
+
+	}
+	focus = {
+		id = gsr_imrf_commercial_incident
+		icon = GFX_goal_generic_secret_weapon
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_imrf_industrial_incident
+		}
+		x = 24
+		y = 26
+
+	}
+	focus = {
+		id = gsr_imrf_evacuation
+		icon = GFX_goal_generic_position_armies
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_imrf_residential_incident
+		}
+		prerequisite = {
+			focus = gsr_imrf_commercial_incident
+		}
+		x = 23
+		y = 27
+
+	}
+	focus = {
+		id = gsr_imrf_disband
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_imrf_evacuation
+		}
+		x = 23
+		y = 28
+
+	}
+	focus = {
+		id = gsr_major_internal_development
+		icon = GFX_focus_generic_self_management
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_mike_leader
+			focus = gsr_kerk_leader
+			focus = gsr_mark_leader
+		}
+		x = 15
+		y = 43
+
+	}
+	focus = {
+		id = gsr_dea_creation
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_major_internal_development
+		}
+		x = 15
+		y = 44
+
+	}
+	focus = {
+		id = gsr_high_command
+		icon = GFX_focus_generic_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_major_internal_development
+		}
+		x = 13
+		y = 44
+
+	}
+	focus = {
+		id = gsr_discord_development
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_dea_creation
+		}
+		x = 15
+		y = 45
+
+	}
+	focus = {
+		id = gsr_maintain_full_secrecy
+		icon = GFX_goal_generic_fortify_city
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_improved_hierarchy
+		}
+		x = 17
+		y = 53
+
+	}
+	focus = {
+		id = gsr_begin_the_duty_conflict
+		icon = GFX_goal_generic_political_pressure
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_maintain_full_secrecy
+		}
+		prerequisite = {
+			focus = gsr_fake_name
+		}
+		x = 16
+		y = 54
+
+	}
+	focus = {
+		id = gsr_raid_duty_facilities
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_begin_the_duty_conflict
+		}
+		x = 15
+		y = 55
+
+	}
+	focus = {
+		id = gsr_active_anti_duty_propaganda
+		icon = GFX_goal_generic_political_pressure
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_begin_the_duty_conflict
+		}
+		x = 17
+		y = 55
+
+	}
+	focus = {
+		id = gsr_anti_duty_creation
+		icon = GFX_focus_generic_treaty
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_raid_duty_facilities
+		}
+		prerequisite = {
+			focus = gsr_active_anti_duty_propaganda
+		}
+		x = 16
+		y = 56
+
+	}
+	focus = {
+		id = gsr_invite_finset
+		icon = GFX_goal_generic_improve_relations
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_anti_duty_creation
+		}
+		x = 18
+		y = 57
+
+	}
+	focus = {
+		id = gsr_invite_od
+		icon = GFX_goal_generic_improve_relations
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_anti_duty_creation
+		}
+		x = 16
+		y = 57
+
+	}
+	focus = {
+		id = gsr_invite_ivan
+		icon = GFX_goal_generic_improve_relations
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_anti_duty_creation
+		}
+		x = 14
+		y = 57
+
+	}
+	focus = {
+		id = gsr_continue_the_raids
+		icon = GFX_goal_generic_position_armies
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_invite_finset
+		}
+		prerequisite = {
+			focus = gsr_invite_ivan
+		}
+		prerequisite = {
+			focus = gsr_invite_od
+		}
+		x = 16
+		y = 58
+
+	}
+	focus = {
+		id = gsr_reveal_the_raiding
+		icon = GFX_goal_generic_major_war
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_continue_the_raids
+		}
+		x = 16
+		y = 59
+
+	}
+	focus = {
+		id = gsr_fake_name
+		icon = GFX_goal_generic_secret_weapon
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_improved_hierarchy
+		}
+		x = 15
+		y = 53
+
+	}
+	focus = {
+		id = gsr_new_outposts
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_administrative_department
+		}
+		prerequisite = {
+			focus = gsr_intelligence_agency
+		}
+		prerequisite = {
+			focus = gsr_discord_development
+		}
+		x = 13
+		y = 46
+
+	}
+	focus = {
+		id = gsr_new_fobs
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_new_outposts
+		}
+		x = 11
+		y = 47
+
+	}
+	focus = {
+		id = gsr_new_headquarters
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_new_outposts
+		}
+		x = 13
+		y = 47
+
+	}
+	focus = {
+		id = gsr_new_facilities
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_new_outposts
+		}
+		x = 15
+		y = 47
+
+	}
+	focus = {
+		id = gsr_research_interests
+		icon = GFX_focus_research
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_new_fobs
+		}
+		prerequisite = {
+			focus = gsr_new_headquarters
+		}
+		prerequisite = {
+			focus = gsr_new_facilities
+		}
+		x = 13
+		y = 48
+
+	}
+	focus = {
+		id = gsr_afr_corporation
+		icon = GFX_goal_tfv_generic_tech_sharing
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_research_interests
+		}
+		x = 12
+		y = 49
+
+	}
+	focus = {
+		id = gsr_rd_innovations
+		icon = GFX_focus_research2
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_research_interests
+		}
+		x = 14
+		y = 49
+
+	}
+	focus = {
+		id = gsr_new_military_factories2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_military_interests
+		}
+		x = 18
+		y = 49
+
+	}
+	focus = {
+		id = gsr_neutral_policy
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_afr_corporation
+		}
+		prerequisite = {
+			focus = gsr_rd_innovations
+		}
+		prerequisite = {
+			focus = gsr_new_military_factories2
+		}
+		prerequisite = {
+			focus = gsr_new_vehicles2
+		}
+		x = 16
+		y = 50
+
+	}
+	focus = {
+		id = gsr_minor_interventionism
+		icon = GFX_goal_generic_political_pressure
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_neutral_policy
+		}
+		mutually_exclusive = {
+			focus = gsr_major_interventionism
+		}
+		x = 15
+		y = 51
+
+	}
+	focus = {
+		id = gsr_major_interventionism
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_neutral_policy
+		}
+		mutually_exclusive = {
+			focus = gsr_minor_interventionism
+		}
+		x = 17
+		y = 51
+
+	}
+	focus = {
+		id = gsr_improved_hierarchy
+		icon = GFX_goal_generic_national_unity
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_minor_interventionism
+		}
+		prerequisite = {
+			focus = gsr_major_interventionism
+		}
+		x = 16
+		y = 52
+
+	}
+	focus = {
+		id = gsr_intelligence_agency
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_dea_creation
+		}
+		x = 13
+		y = 45
+
+	}
+	focus = {
+		id = gsr_administrative_department
+		icon = GFX_focus_generic_self_management
+		cost = 10,00
+		prerequisite = {
+			focus = gsr_dea_creation
+		}
+		x = 11
+		y = 45
+
+	}
+}

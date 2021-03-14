@@ -4,7 +4,7 @@ country_event = {
 	id = arc_invitation.1
     title = arc_title.0.d
     desc = arc_desc.0.d
-	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+	picture = GFX_report_event_generic_sign_treaty2 # Image displayed alongside the text.
 
 	is_triggered_only = yes
 

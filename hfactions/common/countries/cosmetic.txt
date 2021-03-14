@@ -26,3 +26,11 @@ NDF_great_elektrostal = {
 	color = rgb { 255 143 31 }
 	color_ui = rgb { 255 143 31 }
 }
+NDF_state_finset = {
+	color = rgb { 102 102 255 }
+	color_ui = rgb { 102 102 255 }
+}
+VCC_rsfsr = {
+	color = rgb { 255 0 0 }
+	color_ui = rgb { 255 0 0 }
+}

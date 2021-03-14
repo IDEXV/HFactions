@@ -740,6 +740,7 @@ focus_tree = {
 			focus = brf_minor_researches
 		}
 		completion_reward = {
+			add_research_slot = 1
 			add_tech_bonus = {
 				bonus = 2
 				uses = 1
@@ -1913,6 +1914,7 @@ focus_tree = {
 		bypass = {
 			NDF = {
 				has_war_with = BRF
+				has_war_with = GSR
 			}
 		}
 		prerequisite = {
@@ -1926,6 +1928,10 @@ focus_tree = {
 				NDF = {
 					declare_war_on = {
    					target = BRF
+    				type = annex_everything
+					}
+					declare_war_on = {
+   					target = GSR
     				type = annex_everything
 				}				
 			}

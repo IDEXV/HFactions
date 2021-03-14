@@ -4,7 +4,7 @@ country_event = {
 	id = arc_invite_dec.1
     title = arcid_title.0.d
     desc = arcid_desc.0.d
-	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+	picture = GFX_report_event_generic_sign_treaty2 # Image displayed alongside the text.
 
 	is_triggered_only = yes
 
@@ -21,7 +21,7 @@ country_event = {
 	id = arc_invite_ace.1
     title = arcace_title.0.d
     desc = arcace_desc.0.d
-	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+	picture = GFX_report_event_generic_sign_treaty2 # Image displayed alongside the text.
 
 	is_triggered_only = yes
 
@@ -38,7 +38,7 @@ country_event = {
 	id = vcc_tertrade_ace.1
     title = vcc_tertradeace_title.0.d
     desc = vcc_tertradeace_desc.0.d
-	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+	picture = GFX_report_event_generic_sign_treaty3 # Image displayed alongside the text.
 
 	is_triggered_only = yes
 
@@ -56,7 +56,7 @@ country_event = {
 	id = vcc_tertrade_dec.1
     title = vcc_tertradedec_title.0.d
     desc = vcc_tertradedec_desc.0.d
-	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+	picture = GFX_report_event_generic_sign_treaty3 # Image displayed alongside the text.
 
 	is_triggered_only = yes
 
@@ -73,7 +73,7 @@ country_event = {
 	id = ndf_finsetrebels.1
     title = ndf_finsetrebels_title.0.d
     desc = ndf_finsetrebels_desc.0.d
-	picture = GFX_report_event_election_vote # Image displayed alongside the text.
+	picture = GFX_report_event_generic_riot # Image displayed alongside the text.
 
 	is_triggered_only = yes
 

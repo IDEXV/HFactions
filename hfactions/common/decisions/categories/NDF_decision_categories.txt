@@ -8,3 +8,14 @@ NDF_category_inside_issues = {
 		original_tag = NDF
 	}
 }
+
+NDF_category_political_infighting = {
+
+	icon = border_conflicts
+
+	priority = 95
+
+	allowed = {
+		original_tag = NDF
+	}
+}
