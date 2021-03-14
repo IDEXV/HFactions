@@ -211,33 +211,6 @@ set_technology = {
 			communism = 20
 			democratic = 10
 		}
-		
-		create_country_leader = {
-    		name = "Mr. Vuldemar"
-    		desc = ""
-    		picture = "gfx/leaders/VCC/portrait_vcc_vuldemar_corp.dds"
-    		expire = "2050.1.1"
-    		ideology = centrism
-    		traits = {
-        		ideological_crusader
-				head_of_intelligence
-				headstrong
-				communist_revolutionary
-    		}
-		}
-
-		create_country_leader = {
-    		name = "Egor Nikitin"
-    		desc = ""
-    		picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
-    		expire = "2050.1.1"
-    		ideology = stalinism
-    		traits = {
-        		stout_defender
-				headstrong
-				hawk
-    		}
-		}
 }
 
 set_politics = {
@@ -261,7 +234,7 @@ create_country_leader = {
     ideology = stalinism
     traits = {
         ideological_crusader
-		head_of_intelligence
+		warmonger
 		headstrong
 		communist_revolutionary
     }
@@ -305,6 +278,6 @@ create_country_leader = {
         ideological_crusader
 		head_of_intelligence
 		headstrong
-		communist_revolutionary
+		popular_figurehead
     }
 }

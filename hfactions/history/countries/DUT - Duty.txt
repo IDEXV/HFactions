@@ -217,6 +217,23 @@ set_technology = {
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 
+	create_country_leader = {
+    	name = "Danil Plaksin"
+    	desc = "LEADER_DANIL_DESC"
+    	picture = "gfx/leaders/DUT/portrait_dut_danil.dds"
+    	expire = "2050.1.1"
+    	ideology = nazism
+    	traits = {
+        	dictator
+			warmonger
+			national_integralist
+			nationalist_symbol
+			#
+			dislikes_gsr
+			dislikes_brf
+    		}
+		}
+
 		set_politics = {
 			ruling_party = fascism
 			last_election = "2019.6.10"
@@ -253,23 +270,6 @@ create_country_leader = {
         warmonger
 		cabinet_crisis
 		headstrong
-    }
-}
-
-create_country_leader = {
-    name = "Danil Plaksin"
-    desc = "LEADER_DANIL_DESC"
-    picture = "gfx/leaders/DUT/portrait_dut_danil.dds"
-    expire = "2050.1.1"
-    ideology = nazism
-    traits = {
-        dictator
-		warmonger
-		national_integralist
-		nationalist_symbol
-		#
-		dislikes_gsr
-		dislikes_brf
     }
 }
 

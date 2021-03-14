@@ -8,7 +8,6 @@ set_technology = {
 oob = "GSR_2018"
 
 add_ideas = {
-	three_leaders
 	beginning_debuff
 }
 
@@ -194,10 +193,10 @@ set_technology = {
 	
 	add_ideas = {
 		soul_of_organization
+		three_leaders
 	}
 
 	remove_ideas = {
-		soul_of_pmc
 		beginning_debuff
 	}
 
