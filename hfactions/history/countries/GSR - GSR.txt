@@ -26,6 +26,11 @@ set_autonomy = {
 	autonomous_state = autonomy_integrated_puppet
 }
 
+set_autonomy = {
+	target = ZRC
+	autonomous_state = autonomy_integrated_puppet
+}
+
 set_technology = {
 	legacy_doctrines = 1
 	modern_blitzkrieg = 1

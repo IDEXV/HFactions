@@ -157,7 +157,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 2026
+		location = 2188
 		division_template = "C17R Infantry"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -166,7 +166,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 12748
+		location = 2188
 		division_template = "C17R Infantry"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -175,7 +175,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 12809
+		location = 2188
 		division_template = "C17R Infantry"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -184,7 +184,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 12809
+		location = 2188
 		division_template = "C17R Infantry"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -193,7 +193,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 8013
+		location = 2188
 		division_template = "C17R Infantry"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -202,7 +202,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 12788
+		location = 2188
 		division_template = "C17R Infantry"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -211,7 +211,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 10852
+		location = 2188
 		division_template = "C17R Infantry"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -220,7 +220,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 5029
+		location = 2188
 		division_template = "C17R Infantry"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -229,7 +229,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 40
+		location = 2188
 		division_template = "C17R Infantry"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -238,7 +238,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 3067
+		location = 2188
 		division_template = "C17R Infantry"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -247,7 +247,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 6194
+		location = 2188
 		division_template = "C17R Infantry"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -256,7 +256,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 40
+		location = 2188
 		division_template = "C17R Infantry"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -265,7 +265,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 9074
+		location = 2188
 		division_template = "C17R Infantry"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -274,7 +274,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 6117
+		location = 2188
 		division_template = "C17R Infantry"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -283,7 +283,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 9217
+		location = 2188
 		division_template = "C17R Infantry"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -292,7 +292,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 7573
+		location = 2188
 		division_template = "C17R Infantry"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -301,7 +301,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 7448
+		location = 2188
 		division_template = "C17R Infantry"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -310,7 +310,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 7982
+		location = 2188
 		division_template = "C17R Infantry"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -319,7 +319,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 7982
+		location = 2188
 		division_template = "C17R Infantry"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -328,7 +328,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 7982
+		location = 2188
 		division_template = "C17R Infantry"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -337,7 +337,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 7982
+		location = 2188
 		division_template = "C17R Infantry"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -346,7 +346,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 7982
+		location = 2188
 		division_template = "C17R Infantry"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -355,7 +355,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 7982
+		location = 2188
 		division_template = "C17R Infantry"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -364,7 +364,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 7982
+		location = 2188
 		division_template = "C17R Infantry"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -373,7 +373,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 7982
+		location = 2188
 		division_template = "C17R Infantry"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -382,7 +382,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 7982
+		location = 2188
 		division_template = "C17R Infantry"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1
@@ -391,7 +391,7 @@ units = {
 		division_name = {
 				is_name_ordered = yes
 		}
-		location = 7982
+		location = 2188
 		division_template = "C17R Infantry"
 		start_experience_factor = 0.75
 		start_equipment_factor = 1

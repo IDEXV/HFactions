@@ -1,0 +1,171 @@
+ideas = {
+
+    country = {
+
+        mjx_internal_network = {
+
+            picture = generic_spy_intel
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+            modifier = {
+				stability_weekly = 0.1
+				airforce_intel_to_others = -5
+				civilian_intel_to_others = -5
+				navy_intel_to_others = -5
+				new_operative_slot_bonus = 1
+				intelligence_agency_defense = 0.2
+				agency_upgrade_time = -0.2
+            }
+		}
+
+        mjx_agents = {
+
+            picture = generic_spy_intel
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+            modifier = {
+				new_operative_slot_bonus = 1
+            }
+		}
+
+        mjx_internal_security = {
+
+            picture = generic_spy_intel
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+            modifier = {
+				airforce_intel_to_others = -5
+				civilian_intel_to_others = -5
+				navy_intel_to_others = -5
+				intelligence_agency_defense = 0.1
+            }
+		}
+
+        mjx_research_interests = {
+
+            picture = generic_research_bonus
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+            modifier = {
+				research_speed_factor = 0.2
+				war_support_weekly = -0.1
+            }
+		}
+
+        zer_researches = {
+
+            picture = generic_research_bonus
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+            modifier = {
+				research_speed_factor = 0.3
+				war_support_weekly = -0.2
+            }
+		}
+
+        zer_anomaly_researching = {
+
+            picture = generic_research_bonus
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+            modifier = {
+				research_speed_factor = 0.4
+				war_support_weekly = -0.3
+            }
+		}
+
+        zer_ucs_created = {
+
+            picture = generic_research_bonus
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+            modifier = {
+				research_speed_factor = 0.5
+				war_support_weekly = -0.5
+				stability_weekly = 0.1
+            }
+		}
+
+        zer_agents = {
+
+            picture = generic_spy_intel
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+            modifier = {
+				new_operative_slot_bonus = 1
+            }
+		}
+    }
+}

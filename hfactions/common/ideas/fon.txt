@@ -1,0 +1,30 @@
+ideas = {
+
+    country = {
+
+        fon_internal_network = {
+
+            picture = generic_spy_intel
+			
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+            modifier = {
+				stability_weekly = 0.1
+				airforce_intel_to_others = -5
+				civilian_intel_to_others = -5
+				navy_intel_to_others = -5
+				new_operative_slot_bonus = 1
+				intelligence_agency_defense = 0.2
+				agency_upgrade_time = -0.2
+            }
+		}
+    }
+}

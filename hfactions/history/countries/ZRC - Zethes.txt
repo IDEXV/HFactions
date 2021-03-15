@@ -1,4 +1,4 @@
-capital = 215
+capital = 572
 
 # Starting tech
 set_technology = {
@@ -7,7 +7,7 @@ set_technology = {
 
 set_convoys = 15
 set_research_slots = 3
-set_stability = 0.6
+set_stability = 0.7
 set_war_support = 0.8
 
 add_ideas = {
@@ -367,15 +367,17 @@ set_popularities = {
 }
 
 create_country_leader = {
-    name = "Mark Reed"
-    desc = "LEADER_MARK_DESC"
-    picture = "gfx/leaders/GSR/portrait_gsr_unknown.dds"
+    name = "Maxim IDEXV"
+    desc = "LEADER_KERK_DESC"
+    picture = "gfx/leaders/GSR/portrait_gsr_kerk.dds"
     expire = "2050.1.1"
     ideology = centrism
     traits = {
-		warmonger
-		ideological_crusader
-		quartermaster_general
+		fortification_engineer
 		war_industrialist
+		ideological_crusader
+		headstrong
+		#
+		dislikes_duty
     }
 }

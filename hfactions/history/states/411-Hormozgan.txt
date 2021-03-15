@@ -10,8 +10,8 @@ state={
 	
 
 	history={
-		owner = MJX
-		add_core_of = MJX
+		owner = BLK
+		add_core_of = BLK
 				
 		buildings = {
 			infrastructure = 2

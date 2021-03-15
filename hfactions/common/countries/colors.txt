@@ -48,6 +48,10 @@ NDC = {
 	color = RGB { 193 0 32 }
 	color_ui = RGB { 193 0 32 }
 }
+ZRC = {
+	color = RGB { 58 117 196 }
+	color_ui = RGB { 58 117 196 }
+}
 MJX = {
 	color = RGB { 23 128 109 }
 	color_ui = RGB { 23 128 109 }
