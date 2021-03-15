@@ -46,6 +46,7 @@ bookmarks = {
 				three_leaders
 			}
 			focuses = {
+				gsr_organization_reformation
 			}
 		}
 		"DUT" = {

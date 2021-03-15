@@ -11,7 +11,7 @@ focus_tree = {
 	focus = {
 		id = gsr_fd11_founding
 		icon = GFX_focus_hol_the_foundations_of_defense
-		cost = 10,00
+		cost = 5,00
 		x = 4
 		y = 0
 
@@ -19,7 +19,7 @@ focus_tree = {
 	focus = {
 		id = gsr_mjx_founding
 		icon = GFX_focus_hol_the_foundations_of_defense
-		cost = 10,00
+		cost = 5,00
 		x = 11
 		y = 0
 
@@ -27,7 +27,7 @@ focus_tree = {
 	focus = {
 		id = gsr_begin_development
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 10,00
+		cost = 5,00
 		x = 8
 		y = 12
 
@@ -35,7 +35,7 @@ focus_tree = {
 	focus = {
 		id = gsr_found_the_imrf
 		icon = GFX_focus_hol_the_foundations_of_defense
-		cost = 10,00
+		cost = 5,00
 		x = 23
 		y = 19
 
@@ -43,115 +43,47 @@ focus_tree = {
 	focus = {
 		id = gsr_old_comrades
 		icon = GFX_goal_generic_improve_relations
-		cost = 10,00
+		cost = 5,00
 		x = 16
 		y = 29
 
 	}
 	focus = {
-		id = gsr_zrc_brf_aggression
-		icon = GFX_goal_generic_political_pressure
-		prerequisite = {
-			focus = gsr_zrc_brf_outposts
-		}
-		prerequisite = {
-			focus = gsr_zrc_brf_spying
-		}
-		cost = 10,00
-		x = 5
-		y = 31
-
-	}
-	focus = {
-		id = gsr_zrc_anti_brf_operations
-		icon = GFX_goal_generic_attack_allies
-		prerequisite = {
-			focus = gsr_zrc_brf_outposts
-		}
-		prerequisite = {
-			focus = gsr_zrc_brf_spying
-		}
-		cost = 10,00
-		x = 7
-		y = 31
-
-	}
-	focus = {
-		id = gsr_zrc_steal_brf_documents
-		icon = GFX_goal_generic_intelligence_exchange
-		cost = 10,00
-		prerequisite = {
-			focus = gsr_zrc_brf_aggression
-		}
-		prerequisite = {
-			focus = gsr_zrc_anti_brf_operations
-		}
-		x = 4
-		y = 32
-
-	}
-	focus = {
-		id = gsr_zrc_raid_brf_facilities
-		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = {
-			focus = gsr_zrc_brf_aggression
-		}
-		prerequisite = {
-			focus = gsr_zrc_anti_brf_operations
-		}
-		cost = 10,00
-		x = 6
-		y = 32
-
-	}
-	focus = {
-		id = gsr_zrc_brf_data_collection
-		icon = GFX_goal_generic_intelligence_exchange
-		prerequisite = {
-			focus = gsr_zrc_brf_aggression
-		}
-		prerequisite = {
-			focus = gsr_zrc_anti_brf_operations
-		}
-		cost = 10,00
-		x = 8
-		y = 32
-
-	}
-	focus = {
-		id = gsr_zrc_brf_outposts
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = {
-			focus = gsr_receive_brf_aggression
-		}
-		cost = 10,00
-		x = 5
-		y = 30
-
-	}
-	focus = {
-		id = gsr_zrc_brf_spying
-		icon = GFX_goal_generic_radar
-		prerequisite = {
-			focus = gsr_receive_brf_aggression
-		}
-		cost = 10,00
-		x = 7
-		y = 30
-
-	}
-	focus = {
 		id = gsr_receive_brf_aggression
 		icon = GFX_goal_generic_political_pressure
-		cost = 10,00
+		cost = 4,00
 		x = 6
+		y = 29
+
+	}
+	focus = {
+		id = gsr_begin_the_duty_conflict
+		icon = GFX_goal_generic_political_pressure
+		cost = 4,00
+		x = 26
+		y = 29
+
+	}
+	focus = {
+		id = gsr_begin_the_ndf_conflict
+		icon = GFX_goal_generic_major_war
+		cost = 4,00
+		x = 6
+		y = 36
+
+	}
+	focus = {
+		id = gsr_begin_finset_war
+		icon = GFX_goal_generic_major_war
+		cost = 4,00
+		x = 33
 		y = 29
 
 	}
 	focus = {
 		id = gsr_fd11_discord_server
 		icon = GFX_goal_generic_radar
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = gsr_fd11_founding
 		}
@@ -162,7 +94,7 @@ focus_tree = {
 	focus = {
 		id = gsr_fd11_internal_network
 		icon = GFX_goal_generic_defence
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = gsr_fd11_discord_server
 		}
@@ -173,7 +105,7 @@ focus_tree = {
 	focus = {
 		id = gsr_fd11_hire_boreas
 		icon = GFX_goal_generic_scientific_exchange
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_fd11_discord_server
 		}
@@ -184,7 +116,7 @@ focus_tree = {
 	focus = {
 		id = gsr_fd11_underground_ops
 		icon = GFX_goal_generic_secret_weapon
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_fd11_hire_boreas
 		}
@@ -198,7 +130,7 @@ focus_tree = {
 	focus = {
 		id = gsr_fd11_disband
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_fd11_underground_ops
 		}
@@ -212,7 +144,7 @@ focus_tree = {
 	focus = {
 		id = gsr_fd11_continue_development
 		icon = GFX_focus_generic_treaty
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_fd11_underground_ops
 		}
@@ -226,7 +158,7 @@ focus_tree = {
 	focus = {
 		id = gsr_mjx_discord_server
 		icon = GFX_goal_generic_radar
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_mjx_founding
 		}
@@ -237,7 +169,7 @@ focus_tree = {
 	focus = {
 		id = gsr_mjx_internal_network
 		icon = GFX_goal_generic_defence
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = gsr_mjx_discord_server
 		}
@@ -248,7 +180,7 @@ focus_tree = {
 	focus = {
 		id = gsr_mjx_agent_hiring
 		icon = GFX_goal_generic_intelligence_exchange
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_mjx_internal_network
 		}
@@ -259,7 +191,7 @@ focus_tree = {
 	focus = {
 		id = gsr_mjx_internal_security
 		icon = GFX_goal_generic_demand_territory
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_mjx_internal_network
 		}
@@ -270,7 +202,7 @@ focus_tree = {
 	focus = {
 		id = gsr_mjx_research_interest
 		icon = GFX_focus_research2
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = gsr_mjx_internal_security
 		}
@@ -284,7 +216,7 @@ focus_tree = {
 	focus = {
 		id = gsr_mjx_hire_boreas
 		icon = GFX_goal_generic_scientific_exchange
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_mjx_discord_server
 		}
@@ -295,7 +227,7 @@ focus_tree = {
 	focus = {
 		id = gsr_mjx_external_hiring
 		icon = GFX_goal_generic_improve_relations
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_mjx_hire_boreas
 		}
@@ -306,7 +238,7 @@ focus_tree = {
 	focus = {
 		id = gsr_mjx_external_influence
 		icon = GFX_goal_generic_political_pressure
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_mjx_hire_boreas
 		}
@@ -317,7 +249,7 @@ focus_tree = {
 	focus = {
 		id = gsr_mjx_black_ops
 		icon = GFX_goal_generic_military_sphere
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_mjx_external_hiring
 		}
@@ -331,7 +263,7 @@ focus_tree = {
 	focus = {
 		id = gsr_mjx_reform
 		icon = GFX_focus_generic_treaty
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_mjx_research_interest
 		}
@@ -348,7 +280,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zer_full_reformation
 		icon = GFX_focus_hol_the_foundations_of_defense
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_mjx_reform
 		}
@@ -359,7 +291,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zer_research
 		icon = GFX_focus_research
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_zer_full_reformation
 		}
@@ -370,7 +302,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zer_foundations
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_zer_research
 		}
@@ -381,7 +313,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zer_anomaly_research
 		icon = GFX_focus_research
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = gsr_zer_research
 		}
@@ -392,7 +324,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zer_army_focus
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_zer_full_reformation
 		}
@@ -403,7 +335,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zer_mjx_operatives
 		icon = GFX_goal_generic_intelligence_exchange
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_zer_army_focus
 		}
@@ -414,7 +346,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zer_operations_reborn
 		icon = GFX_goal_generic_political_pressure
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_zer_army_focus
 		}
@@ -425,7 +357,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zer_ucs_creation
 		icon = GFX_goal_continuous_research
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = gsr_zer_foundations
 		}
@@ -445,7 +377,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zer_ucs_001
 		icon = GFX_focus_research
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_zer_ucs_creation
 		}
@@ -456,7 +388,7 @@ focus_tree = {
 	focus = {
 		id = gsr_begin_major_development
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = gsr_old_comrades
 		}
@@ -467,7 +399,7 @@ focus_tree = {
 	focus = {
 		id = gsr_new_base
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_begin_major_development
 		}
@@ -478,7 +410,7 @@ focus_tree = {
 	focus = {
 		id = gsr_new_vehicles
 		icon = GFX_goal_generic_army_motorized
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_begin_major_development
 		}
@@ -489,7 +421,7 @@ focus_tree = {
 	focus = {
 		id = gsr_new_people
 		icon = GFX_goal_generic_improve_relations
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_begin_major_development
 		}
@@ -500,7 +432,7 @@ focus_tree = {
 	focus = {
 		id = gsr_major_arms_development
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_begin_major_development
 		}
@@ -511,7 +443,7 @@ focus_tree = {
 	focus = {
 		id = gsr_pmc_reformation
 		icon = GFX_focus_generic_treaty
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_new_base
 		}
@@ -531,7 +463,7 @@ focus_tree = {
 	focus = {
 		id = gsr_new_departments
 		icon = GFX_focus_generic_treaty
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = gsr_pmc_reformation
 		}
@@ -542,7 +474,7 @@ focus_tree = {
 	focus = {
 		id = gsr_isd_creation
 		icon = GFX_goal_generic_secret_weapon
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = gsr_new_departments
 		}
@@ -553,7 +485,7 @@ focus_tree = {
 	focus = {
 		id = gsr_eng_creation
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = gsr_new_departments
 		}
@@ -564,7 +496,7 @@ focus_tree = {
 	focus = {
 		id = gsr_rd_creation
 		icon = GFX_focus_research2
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = gsr_new_departments
 		}
@@ -575,7 +507,7 @@ focus_tree = {
 	focus = {
 		id = gsr_med_creation
 		icon = GFX_focus_research
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = gsr_new_departments
 		}
@@ -586,7 +518,7 @@ focus_tree = {
 	focus = {
 		id = gsr_military_creation
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = gsr_new_departments
 		}
@@ -597,7 +529,7 @@ focus_tree = {
 	focus = {
 		id = gsr_begin_afghano_ops
 		icon = GFX_goal_generic_major_war
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_eng_creation
 		}
@@ -620,7 +552,7 @@ focus_tree = {
 	focus = {
 		id = gsr_intervention_in_the_cmb_war
 		icon = GFX_goal_generic_more_territorial_claims
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_begin_afghano_ops
 		}
@@ -631,7 +563,7 @@ focus_tree = {
 	focus = {
 		id = gsr_anti_duty_operations
 		icon = GFX_goal_generic_political_pressure
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_begin_afghano_ops
 		}
@@ -642,7 +574,7 @@ focus_tree = {
 	focus = {
 		id = gsr_afghano_hiring
 		icon = GFX_goal_generic_improve_relations
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = gsr_begin_afghano_ops
 		}
@@ -653,7 +585,7 @@ focus_tree = {
 	focus = {
 		id = gsr_chemical_research
 		icon = GFX_focus_research
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_begin_afghano_ops
 		}
@@ -664,7 +596,7 @@ focus_tree = {
 	focus = {
 		id = gsr_begin_african_ops
 		icon = GFX_goal_generic_major_war
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_intervention_in_the_cmb_war
 		}
@@ -684,7 +616,7 @@ focus_tree = {
 	focus = {
 		id = gsr_war_with_african_pmc
 		icon = GFX_goal_generic_major_war
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_begin_african_ops
 		}
@@ -695,7 +627,7 @@ focus_tree = {
 	focus = {
 		id = gsr_anti_xof_ops
 		icon = GFX_goal_generic_political_pressure
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_begin_african_ops
 		}
@@ -706,7 +638,7 @@ focus_tree = {
 	focus = {
 		id = gsr_african_hiring
 		icon = GFX_goal_generic_improve_relations
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = gsr_begin_african_ops
 		}
@@ -717,7 +649,7 @@ focus_tree = {
 	focus = {
 		id = gsr_major_chemical_development
 		icon = GFX_focus_research2
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_begin_african_ops
 		}
@@ -728,7 +660,7 @@ focus_tree = {
 	focus = {
 		id = gsr_crackdown_on_xof
 		icon = GFX_goal_generic_secret_weapon
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = gsr_war_with_african_pmc
 		}
@@ -748,7 +680,7 @@ focus_tree = {
 	focus = {
 		id = gsr_afghano_crackdown
 		icon = GFX_goal_generic_secret_weapon
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = gsr_crackdown_on_xof
 		}
@@ -759,7 +691,7 @@ focus_tree = {
 	focus = {
 		id = gsr_organization_reformation
 		icon = GFX_goal_support_democracy
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_afghano_crackdown
 		}
@@ -770,7 +702,7 @@ focus_tree = {
 	focus = {
 		id = gsr_kerk_leader
 		icon = GFX_focus_generic_treaty
-		cost = 10,00
+		cost = 1,00
 		prerequisite = {
 			focus = gsr_organization_reformation
 		}
@@ -785,7 +717,7 @@ focus_tree = {
 	focus = {
 		id = gsr_mike_leader
 		icon = GFX_focus_generic_treaty
-		cost = 10,00
+		cost = 1,00
 		prerequisite = {
 			focus = gsr_organization_reformation
 		}
@@ -799,7 +731,7 @@ focus_tree = {
 	focus = {
 		id = gsr_mark_leader
 		icon = GFX_focus_generic_treaty
-		cost = 10,00
+		cost = 1,00
 		prerequisite = {
 			focus = gsr_organization_reformation
 		}
@@ -813,7 +745,7 @@ focus_tree = {
 	focus = {
 		id = gsr_major_military_development
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_mike_leader
 			focus = gsr_kerk_leader
@@ -826,7 +758,7 @@ focus_tree = {
 	focus = {
 		id = gsr_new_m_factories
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_major_military_development
 		}
@@ -837,7 +769,7 @@ focus_tree = {
 	focus = {
 		id = gsr_bring_back_the_old_hangars
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = gsr_new_m_factories
 		}
@@ -848,7 +780,7 @@ focus_tree = {
 	focus = {
 		id = gsr_begin_research
 		icon = GFX_focus_research2
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_found_the_imrf
 		}
@@ -859,7 +791,7 @@ focus_tree = {
 	focus = {
 		id = gsr_imrf_bring_back_ucs
 		icon = GFX_goal_continuous_research
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_begin_research
 		}
@@ -873,7 +805,7 @@ focus_tree = {
 	focus = {
 		id = gsr_imrf_new_ca_procedure
 		icon = GFX_focus_generic_treaty
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_begin_research
 		}
@@ -887,7 +819,7 @@ focus_tree = {
 	focus = {
 		id = gsr_imrf_build_new_facilities
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_imrf_bring_back_ucs
 			focus = gsr_imrf_new_ca_procedure
@@ -899,7 +831,7 @@ focus_tree = {
 	focus = {
 		id = gsr_imrf_arms_development
 		icon = GFX_goal_generic_small_arms
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_imrf_build_new_facilities
 		}
@@ -910,7 +842,7 @@ focus_tree = {
 	focus = {
 		id = gsr_imrf_military_factories
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_imrf_arms_development
 		}
@@ -921,7 +853,7 @@ focus_tree = {
 	focus = {
 		id = gsr_new_factories
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_major_military_development
 		}
@@ -932,7 +864,7 @@ focus_tree = {
 	focus = {
 		id = gsr_construct_new_hangars
 		icon = GFX_goal_generic_air_fighter2
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_new_m_factories
 		}
@@ -943,7 +875,7 @@ focus_tree = {
 	focus = {
 		id = gsr_new_bases
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_new_m_factories
 		}
@@ -954,7 +886,7 @@ focus_tree = {
 	focus = {
 		id = gsr_island_interventions
 		icon = GFX_goal_generic_major_war
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = gsr_bring_back_the_old_hangars
 		}
@@ -971,7 +903,7 @@ focus_tree = {
 	focus = {
 		id = gsr_stratis_ops
 		icon = GFX_goal_generic_political_pressure
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_island_interventions
 		}
@@ -982,7 +914,7 @@ focus_tree = {
 	focus = {
 		id = gsr_malden_ops
 		icon = GFX_goal_generic_political_pressure
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_island_interventions
 		}
@@ -993,7 +925,7 @@ focus_tree = {
 	focus = {
 		id = gsr_rahmadi_ops
 		icon = GFX_goal_generic_political_pressure
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_island_interventions
 		}
@@ -1004,7 +936,7 @@ focus_tree = {
 	focus = {
 		id = gsr_military_interests
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_stratis_ops
 		}
@@ -1021,7 +953,7 @@ focus_tree = {
 	focus = {
 		id = gsr_imrf_old_factories
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_imrf_arms_development
 		}
@@ -1032,7 +964,7 @@ focus_tree = {
 	focus = {
 		id = gsr_new_vehicles2
 		icon = GFX_goal_generic_army_motorized
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_military_interests
 		}
@@ -1043,7 +975,7 @@ focus_tree = {
 	focus = {
 		id = gsr_imrf_begin_operations
 		icon = GFX_goal_generic_political_pressure
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = gsr_found_the_imrf
 		}
@@ -1054,7 +986,7 @@ focus_tree = {
 	focus = {
 		id = gsr_imrf_military_factories2
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_imrf_begin_operations
 		}
@@ -1065,7 +997,7 @@ focus_tree = {
 	focus = {
 		id = gsr_imrf_external_networks
 		icon = GFX_goal_generic_intelligence_exchange
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_imrf_begin_operations
 		}
@@ -1076,7 +1008,7 @@ focus_tree = {
 	focus = {
 		id = gsr_imrf_military_facilities
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_imrf_military_factories2
 		}
@@ -1090,7 +1022,7 @@ focus_tree = {
 	focus = {
 		id = gsr_imrf_military_outposts
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_imrf_military_factories2
 		}
@@ -1102,9 +1034,106 @@ focus_tree = {
 
 	}
 	focus = {
+		id = gsr_raid_duty_facilities
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 3,00
+		prerequisite = {
+			focus = gsr_begin_the_duty_conflict
+		}
+		x = 25
+		y = 30
+
+	}
+	focus = {
+		id = gsr_active_anti_duty_propaganda
+		icon = GFX_goal_generic_political_pressure
+		cost = 2,00
+		prerequisite = {
+			focus = gsr_begin_the_duty_conflict
+		}
+		x = 27
+		y = 30
+
+	}
+	focus = {
+		id = gsr_anti_duty_creation
+		icon = GFX_focus_generic_treaty
+		cost = 4,00
+		prerequisite = {
+			focus = gsr_raid_duty_facilities
+		}
+		prerequisite = {
+			focus = gsr_active_anti_duty_propaganda
+		}
+		x = 26
+		y = 31
+
+	}
+	focus = {
+		id = gsr_invite_od
+		icon = GFX_goal_generic_improve_relations
+		cost = 2,00
+		prerequisite = {
+			focus = gsr_anti_duty_creation
+		}
+		x = 26
+		y = 32
+
+	}
+	focus = {
+		id = gsr_invite_finset
+		icon = GFX_goal_generic_improve_relations
+		cost = 2,00
+		prerequisite = {
+			focus = gsr_anti_duty_creation
+		}
+		x = 28
+		y = 32
+
+	}
+	focus = {
+		id = gsr_invite_ivan
+		icon = GFX_goal_generic_improve_relations
+		cost = 2,00
+		prerequisite = {
+			focus = gsr_anti_duty_creation
+		}
+		x = 24
+		y = 32
+
+	}
+	focus = {
+		id = gsr_continue_the_raids
+		icon = GFX_goal_generic_position_armies
+		cost = 3,00
+		prerequisite = {
+			focus = gsr_invite_finset
+		}
+		prerequisite = {
+			focus = gsr_invite_ivan
+		}
+		prerequisite = {
+			focus = gsr_invite_od
+		}
+		x = 26
+		y = 33
+
+	}
+	focus = {
+		id = gsr_reveal_the_raiding
+		icon = GFX_goal_generic_major_war
+		cost = 5,00
+		prerequisite = {
+			focus = gsr_continue_the_raids
+		}
+		x = 26
+		y = 34
+
+	}
+	focus = {
 		id = gsr_imrf_data_collection
 		icon = GFX_goal_generic_intelligence_exchange
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_imrf_military_factories2
 		}
@@ -1118,7 +1147,7 @@ focus_tree = {
 	focus = {
 		id = gsr_imrf_spying_network
 		icon = GFX_goal_generic_secret_weapon
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_imrf_military_factories2
 		}
@@ -1132,7 +1161,7 @@ focus_tree = {
 	focus = {
 		id = gsr_imrf_taskforces
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_imrf_military_outposts
 		}
@@ -1152,7 +1181,7 @@ focus_tree = {
 	focus = {
 		id = gsr_imrf_internal_departments
 		icon = GFX_focus_generic_treaty
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = gsr_imrf_taskforces
 		}
@@ -1163,7 +1192,7 @@ focus_tree = {
 	focus = {
 		id = gsr_imrf_classifications
 		icon = GFX_focus_generic_treaty
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = gsr_imrf_taskforces
 		}
@@ -1174,7 +1203,7 @@ focus_tree = {
 	focus = {
 		id = gsr_imrf_access_levels
 		icon = GFX_focus_generic_treaty
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = gsr_imrf_taskforces
 		}
@@ -1185,7 +1214,7 @@ focus_tree = {
 	focus = {
 		id = gsr_imrf_industrial_incident
 		icon = GFX_goal_generic_secret_weapon
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = gsr_imrf_internal_departments
 		}
@@ -1208,7 +1237,7 @@ focus_tree = {
 	focus = {
 		id = gsr_imrf_residential_incident
 		icon = GFX_goal_generic_secret_weapon
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = gsr_imrf_industrial_incident
 		}
@@ -1217,9 +1246,209 @@ focus_tree = {
 
 	}
 	focus = {
+		id = gsr_join_the_oog
+		icon = GFX_focus_generic_treaty
+		cost = 3,00
+		prerequisite = {
+			focus = gsr_begin_finset_war
+		}
+		x = 32
+		y = 30
+
+	}
+	focus = {
+		id = gsr_plan_to_join_brf
+		icon = GFX_goal_generic_improve_relations
+		cost = 2,00
+		prerequisite = {
+			focus = gsr_begin_finset_war
+		}
+		x = 34
+		y = 30
+
+	}
+	focus = {
+		id = gsr_oog_declaration_of_war
+		icon = GFX_goal_generic_major_war
+		cost =4,00
+		prerequisite = {
+			focus = gsr_join_the_oog
+		}
+		prerequisite = {
+			focus = gsr_plan_to_join_brf
+		}
+		x = 33
+		y = 31
+
+	}
+	focus = {
+		id = gsr_anti_finset_ops
+		icon = GFX_goal_generic_political_pressure
+		cost = 3,00
+		prerequisite = {
+			focus = gsr_oog_declaration_of_war
+		}
+		x = 31
+		y = 32
+
+	}
+	focus = {
+		id = gsr_finset_data_collection
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 4,00
+		prerequisite = {
+			focus = gsr_oog_declaration_of_war
+		}
+		x = 33
+		y = 32
+
+	}
+	focus = {
+		id = gsr_internal_damages
+		icon = GFX_goal_generic_attack_allies
+		cost = 2,00
+		prerequisite = {
+			focus = gsr_oog_declaration_of_war
+		}
+		x = 35
+		y = 32
+
+	}
+	focus = {
+		id = gsr_finish_with_finset
+		icon = GFX_goal_generic_political_pressure
+		cost = 4,00
+		prerequisite = {
+			focus = gsr_anti_finset_ops
+		}
+		prerequisite = {
+			focus = gsr_finset_data_collection
+		}
+		prerequisite = {
+			focus = gsr_internal_damages
+		}
+		x = 33
+		y = 33
+
+	}
+	focus = {
+		id = gsr_free_finset
+		icon = GFX_goal_generic_improve_relations
+		cost = 2,00
+		prerequisite = {
+			focus = gsr_finish_with_finset
+		}
+		x = 32
+		y = 34
+
+	}
+	focus = {
+		id = gsr_ask_to_join_brf
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 3,00
+		prerequisite = {
+			focus = gsr_finish_with_finset
+		}
+		x = 34
+		y = 34
+
+	}
+	focus = {
+		id = gsr_zrc_brf_aggression
+		icon = GFX_goal_generic_political_pressure
+		cost = 3,00
+		prerequisite = {
+			focus = gsr_zrc_brf_outposts
+		}
+		prerequisite = {
+			focus = gsr_zrc_brf_spying
+		}
+		x = 5
+		y = 31
+
+	}
+	focus = {
+		id = gsr_zrc_anti_brf_operations
+		icon = GFX_goal_generic_attack_allies
+		cost = 3,00
+		prerequisite = {
+			focus = gsr_zrc_brf_outposts
+		}
+		prerequisite = {
+			focus = gsr_zrc_brf_spying
+		}
+		x = 7
+		y = 31
+
+	}
+	focus = {
+		id = gsr_zrc_steal_brf_documents
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 2,00
+		prerequisite = {
+			focus = gsr_zrc_brf_aggression
+		}
+		prerequisite = {
+			focus = gsr_zrc_anti_brf_operations
+		}
+		x = 4
+		y = 32
+
+	}
+	focus = {
+		id = gsr_zrc_raid_brf_facilities
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 3,00
+		prerequisite = {
+			focus = gsr_zrc_brf_aggression
+		}
+		prerequisite = {
+			focus = gsr_zrc_anti_brf_operations
+		}
+		x = 6
+		y = 32
+
+	}
+	focus = {
+		id = gsr_zrc_brf_data_collection
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 4,00
+		prerequisite = {
+			focus = gsr_zrc_brf_aggression
+		}
+		prerequisite = {
+			focus = gsr_zrc_anti_brf_operations
+		}
+		x = 8
+		y = 32
+
+	}
+	focus = {
+		id = gsr_zrc_brf_outposts
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 3,00
+		prerequisite = {
+			focus = gsr_receive_brf_aggression
+		}
+		x = 5
+		y = 30
+
+	}
+	focus = {
+		id = gsr_zrc_brf_spying
+		icon = GFX_goal_generic_radar
+		cost = 2,00
+		prerequisite = {
+			focus = gsr_receive_brf_aggression
+		}
+		x = 7
+		y = 30
+
+	}
+	focus = {
 		id = gsr_zrc_anomaly_research
 		icon = GFX_focus_research
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_zrc_task_forces_weaponry
 		}
@@ -1236,7 +1465,7 @@ focus_tree = {
 	focus = {
 		id = gsr_mjx_disband
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_mjx_research_interest
 		}
@@ -1253,7 +1482,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zer_disband
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_zer_ucs_002
 		}
@@ -1270,7 +1499,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zer_continue_development
 		icon = GFX_focus_generic_treaty
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_zer_ucs_001
 		}
@@ -1287,7 +1516,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zer_ucs_002
 		icon = GFX_focus_research
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_zer_ucs_creation
 		}
@@ -1298,7 +1527,7 @@ focus_tree = {
 	focus = {
 		id = gsr_rally_the_trio
 		icon = GFX_goal_generic_improve_relations
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_begin_development
 		}
@@ -1309,7 +1538,7 @@ focus_tree = {
 	focus = {
 		id = gsr_the_refuge
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = gsr_rally_the_trio
 		}
@@ -1320,7 +1549,7 @@ focus_tree = {
 	focus = {
 		id = gsr_begin_operations
 		icon = GFX_goal_generic_secret_weapon
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_the_refuge
 		}
@@ -1331,7 +1560,7 @@ focus_tree = {
 	focus = {
 		id = gsr_raid_hostile_warehouses
 		icon = GFX_goal_generic_small_arms
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_begin_operations
 		}
@@ -1342,7 +1571,7 @@ focus_tree = {
 	focus = {
 		id = gsr_skyscraper_takeover
 		icon = GFX_goal_generic_secret_weapon
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_begin_operations
 		}
@@ -1353,7 +1582,7 @@ focus_tree = {
 	focus = {
 		id = gsr_construction_extraction
 		icon = GFX_goal_generic_army_doctrines
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_begin_operations
 		}
@@ -1364,7 +1593,7 @@ focus_tree = {
 	focus = {
 		id = gsr_old_conflicts
 		icon = GFX_goal_generic_major_war
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_begin_operations
 		}
@@ -1375,7 +1604,7 @@ focus_tree = {
 	focus = {
 		id = gsr_lab_takeover
 		icon = GFX_focus_research
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_raid_hostile_warehouses
 		}
@@ -1395,7 +1624,7 @@ focus_tree = {
 	focus = {
 		id = gsr_exploration_incident
 		icon = GFX_goal_generic_secret_weapon
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_raid_hostile_warehouses
 		}
@@ -1415,7 +1644,7 @@ focus_tree = {
 	focus = {
 		id = gsr_arms_development
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_the_refuge
 		}
@@ -1426,7 +1655,7 @@ focus_tree = {
 	focus = {
 		id = gsr_new_weaponry
 		icon = GFX_goal_generic_small_arms
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_arms_development
 		}
@@ -1437,7 +1666,7 @@ focus_tree = {
 	focus = {
 		id = gsr_helicopter_design
 		icon = GFX_goal_generic_air_fighter2
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_arms_development
 		}
@@ -1448,7 +1677,7 @@ focus_tree = {
 	focus = {
 		id = gsr_minor_vehicles
 		icon = GFX_goal_generic_army_motorized
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_arms_development
 		}
@@ -1459,7 +1688,7 @@ focus_tree = {
 	focus = {
 		id = gsr_found_the_armory
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_new_weaponry
 		}
@@ -1476,7 +1705,7 @@ focus_tree = {
 	focus = {
 		id = gsr_temporary_hangars
 		icon = GFX_goal_generic_air_fighter
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = gsr_new_weaponry
 		}
@@ -1493,7 +1722,7 @@ focus_tree = {
 	focus = {
 		id = gsr_c17_incident
 		icon = GFX_focus_generic_strike_at_democracy1
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = gsr_lab_takeover
 		}
@@ -1513,7 +1742,7 @@ focus_tree = {
 	focus = {
 		id = gsr_found_the_zrc
 		icon = GFX_focus_research2
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = gsr_c17_incident
 		}
@@ -1524,7 +1753,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zrc_begin_research
 		icon = GFX_focus_research
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_found_the_zrc
 		}
@@ -1535,7 +1764,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zrc_outposts
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_found_the_zrc
 		}
@@ -1546,7 +1775,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zrc_facilities
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_found_the_zrc
 		}
@@ -1557,7 +1786,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zrc_military_factories
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_zrc_facilities
 		}
@@ -1571,7 +1800,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zrc_disband
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_zrc_electronics_research
 		}
@@ -1588,7 +1817,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zrc_continue_research
 		icon = GFX_goal_continuous_research
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_zrc_electronics_research
 		}
@@ -1605,7 +1834,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zrc_electronics_research
 		icon = GFX_focus_research
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = gsr_zrc_begin_research
 		}
@@ -1619,7 +1848,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zrc_arms_research
 		icon = GFX_goal_generic_small_arms
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_found_the_zrc
 		}
@@ -1630,7 +1859,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zrc_major_brf_war
 		icon = GFX_goal_generic_major_war
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = gsr_zrc_steal_brf_documents
 		}
@@ -1647,7 +1876,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zrc_ivan_help
 		icon = GFX_goal_generic_small_arms
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_zrc_major_brf_war
 		}
@@ -1658,7 +1887,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zrc_danil_help
 		icon = GFX_goal_generic_small_arms
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_zrc_major_brf_war
 		}
@@ -1669,7 +1898,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zrc_new_facilities
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_zrc_continue_research
 		}
@@ -1680,7 +1909,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zrc_nuclear_research
 		icon = GFX_focus_wonderweapons
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_zrc_continue_research
 		}
@@ -1691,7 +1920,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zrc_industrial_research
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = gsr_zrc_new_facilities
 		}
@@ -1702,7 +1931,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zrc_arms_development
 		icon = GFX_goal_generic_allies_build_infantry
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_zrc_new_facilities
 		}
@@ -1713,7 +1942,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zrc_task_forces_weaponry
 		icon = GFX_goal_generic_small_arms
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_zrc_new_facilities
 		}
@@ -1724,7 +1953,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zrc_bring_back_ucs
 		icon = GFX_goal_continuous_research
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_zrc_task_forces_weaponry
 		}
@@ -1741,7 +1970,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zrc_ucs_containment
 		icon = GFX_focus_research2
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_zrc_bring_back_ucs
 		}
@@ -1755,7 +1984,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zrc_ucs_001
 		icon = GFX_focus_research2
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_zrc_ucs_containment
 		}
@@ -1766,7 +1995,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zrc_ucs_002
 		icon = GFX_focus_research2
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_zrc_ucs_containment
 		}
@@ -1777,7 +2006,7 @@ focus_tree = {
 	focus = {
 		id = gsr_zrc_ucs_003
 		icon = GFX_focus_research2
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_zrc_ucs_containment
 		}
@@ -1788,7 +2017,7 @@ focus_tree = {
 	focus = {
 		id = gsr_imrf_commercial_incident
 		icon = GFX_goal_generic_secret_weapon
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = gsr_imrf_industrial_incident
 		}
@@ -1799,7 +2028,7 @@ focus_tree = {
 	focus = {
 		id = gsr_imrf_evacuation
 		icon = GFX_goal_generic_position_armies
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = gsr_imrf_residential_incident
 		}
@@ -1813,7 +2042,7 @@ focus_tree = {
 	focus = {
 		id = gsr_imrf_disband
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_imrf_evacuation
 		}
@@ -1824,7 +2053,7 @@ focus_tree = {
 	focus = {
 		id = gsr_major_internal_development
 		icon = GFX_focus_generic_self_management
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_mike_leader
 			focus = gsr_kerk_leader
@@ -1837,7 +2066,7 @@ focus_tree = {
 	focus = {
 		id = gsr_dea_creation
 		icon = GFX_goal_generic_intelligence_exchange
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = gsr_major_internal_development
 		}
@@ -1848,7 +2077,7 @@ focus_tree = {
 	focus = {
 		id = gsr_high_command
 		icon = GFX_focus_generic_treaty
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = gsr_major_internal_development
 		}
@@ -1859,7 +2088,7 @@ focus_tree = {
 	focus = {
 		id = gsr_discord_development
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_dea_creation
 		}
@@ -1870,7 +2099,7 @@ focus_tree = {
 	focus = {
 		id = gsr_maintain_full_secrecy
 		icon = GFX_goal_generic_fortify_city
-		cost = 10,00
+		cost = 5,00
 		prerequisite = {
 			focus = gsr_improved_hierarchy
 		}
@@ -1879,120 +2108,9 @@ focus_tree = {
 
 	}
 	focus = {
-		id = gsr_begin_the_duty_conflict
-		icon = GFX_goal_generic_political_pressure
-		cost = 10,00
-		prerequisite = {
-			focus = gsr_maintain_full_secrecy
-		}
-		prerequisite = {
-			focus = gsr_fake_name
-		}
-		x = 16
-		y = 54
-
-	}
-	focus = {
-		id = gsr_raid_duty_facilities
-		icon = GFX_goal_generic_more_territorial_claims
-		cost = 10,00
-		prerequisite = {
-			focus = gsr_begin_the_duty_conflict
-		}
-		x = 15
-		y = 55
-
-	}
-	focus = {
-		id = gsr_active_anti_duty_propaganda
-		icon = GFX_goal_generic_political_pressure
-		cost = 10,00
-		prerequisite = {
-			focus = gsr_begin_the_duty_conflict
-		}
-		x = 17
-		y = 55
-
-	}
-	focus = {
-		id = gsr_anti_duty_creation
-		icon = GFX_focus_generic_treaty
-		cost = 10,00
-		prerequisite = {
-			focus = gsr_raid_duty_facilities
-		}
-		prerequisite = {
-			focus = gsr_active_anti_duty_propaganda
-		}
-		x = 16
-		y = 56
-
-	}
-	focus = {
-		id = gsr_invite_finset
-		icon = GFX_goal_generic_improve_relations
-		cost = 10,00
-		prerequisite = {
-			focus = gsr_anti_duty_creation
-		}
-		x = 18
-		y = 57
-
-	}
-	focus = {
-		id = gsr_invite_od
-		icon = GFX_goal_generic_improve_relations
-		cost = 10,00
-		prerequisite = {
-			focus = gsr_anti_duty_creation
-		}
-		x = 16
-		y = 57
-
-	}
-	focus = {
-		id = gsr_invite_ivan
-		icon = GFX_goal_generic_improve_relations
-		cost = 10,00
-		prerequisite = {
-			focus = gsr_anti_duty_creation
-		}
-		x = 14
-		y = 57
-
-	}
-	focus = {
-		id = gsr_continue_the_raids
-		icon = GFX_goal_generic_position_armies
-		cost = 10,00
-		prerequisite = {
-			focus = gsr_invite_finset
-		}
-		prerequisite = {
-			focus = gsr_invite_ivan
-		}
-		prerequisite = {
-			focus = gsr_invite_od
-		}
-		x = 16
-		y = 58
-
-	}
-	focus = {
-		id = gsr_reveal_the_raiding
-		icon = GFX_goal_generic_major_war
-		cost = 10,00
-		prerequisite = {
-			focus = gsr_continue_the_raids
-		}
-		x = 16
-		y = 59
-
-	}
-	focus = {
 		id = gsr_fake_name
 		icon = GFX_goal_generic_secret_weapon
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = gsr_improved_hierarchy
 		}
@@ -2003,7 +2121,7 @@ focus_tree = {
 	focus = {
 		id = gsr_new_outposts
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_administrative_department
 		}
@@ -2020,7 +2138,7 @@ focus_tree = {
 	focus = {
 		id = gsr_new_fobs
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_new_outposts
 		}
@@ -2031,7 +2149,7 @@ focus_tree = {
 	focus = {
 		id = gsr_new_headquarters
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_new_outposts
 		}
@@ -2042,7 +2160,7 @@ focus_tree = {
 	focus = {
 		id = gsr_new_facilities
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_new_outposts
 		}
@@ -2053,7 +2171,7 @@ focus_tree = {
 	focus = {
 		id = gsr_research_interests
 		icon = GFX_focus_research
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_new_fobs
 		}
@@ -2070,7 +2188,7 @@ focus_tree = {
 	focus = {
 		id = gsr_afr_corporation
 		icon = GFX_goal_tfv_generic_tech_sharing
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_research_interests
 		}
@@ -2081,7 +2199,7 @@ focus_tree = {
 	focus = {
 		id = gsr_rd_innovations
 		icon = GFX_focus_research2
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_research_interests
 		}
@@ -2092,7 +2210,7 @@ focus_tree = {
 	focus = {
 		id = gsr_new_military_factories2
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_military_interests
 		}
@@ -2103,7 +2221,7 @@ focus_tree = {
 	focus = {
 		id = gsr_neutral_policy
 		icon = GFX_goal_generic_neutrality_focus
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = gsr_afr_corporation
 		}
@@ -2123,7 +2241,7 @@ focus_tree = {
 	focus = {
 		id = gsr_minor_interventionism
 		icon = GFX_goal_generic_political_pressure
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = gsr_neutral_policy
 		}
@@ -2137,7 +2255,7 @@ focus_tree = {
 	focus = {
 		id = gsr_major_interventionism
 		icon = GFX_goal_generic_more_territorial_claims
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_neutral_policy
 		}
@@ -2151,7 +2269,7 @@ focus_tree = {
 	focus = {
 		id = gsr_improved_hierarchy
 		icon = GFX_goal_generic_national_unity
-		cost = 10,00
+		cost = 4,00
 		prerequisite = {
 			focus = gsr_minor_interventionism
 		}
@@ -2165,7 +2283,7 @@ focus_tree = {
 	focus = {
 		id = gsr_intelligence_agency
 		icon = GFX_goal_generic_intelligence_exchange
-		cost = 10,00
+		cost = 3,00
 		prerequisite = {
 			focus = gsr_dea_creation
 		}
@@ -2176,12 +2294,128 @@ focus_tree = {
 	focus = {
 		id = gsr_administrative_department
 		icon = GFX_focus_generic_self_management
-		cost = 10,00
+		cost = 2,00
 		prerequisite = {
 			focus = gsr_dea_creation
 		}
 		x = 11
 		y = 45
+
+	}
+	focus = {
+		id = gsr_spy_from_boreas
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 3,00
+		prerequisite = {
+			focus = gsr_begin_the_ndf_conflict
+		}
+		x = 5
+		y = 37
+
+	}
+	focus = {
+		id = gsr_improve_brf_relations
+		icon = GFX_goal_generic_improve_relations
+		cost = 2,00
+		prerequisite = {
+			focus = gsr_begin_the_ndf_conflict
+		}
+		x = 7
+		y = 37
+
+	}
+	focus = {
+		id = gsr_plan_the_inside_job
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 5,00
+		prerequisite = {
+			focus = gsr_spy_from_boreas
+		}
+		prerequisite = {
+			focus = gsr_improve_brf_relations
+		}
+		x = 6
+		y = 38
+
+	}
+	focus = {
+		id = gsr_intel_for_brf
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 3,00
+		prerequisite = {
+			focus = gsr_plan_the_inside_job
+		}
+		x = 5
+		y = 39
+
+	}
+	focus = {
+		id = gsr_communications_with_brf
+		icon = GFX_goal_generic_improve_relations
+		cost = 3,00
+		prerequisite = {
+			focus = gsr_plan_the_inside_job
+		}
+		x = 7
+		y = 39
+
+	}
+	focus = {
+		id = gsr_commence_the_inside_job
+		icon = GFX_goal_generic_attack_allies
+		cost = 5,00
+		prerequisite = {
+			focus = gsr_intel_for_brf
+		}
+		prerequisite = {
+			focus = gsr_communications_with_brf
+		}
+		x = 6
+		y = 40
+
+	}
+	focus = {
+		id = gsr_reform_the_ndc
+		icon = GFX_focus_generic_treaty
+		cost = 2,00
+		prerequisite = {
+			focus = gsr_commence_the_inside_job
+		}
+		x = 5
+		y = 41
+
+	}
+	focus = {
+		id = gsr_ndf_data_collection
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 3,00
+		prerequisite = {
+			focus = gsr_commence_the_inside_job
+		}
+		x = 7
+		y = 41
+
+	}
+	focus = {
+		id = gsr_raid_ndf_facilities
+		icon = GFX_goal_generic_political_pressure
+		cost = 4,00
+		prerequisite = {
+			focus = gsr_commence_the_inside_job
+		}
+		x = 9
+		y = 41
+
+	}
+	focus = {
+		id = gsr_anti_ndf_operations
+		icon = GFX_goal_generic_political_pressure
+		cost = 3,00
+		prerequisite = {
+			focus = gsr_commence_the_inside_job
+		}
+		x = 3
+		y = 41
 
 	}
 }

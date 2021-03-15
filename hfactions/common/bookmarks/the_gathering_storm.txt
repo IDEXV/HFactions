@@ -50,6 +50,7 @@ bookmarks = {
 				beginning_debuff
 			}
 			focuses = {
+				gsr_organization_reformation
 			}
 		}
 		"DUT" = {
