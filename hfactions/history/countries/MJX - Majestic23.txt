@@ -365,19 +365,3 @@ set_politics = {
 set_popularities = {
 	neutrality = 100
 }
-
-create_country_leader = {
-    name = "Maxim IDEXV"
-    desc = "LEADER_KERK_DESC"
-    picture = "gfx/leaders/GSR/portrait_gsr_kerk.dds"
-    expire = "2050.1.1"
-    ideology = centrism
-    traits = {
-		fortification_engineer
-		war_industrialist
-		ideological_crusader
-		headstrong
-		#
-		dislikes_duty
-    }
-}

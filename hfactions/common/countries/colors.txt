@@ -52,6 +52,10 @@ ZRC = {
 	color = RGB { 58 117 196 }
 	color_ui = RGB { 58 117 196 }
 }
+IMR = {
+	color = RGB { 80 80 80 }
+	color_ui = RGB { 80 80 80 }
+}
 MJX = {
 	color = RGB { 23 128 109 }
 	color_ui = RGB { 23 128 109 }

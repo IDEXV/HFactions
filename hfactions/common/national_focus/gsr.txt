@@ -117,6 +117,32 @@ focus_tree = {
 		}
 		icon = GFX_focus_hol_the_foundations_of_defense
 		cost = 5,00
+		completion_reward = {
+			custom_effect_tooltip = imr_creation
+			add_stability = 0.1
+			add_manpower = -50000
+			add_war_support = 0.05
+			hidden_effect = {
+				IMR = {
+					add_state_core = 560
+					add_state_core = 657
+					add_state_core = 409
+					add_state_core = 655
+					add_state_core = 537
+					set_state_owner = 560
+					set_state_owner = 657
+					set_state_owner = 409
+					set_state_owner = 655
+					set_state_owner = 537
+					set_state_controller = 560
+					set_state_controller = 657
+					set_state_controller = 409
+					set_state_controller = 655
+					set_state_controller = 537
+					load_oob = "IMR_2018"
+				}
+			}
+		}
 		x = 23
 		y = 19
 
@@ -308,22 +334,6 @@ focus_tree = {
 			custom_effect_tooltip = fd11_disbanded
 			set_country_flag = fd11_fate_decided
 			hidden_effect = {
-			create_country_leader = {
-    			name = "Mark Reed"
-    			desc = "LEADER_MARK_DESC"
-    			picture = "gfx/leaders/GSR/portrait_gsr_unknown.dds"
-    			expire = "2050.1.1"
-    			ideology = centrism
-    			traits = {
-					warmonger
-					ideological_crusader
-					quartermaster_general
-					war_industrialist
-    			}
-			}
-			FON = {
-				retire_country_leader = yes
-			}
 				FON = { 
 					delete_unit = { 
             			state = 213             
@@ -2079,24 +2089,6 @@ focus_tree = {
 			custom_effect_tooltip = mjx_disbanded
 			set_country_flag = mjx_fate_decided
 			hidden_effect = {
-				create_country_leader = {
-    				name = "Maxim IDEXV"
-    				desc = "LEADER_KERK_DESC"
-    				picture = "gfx/leaders/GSR/portrait_gsr_kerk.dds"
-    				expire = "2050.1.1"
-    				ideology = centrism
-    				traits = {
-						fortification_engineer
-						war_industrialist
-						ideological_crusader
-						headstrong
-						#
-						dislikes_duty
-    				}
-				}
-				MJX = {					
-					retire_country_leader = yes
-				}
 				MJX = { 
 					delete_unit = { 
             			state = 444             
@@ -2221,24 +2213,6 @@ focus_tree = {
 			custom_effect_tooltip = zif_disbanded
 			set_country_flag = mjx_fate_decided
 			hidden_effect = {
-				create_country_leader = {
-    				name = "Maxim IDEXV"
-    				desc = "LEADER_KERK_DESC"
-    				picture = "gfx/leaders/GSR/portrait_gsr_kerk.dds"
-    				expire = "2050.1.1"
-    				ideology = centrism
-    				traits = {
-						fortification_engineer
-						war_industrialist
-						ideological_crusader
-						headstrong
-						#
-						dislikes_duty
-    				}
-				}
-				MJX = {					
-					retire_country_leader = yes
-				}
 				MJX = { 
 					delete_unit = { 
             			state = 444             

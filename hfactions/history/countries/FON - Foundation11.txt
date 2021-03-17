@@ -365,17 +365,3 @@ set_politics = {
 set_popularities = {
 	neutrality = 100
 }
-
-create_country_leader = {
-    name = "Mark Reed"
-    desc = "LEADER_MARK_DESC"
-    picture = "gfx/leaders/GSR/portrait_gsr_unknown.dds"
-    expire = "2050.1.1"
-    ideology = centrism
-    traits = {
-		warmonger
-		ideological_crusader
-		quartermaster_general
-		war_industrialist
-    }
-}

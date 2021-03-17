@@ -31,6 +31,11 @@ set_autonomy = {
 	autonomous_state = autonomy_integrated_puppet
 }
 
+set_autonomy = {
+	target = IMR
+	autonomous_state = autonomy_integrated_puppet
+}
+
 set_technology = {
 	legacy_doctrines = 1
 	modern_blitzkrieg = 1
@@ -459,6 +464,36 @@ set_politics = {
 
 set_popularities = {
 	neutrality = 100
+}
+
+create_country_leader = {
+    name = "Mark Reed"
+    desc = "LEADER_MARK_DESC"
+    picture = "gfx/leaders/GSR/portrait_gsr_unknown.dds"
+    expire = "2050.1.1"
+    ideology = centrism
+    traits = {
+		warmonger
+		ideological_crusader
+		quartermaster_general
+		war_industrialist
+    }
+}
+
+create_country_leader = {
+    name = "Maxim IDEXV"
+    desc = "LEADER_KERK_DESC"
+    picture = "gfx/leaders/GSR/portrait_gsr_kerk.dds"
+    expire = "2050.1.1"
+    ideology = centrism
+    traits = {
+		fortification_engineer
+		war_industrialist
+		ideological_crusader
+		headstrong
+		#
+		dislikes_duty
+    }
 }
 
 create_country_leader = {
